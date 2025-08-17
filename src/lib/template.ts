@@ -1,5 +1,26 @@
 import { DESIGN_CONFIG, FONT_IMPORTS } from '@/config/design';
 import { SanitizedQuoteData, escapeHtml } from './sanitization';
+import fs from 'fs';
+import path from 'path';
+
+function loadIconSvg(): string {
+  try {
+    const iconPath = path.join(process.cwd(), 'public', 'images', 'icons', 'dove.svg');
+    const svgContent = fs.readFileSync(iconPath, 'utf-8');
+    // Create a data URI for the SVG
+    const base64 = Buffer.from(svgContent).toString('base64');
+    return `data:image/svg+xml;base64,${base64}`;
+  } catch (error) {
+    console.warn('Could not load custom icon, using fallback');
+    // Fallback to simple SVG
+    return `data:image/svg+xml;base64,${Buffer.from(`
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="${DESIGN_CONFIG.COLORS.PRIMARY}"/>
+        <circle cx="50" cy="50" r="20" fill="${DESIGN_CONFIG.COLORS.SECONDARY}"/>
+      </svg>
+    `).toString('base64')}`;
+  }
+}
 
 export function generateQuoteTemplate(data: SanitizedQuoteData): string {
   const { coreValue, supportingValue, quote, author } = data;
@@ -12,15 +33,50 @@ export function generateQuoteTemplate(data: SanitizedQuoteData): string {
     author: author ? escapeHtml(author) : '',
   };
 
-  // Calculate responsive font sizes
-  const coreFontSize = coreValue.length > 20 
-    ? DESIGN_CONFIG.FONT_SIZES.CORE_VALUE.LONG 
-    : DESIGN_CONFIG.FONT_SIZES.CORE_VALUE.DEFAULT;
-    
-  const quoteFontSize = 
-    quote.length > 100 ? DESIGN_CONFIG.FONT_SIZES.QUOTE.LONG :
-    quote.length > 60 ? DESIGN_CONFIG.FONT_SIZES.QUOTE.MEDIUM :
-    DESIGN_CONFIG.FONT_SIZES.QUOTE.SHORT;
+  // Load the icon
+  const iconDataUri = loadIconSvg();
+
+  // Calculate responsive font sizes with better scaling
+  const getCoreFontSize = (text: string) => {
+    const baseSize = 57;
+    const minSize = 36;
+    if (text.length <= 15) return `${baseSize}px`;
+    if (text.length <= 25) return `${Math.max(minSize, baseSize - 5)}px`;
+    if (text.length <= 35) return `${Math.max(minSize, baseSize - 10)}px`;
+    return `${Math.max(minSize, baseSize - 15)}px`;
+  };
+  
+  const getSupportingFontSize = (text: string) => {
+    const baseSize = 36;
+    const minSize = 24;
+    if (text.length <= 20) return `${baseSize}px`;
+    if (text.length <= 30) return `${Math.max(minSize, baseSize - 4)}px`;
+    if (text.length <= 40) return `${Math.max(minSize, baseSize - 8)}px`;
+    return `${Math.max(minSize, baseSize - 12)}px`;
+  };
+  
+  const getQuoteFontSize = (text: string) => {
+    const baseSize = 84;
+    const minSize = 42;
+    if (text.length <= 50) return `${baseSize}px`;
+    if (text.length <= 80) return `${Math.max(minSize, baseSize - 8)}px`;
+    if (text.length <= 120) return `${Math.max(minSize, baseSize - 16)}px`;
+    if (text.length <= 160) return `${Math.max(minSize, baseSize - 24)}px`;
+    return `${Math.max(minSize, baseSize - 32)}px`;
+  };
+  
+  const getAuthorFontSize = (text: string) => {
+    const baseSize = 32;
+    const minSize = 20;
+    if (text.length <= 20) return `${baseSize}px`;
+    if (text.length <= 30) return `${Math.max(minSize, baseSize - 4)}px`;
+    return `${Math.max(minSize, baseSize - 8)}px`;
+  };
+
+  const coreFontSize = getCoreFontSize(coreValue);
+  const supportingFontSize = getSupportingFontSize(supportingValue);
+  const quoteFontSize = getQuoteFontSize(quote);
+  const authorFontSize = author ? getAuthorFontSize(author) : '32px';
 
   return `
     <!DOCTYPE html>
@@ -78,7 +134,7 @@ export function generateQuoteTemplate(data: SanitizedQuoteData): string {
         
         .supporting-value {
           font-family: ${DESIGN_CONFIG.FONTS.PRIMARY};
-          font-size: ${DESIGN_CONFIG.FONT_SIZES.SUPPORTING_VALUE}; 
+          font-size: ${supportingFontSize}; 
           font-weight: 400; 
           color: ${DESIGN_CONFIG.COLORS.GRAY};
           text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -109,7 +165,7 @@ export function generateQuoteTemplate(data: SanitizedQuoteData): string {
         
         .author {
           font-family: ${DESIGN_CONFIG.FONTS.SECONDARY};
-          font-size: ${DESIGN_CONFIG.FONT_SIZES.AUTHOR}; 
+          font-size: ${authorFontSize}; 
           font-weight: 400; 
           color: ${DESIGN_CONFIG.COLORS.GRAY}; 
           text-align: right;
@@ -141,19 +197,14 @@ export function generateQuoteTemplate(data: SanitizedQuoteData): string {
         
         .dove-icon {
           margin-left: ${DESIGN_CONFIG.SPACING.ICON_MARGIN};
-          width: ${DESIGN_CONFIG.BRAND.ICON_SIZE};
-          height: ${DESIGN_CONFIG.BRAND.ICON_SIZE};
-          background: ${DESIGN_CONFIG.COLORS.PRIMARY};
-          border-radius: 50%;
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          position: relative;
         }
         
         .dove-svg {
-          width: ${DESIGN_CONFIG.BRAND.ICON_SVG_SIZE};
-          height: ${DESIGN_CONFIG.BRAND.ICON_SVG_SIZE};
+          width: 35px;
+          height: 35px;
           fill: ${DESIGN_CONFIG.COLORS.SECONDARY};
         }
         
@@ -184,12 +235,7 @@ export function generateQuoteTemplate(data: SanitizedQuoteData): string {
           <div class="footer-content">
             <span class="footer-text">${DESIGN_CONFIG.BRAND.HANDLE}</span>
             <div class="dove-icon">
-              <svg class="dove-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 50 Q30 30, 50 35 Q70 30, 80 50 Q75 40, 65 45 Q70 50, 75 60 Q70 70, 60 65 Q50 70, 40 65 Q30 70, 25 60 Q30 50, 20 50 Z" fill="${DESIGN_CONFIG.COLORS.SECONDARY}"/>
-                <circle cx="65" cy="45" r="3" fill="${DESIGN_CONFIG.COLORS.PRIMARY}"/>
-                <path d="M45 50 Q50 45, 55 50 Q60 55, 65 50 Q70 55, 75 60" stroke="${DESIGN_CONFIG.COLORS.PRIMARY}" stroke-width="2" fill="none"/>
-                <path d="M35 55 Q40 50, 45 55 Q50 60, 55 55" stroke="${DESIGN_CONFIG.COLORS.PRIMARY}" stroke-width="2" fill="none"/>
-              </svg>
+              <img class="dove-svg" src="${iconDataUri}" alt="Icon" />
             </div>
           </div>
         </div>
