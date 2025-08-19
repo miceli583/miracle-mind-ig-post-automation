@@ -272,47 +272,47 @@ function generateStyle2Template(safeData: {
 }): string {
   const { coreValue, supportingValue, quote, author } = safeData;
 
-  // Calculate responsive font sizes for dark theme
+  // Enhanced responsive font sizes with better scaling
   const getCoreFontSize = (text: string) => {
-    const baseSize = 54;
-    const minSize = 32;
-    if (text.length <= 15) return `${baseSize}px`;
-    if (text.length <= 25) return `${Math.max(minSize, baseSize - 4)}px`;
-    if (text.length <= 35) return `${Math.max(minSize, baseSize - 8)}px`;
+    const baseSize = 48;
+    const minSize = 28;
+    if (text.length <= 12) return `${baseSize}px`;
+    if (text.length <= 20) return `${Math.max(minSize, baseSize - 4)}px`;
+    if (text.length <= 30) return `${Math.max(minSize, baseSize - 8)}px`;
     return `${Math.max(minSize, baseSize - 12)}px`;
   };
   
   const getSupportingFontSize = (text: string) => {
-    const baseSize = 32;
-    const minSize = 20;
-    if (text.length <= 20) return `${baseSize}px`;
-    if (text.length <= 30) return `${Math.max(minSize, baseSize - 3)}px`;
-    if (text.length <= 40) return `${Math.max(minSize, baseSize - 6)}px`;
-    return `${Math.max(minSize, baseSize - 9)}px`;
+    const baseSize = 28;
+    const minSize = 18;
+    if (text.length <= 15) return `${baseSize}px`;
+    if (text.length <= 25) return `${Math.max(minSize, baseSize - 3)}px`;
+    if (text.length <= 35) return `${Math.max(minSize, baseSize - 5)}px`;
+    return `${Math.max(minSize, baseSize - 8)}px`;
   };
   
   const getQuoteFontSize = (text: string) => {
-    const baseSize = 78;
-    const minSize = 38;
-    if (text.length <= 50) return `${baseSize}px`;
-    if (text.length <= 80) return `${Math.max(minSize, baseSize - 8)}px`;
-    if (text.length <= 120) return `${Math.max(minSize, baseSize - 16)}px`;
-    if (text.length <= 160) return `${Math.max(minSize, baseSize - 24)}px`;
+    const baseSize = 72;
+    const minSize = 32;
+    if (text.length <= 40) return `${baseSize}px`;
+    if (text.length <= 70) return `${Math.max(minSize, baseSize - 8)}px`;
+    if (text.length <= 110) return `${Math.max(minSize, baseSize - 16)}px`;
+    if (text.length <= 150) return `${Math.max(minSize, baseSize - 24)}px`;
     return `${Math.max(minSize, baseSize - 32)}px`;
   };
   
   const getAuthorFontSize = (text: string) => {
-    const baseSize = 28;
-    const minSize = 18;
-    if (text.length <= 20) return `${baseSize}px`;
-    if (text.length <= 30) return `${Math.max(minSize, baseSize - 3)}px`;
-    return `${Math.max(minSize, baseSize - 6)}px`;
+    const baseSize = 24;
+    const minSize = 16;
+    if (text.length <= 15) return `${baseSize}px`;
+    if (text.length <= 25) return `${Math.max(minSize, baseSize - 2)}px`;
+    return `${Math.max(minSize, baseSize - 4)}px`;
   };
 
   const coreFontSize = getCoreFontSize(coreValue);
   const supportingFontSize = getSupportingFontSize(supportingValue);
   const quoteFontSize = getQuoteFontSize(quote);
-  const authorFontSize = author ? getAuthorFontSize(author) : '28px';
+  const authorFontSize = author ? getAuthorFontSize(author) : '24px';
 
   return `
     <!DOCTYPE html>
@@ -332,88 +332,95 @@ function generateStyle2Template(safeData: {
           padding: 0; 
           width: ${DESIGN_CONFIG.IMAGE.WIDTH}px; 
           height: ${DESIGN_CONFIG.IMAGE.HEIGHT}px;
-          background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+          background: radial-gradient(ellipse at center, #1a202c 0%, #0f0f0f 100%);
           display: flex; 
           justify-content: center; 
           align-items: center;
           font-family: ${DESIGN_CONFIG.FONTS.PRIMARY};
+          overflow: hidden;
         }
         
         .container {
           width: ${DESIGN_CONFIG.IMAGE.CONTAINER_WIDTH}px; 
           height: ${DESIGN_CONFIG.IMAGE.CONTAINER_HEIGHT}px; 
-          background: linear-gradient(135deg, #1f2937 0%, #111827 50%, #000000 100%);
-          border: 2px solid #374151;
-          border-radius: 24px;
-          padding: ${DESIGN_CONFIG.IMAGE.PADDING}px; 
+          background: linear-gradient(145deg, #1a202c 0%, #2d3748 25%, #1a202c 50%, #2d3748 75%, #0f0f0f 100%);
+          border: 3px solid transparent;
+          border-radius: 32px;
+          padding: ${DESIGN_CONFIG.IMAGE.PADDING + 10}px; 
           box-sizing: border-box;
           display: flex; 
           flex-direction: column; 
           justify-content: space-between;
           position: relative;
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+          box-shadow: 
+            0 20px 40px rgba(0, 0, 0, 0.4),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.2);
         }
         
         .container::before {
+          content: '';
+          position: absolute;
+          top: -3px;
+          left: -3px;
+          right: -3px;
+          bottom: -3px;
+          border-radius: 35px;
+          background: linear-gradient(135deg, #fbbf24 0%, #06b6d4 25%, #8b5cf6 50%, #06b6d4 75%, #fbbf24 100%);
+          z-index: -1;
+        }
+        
+        .container::after {
           content: '';
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          border-radius: 22px;
-          background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+          border-radius: 29px;
+          background: linear-gradient(135deg, rgba(251, 191, 36, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
           pointer-events: none;
         }
         
         .header {
           text-align: center;
-          margin-bottom: 32px;
+          margin-bottom: 20px;
           flex-shrink: 0;
           position: relative;
-          z-index: 1;
+          z-index: 2;
         }
         
-        .header-accent {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 16px;
-        }
-        
-        .accent-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          margin: 0 8px;
-        }
-        
-        .accent-dot.red {
-          background: #ef4444;
-        }
-        
-        .accent-dot.cyan {
-          background: #06b6d4;
+        .header-divider {
+          width: 80px;
+          height: 2px;
+          background: linear-gradient(90deg, transparent 0%, #fbbf24 20%, #06b6d4 50%, #fbbf24 80%, transparent 100%);
+          margin: 0 auto 20px auto;
+          border-radius: 1px;
         }
         
         .core-value {
           font-family: ${DESIGN_CONFIG.FONTS.PRIMARY};
           font-size: ${coreFontSize}; 
-          font-weight: 300;
-          color: #ffffff; 
-          margin-bottom: 12px; 
-          line-height: 1.2;
-          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-          letter-spacing: 0.5px;
+          font-weight: 600;
+          background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          margin-bottom: 8px; 
+          line-height: 1.1;
+          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          letter-spacing: 1px;
+          text-transform: uppercase;
         }
         
         .supporting-value {
           font-family: ${DESIGN_CONFIG.FONTS.PRIMARY};
           font-size: ${supportingFontSize}; 
-          font-weight: 300; 
-          color: #9ca3af;
+          font-weight: 400; 
+          color: #cbd5e0;
           text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-          letter-spacing: 0.25px;
+          letter-spacing: 0.5px;
+          opacity: 0.9;
         }
         
         .quote-section {
@@ -423,55 +430,88 @@ function generateStyle2Template(safeData: {
           justify-content: center; 
           text-align: center; 
           align-items: center;
-          padding: 40px 20px;
+          padding: 30px 25px;
           position: relative;
-          z-index: 1;
+          z-index: 2;
+        }
+        
+        .quote-container {
+          position: relative;
+          margin-bottom: 25px;
         }
         
         .quote {
           font-family: ${DESIGN_CONFIG.FONTS.SECONDARY};
           font-size: ${quoteFontSize};
-          font-weight: 300; 
-          color: #ffffff; 
-          line-height: 1.15;
-          margin-bottom: 24px;
+          font-weight: 400; 
+          background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          line-height: 1.2;
           font-style: italic;
-          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-          max-width: 95%;
+          max-width: 90%;
           word-wrap: break-word;
           position: relative;
+          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .quote::before,
+        .quote::after {
+          position: absolute;
+          font-size: 120px;
+          font-family: Georgia, serif;
+          font-weight: bold;
+          color: #fbbf24;
+          opacity: 0.15;
+          line-height: 1;
         }
         
         .quote::before {
           content: '"';
-          position: absolute;
-          left: -20px;
-          top: -10px;
-          font-size: 72px;
-          color: #fbbf24;
-          opacity: 0.3;
-          font-family: serif;
+          top: -40px;
+          left: -40px;
+        }
+        
+        .quote::after {
+          content: '"';
+          bottom: -80px;
+          right: -40px;
+          transform: rotate(180deg);
         }
         
         .author {
           font-family: ${DESIGN_CONFIG.FONTS.SECONDARY};
           font-size: ${authorFontSize}; 
-          font-weight: 300; 
-          color: #6b7280; 
+          font-weight: 400; 
+          color: #94a3b8; 
           text-align: right;
           font-style: italic;
           align-self: flex-end;
-          max-width: 95%;
+          max-width: 90%;
           text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          letter-spacing: 0.5px;
+          position: relative;
+        }
+        
+        .author::before {
+          content: '';
+          position: absolute;
+          left: -20px;
+          top: 50%;
+          width: 12px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, #94a3b8, transparent);
+          transform: translateY(-50%);
         }
         
         .footer {
-          border-top: 1px solid #374151;
-          padding-top: 20px;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          padding-top: 15px;
           text-align: center;
           flex-shrink: 0;
           position: relative;
-          z-index: 1;
+          z-index: 2;
         }
         
         .footer-content {
@@ -482,32 +522,25 @@ function generateStyle2Template(safeData: {
         
         .footer-text { 
           font-family: ${DESIGN_CONFIG.FONTS.FOOTER};
-          font-size: 18px; 
-          color: #9ca3af; 
-          font-weight: 300;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-          letter-spacing: 0.5px;
+          font-size: 16px; 
+          color: #a0aec0; 
+          font-weight: 400;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+          letter-spacing: 1px;
         }
         
         .brand-icon {
-          margin-left: 12px;
+          margin-left: 10px;
           display: inline-flex;
           align-items: center;
           justify-content: center;
         }
         
         .brand-svg {
-          width: 32px;
-          height: 32px;
+          width: 28px;
+          height: 28px;
           fill: #fbbf24;
           filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-        }
-        
-        .gradient-line {
-          width: 60px;
-          height: 1px;
-          background: linear-gradient(to right, transparent, #fbbf24, transparent);
-          margin: 16px auto;
         }
         
         /* Ensure font loading */
@@ -524,18 +557,16 @@ function generateStyle2Template(safeData: {
       <div class="font-preload">.</div>
       <div class="container">
         <div class="header">
-          <div class="header-accent">
-            <div class="accent-dot red"></div>
-            <div class="gradient-line"></div>
-            <div class="accent-dot cyan"></div>
-          </div>
+          <div class="header-divider"></div>
           <div class="core-value">${coreValue}</div>
           <div class="supporting-value">${supportingValue}</div>
         </div>
         
         <div class="quote-section">
-          <div class="quote">${quote}</div>
-          ${author ? `<div class="author">— ${author}</div>` : ''}
+          <div class="quote-container">
+            <div class="quote">${quote}</div>
+          </div>
+          ${author ? `<div class="author">${author}</div>` : ''}
         </div>
         
         <div class="footer">

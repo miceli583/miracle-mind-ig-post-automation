@@ -3256,6 +3256,15 @@
       "isPublished": false,
       "createdAt": "2025-08-19T21:35:13.451Z",
       "updatedAt": "2025-08-19T21:35:13.451Z"
+    },
+    {
+      "id": "e4towURBb5GK1POVExajE",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "quoteId": "NO9BJOa7wA8iONZOitnOJ",
+      "isPublished": false,
+      "createdAt": "2025-08-19T21:38:40.730Z",
+      "updatedAt": "2025-08-19T21:38:40.730Z"
     }
   ]
 }
