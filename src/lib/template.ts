@@ -272,6 +272,9 @@ function generateStyle2Template(safeData: {
 }): string {
   const { coreValue, supportingValue, quote, author } = safeData;
 
+  // Load the dove icon
+  const iconDataUri = loadIconSvg();
+
   // Enhanced responsive font sizes with better scaling
   const getCoreFontSize = (text: string) => {
     const baseSize = 48;
@@ -302,17 +305,17 @@ function generateStyle2Template(safeData: {
   };
   
   const getAuthorFontSize = (text: string) => {
-    const baseSize = 24;
-    const minSize = 16;
+    const baseSize = 32;
+    const minSize = 22;
     if (text.length <= 15) return `${baseSize}px`;
-    if (text.length <= 25) return `${Math.max(minSize, baseSize - 2)}px`;
-    return `${Math.max(minSize, baseSize - 4)}px`;
+    if (text.length <= 25) return `${Math.max(minSize, baseSize - 3)}px`;
+    return `${Math.max(minSize, baseSize - 6)}px`;
   };
 
   const coreFontSize = getCoreFontSize(coreValue);
   const supportingFontSize = getSupportingFontSize(supportingValue);
   const quoteFontSize = getQuoteFontSize(quote);
-  const authorFontSize = author ? getAuthorFontSize(author) : '24px';
+  const authorFontSize = author ? getAuthorFontSize(author) : '32px';
 
   return `
     <!DOCTYPE html>
@@ -522,23 +525,23 @@ function generateStyle2Template(safeData: {
         
         .footer-text { 
           font-family: ${DESIGN_CONFIG.FONTS.FOOTER};
-          font-size: 16px; 
+          font-size: 30px; 
           color: #a0aec0; 
           font-weight: 400;
           text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
           letter-spacing: 1px;
         }
         
-        .brand-icon {
-          margin-left: 10px;
+        .dove-icon {
+          margin-left: ${DESIGN_CONFIG.SPACING.ICON_MARGIN};
           display: inline-flex;
           align-items: center;
           justify-content: center;
         }
         
-        .brand-svg {
-          width: 28px;
-          height: 28px;
+        .dove-svg {
+          width: 42px;
+          height: 42px;
           fill: #fbbf24;
           filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         }
@@ -558,8 +561,8 @@ function generateStyle2Template(safeData: {
       <div class="container">
         <div class="header">
           <div class="header-divider"></div>
-          <div class="core-value">${coreValue}</div>
-          <div class="supporting-value">${supportingValue}</div>
+          <div class="core-value">Core Value: ${coreValue}</div>
+          <div class="supporting-value">Supporting Value: ${supportingValue}</div>
         </div>
         
         <div class="quote-section">
@@ -572,10 +575,8 @@ function generateStyle2Template(safeData: {
         <div class="footer">
           <div class="footer-content">
             <span class="footer-text">${DESIGN_CONFIG.BRAND.HANDLE}</span>
-            <div class="brand-icon">
-              <svg class="brand-svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
+            <div class="dove-icon">
+              <img class="dove-svg" src="${iconDataUri}" alt="Icon" />
             </div>
           </div>
         </div>
