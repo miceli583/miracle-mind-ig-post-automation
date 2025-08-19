@@ -155,16 +155,6 @@ export default function DailyValueManagerDashboard() {
           <div className="p-6">
             <nav className="space-y-2">
               <a
-                href="/admin/daily-value-manager"
-                className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
-              >
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v10a2 2 0 01-2 2H10a2 2 0 01-2-2V5z" />
-                </svg>
-                <span>Overview</span>
-              </a>
-              <a
                 href="/admin/daily-value-manager/values"
                 className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
               >
@@ -174,15 +164,6 @@ export default function DailyValueManagerDashboard() {
                 <span>Values</span>
               </a>
               <a
-                href="/admin/daily-value-manager/posts"
-                className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
-              >
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
-                <span>Posts</span>
-              </a>
-              <a
                 href="/admin/daily-value-manager/image-gen"
                 className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
               >
@@ -190,6 +171,15 @@ export default function DailyValueManagerDashboard() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 <span>Image Generator</span>
+              </a>
+              <a
+                href="/admin/daily-value-manager/posts"
+                className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+                <span>Posts</span>
               </a>
             </nav>
           </div>
