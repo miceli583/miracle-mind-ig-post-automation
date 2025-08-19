@@ -261,6 +261,7 @@ export default function ImageGenerator() {
           <li>• Generated images are optimized for Instagram posts (1080x1080px)</li>
         </ul>
       </div>
+      </div>
     </div>
   );
 }
