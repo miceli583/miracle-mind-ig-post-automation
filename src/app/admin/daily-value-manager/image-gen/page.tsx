@@ -7,6 +7,7 @@ interface QuoteData {
   supportingValue: string;
   quote: string;
   author: string;
+  style: string;
 }
 
 interface LoadingState {
@@ -20,8 +21,13 @@ export default function ImageGenerator() {
     coreValue: '',
     supportingValue: '',
     quote: '',
-    author: ''
+    author: '',
+    style: 'style1'
   });
+
+  const imageStyles = [
+    { id: 'style1', name: 'Style 1', description: 'Classic elegant design with gradient background' }
+  ];
   const [loadingState, setLoadingState] = useState<LoadingState>({ isGenerating: false });
   const [imageUrl, setImageUrl] = useState<string>('');
 
@@ -39,12 +45,13 @@ export default function ImageGenerator() {
 
       if (response.ok) {
         const data = await response.json();
-        setFormData({
+        setFormData(prev => ({
+          ...prev,
           coreValue: data.preview.coreValue,
           supportingValue: data.preview.supportingValue,
           quote: data.preview.quote,
           author: data.preview.author
-        });
+        }));
         setLoadingState({ isGenerating: false });
       } else {
         throw new Error('Failed to generate random post');
@@ -71,7 +78,13 @@ export default function ImageGenerator() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          coreValue: formData.coreValue,
+          supportingValue: formData.supportingValue,
+          quote: formData.quote,
+          author: formData.author,
+          style: formData.style
+        }),
       });
 
       if (response.ok) {
@@ -208,6 +221,27 @@ export default function ImageGenerator() {
                   className="block w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition-all duration-300 hover:border-gray-600"
                   placeholder="e.g., Ralph Waldo Emerson"
                 />
+              </div>
+
+              <div>
+                <label htmlFor="style" className="block text-sm font-medium text-gray-300 mb-2">
+                  Image Style
+                </label>
+                <select
+                  id="style"
+                  value={formData.style}
+                  onChange={(e) => handleInputChange('style', e.target.value)}
+                  className="block w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition-all duration-300 hover:border-gray-600"
+                >
+                  {imageStyles.map((style) => (
+                    <option key={style.id} value={style.id} className="bg-gray-800 text-white">
+                      {style.name}
+                    </option>
+                  ))}
+                </select>
+                <p className="mt-1 text-xs text-gray-500">
+                  {imageStyles.find(s => s.id === formData.style)?.description}
+                </p>
               </div>
             </div>
 

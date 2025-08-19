@@ -3238,6 +3238,15 @@
       "isPublished": false,
       "createdAt": "2025-08-19T16:56:09.491Z",
       "updatedAt": "2025-08-19T16:56:09.491Z"
+    },
+    {
+      "id": "FnHfPC6wE_XHJ0vV_pM1R",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "2AVyHgktyPMUGAu_dNujv",
+      "quoteId": "cmkgeuACfFe4TdIuyYbzy",
+      "isPublished": false,
+      "createdAt": "2025-08-19T18:13:38.848Z",
+      "updatedAt": "2025-08-19T18:13:38.848Z"
     }
   ]
 }

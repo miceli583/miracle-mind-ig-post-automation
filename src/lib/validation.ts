@@ -18,7 +18,12 @@ export const quoteSchema = z.object({
     .max(DESIGN_CONFIG.LIMITS.AUTHOR.MAX, `Author must be ${DESIGN_CONFIG.LIMITS.AUTHOR.MAX} characters or less`)
     .trim()
     .optional()
-    .or(z.literal(''))
+    .or(z.literal('')),
+  style: z.string()
+    .default('style1')
+    .refine((val) => ['style1'].includes(val), {
+      message: 'Invalid style selected'
+    })
 });
 
 export type QuoteInput = z.infer<typeof quoteSchema>;

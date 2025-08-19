@@ -5,6 +5,7 @@ export interface SanitizedQuoteData {
   supportingValue: string; 
   quote: string;
   author?: string;
+  style?: string;
 }
 
 export function sanitizeQuoteData(data: {
@@ -12,12 +13,14 @@ export function sanitizeQuoteData(data: {
   supportingValue: string;
   quote: string;
   author?: string;
+  style?: string;
 }): SanitizedQuoteData {
   return {
     coreValue: sanitizeText(data.coreValue),
     supportingValue: sanitizeText(data.supportingValue),
     quote: sanitizeText(data.quote),
     author: data.author ? sanitizeText(data.author) : undefined,
+    style: data.style || 'style1',
   };
 }
 

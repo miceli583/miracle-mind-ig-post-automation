@@ -23,7 +23,7 @@ function loadIconSvg(): string {
 }
 
 export function generateQuoteTemplate(data: SanitizedQuoteData): string {
-  const { coreValue, supportingValue, quote, author } = data;
+  const { coreValue, supportingValue, quote, author, style = 'style1' } = data;
   
   // Escape all content for HTML safety
   const safeData = {
@@ -32,6 +32,22 @@ export function generateQuoteTemplate(data: SanitizedQuoteData): string {
     quote: escapeHtml(quote),
     author: author ? escapeHtml(author) : '',
   };
+
+  // Generate template based on selected style
+  switch (style) {
+    case 'style1':
+    default:
+      return generateStyle1Template(safeData);
+  }
+}
+
+function generateStyle1Template(safeData: {
+  coreValue: string;
+  supportingValue: string;
+  quote: string;
+  author: string;
+}): string {
+  const { coreValue, supportingValue, quote, author } = safeData;
 
   // Load the icon
   const iconDataUri = loadIconSvg();
@@ -222,13 +238,13 @@ export function generateQuoteTemplate(data: SanitizedQuoteData): string {
       <div class="font-preload">.</div>
       <div class="container">
         <div class="header">
-          <div class="core-value">Core Value: ${safeData.coreValue}</div>
-          <div class="supporting-value">Supporting Value: ${safeData.supportingValue}</div>
+          <div class="core-value">Core Value: ${coreValue}</div>
+          <div class="supporting-value">Supporting Value: ${supportingValue}</div>
         </div>
         
         <div class="quote-section">
-          <div class="quote">"${safeData.quote}"</div>
-          ${safeData.author ? `<div class="author">— ${safeData.author}</div>` : ''}
+          <div class="quote">"${quote}"</div>
+          ${author ? `<div class="author">— ${author}</div>` : ''}
         </div>
         
         <div class="footer">
