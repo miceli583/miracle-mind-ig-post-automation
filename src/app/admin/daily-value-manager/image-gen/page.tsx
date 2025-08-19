@@ -26,7 +26,8 @@ export default function ImageGenerator() {
   });
 
   const imageStyles = [
-    { id: 'style1', name: 'Style 1', description: 'Classic elegant design with gradient background' }
+    { id: 'style1', name: 'Style 1', description: 'Classic elegant design with gradient background' },
+    { id: 'style2', name: 'Style 2', description: 'Modern dark theme matching app aesthetic' }
   ];
   const [loadingState, setLoadingState] = useState<LoadingState>({ isGenerating: false });
   const [imageUrl, setImageUrl] = useState<string>('');

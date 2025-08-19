@@ -21,7 +21,7 @@ export const quoteSchema = z.object({
     .or(z.literal('')),
   style: z.string()
     .default('style1')
-    .refine((val) => ['style1'].includes(val), {
+    .refine((val) => ['style1', 'style2'].includes(val), {
       message: 'Invalid style selected'
     })
 });
