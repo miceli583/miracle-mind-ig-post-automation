@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import type { CoreValue, SupportingValue, CoreValueSupportingValue, QuoteWithAuthor, Author, CoreValueQuote } from '@/types/database-relational';
 
 interface ExtendedSupportingValue extends SupportingValue {
@@ -14,6 +15,9 @@ interface ExtendedQuote extends QuoteWithAuthor {
 }
 
 export default function ValuesPage() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  
   const [coreValues, setCoreValues] = useState<CoreValue[]>([]);
   const [supportingValues, setSupportingValues] = useState<ExtendedSupportingValue[]>([]);
   const [quotes, setQuotes] = useState<ExtendedQuote[]>([]);
@@ -21,7 +25,18 @@ export default function ValuesPage() {
   const [relationships, setRelationships] = useState<CoreValueSupportingValue[]>([]);
   const [quoteRelationships, setQuoteRelationships] = useState<CoreValueQuote[]>([]);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<'core' | 'supporting' | 'quotes'>('core');
+  
+  // Get current tab from URL, with fallback to 'core'
+  const getCurrentTab = (): 'core' | 'supporting' | 'quotes' => {
+    const tabParam = searchParams.get('tab');
+    if (tabParam === 'supporting' || tabParam === 'quotes') {
+      return tabParam;
+    }
+    return 'core';
+  };
+  
+  // Use URL as single source of truth for active tab
+  const activeTab = getCurrentTab();
   
   // Form states
   const [showCoreForm, setShowCoreForm] = useState(false);
@@ -34,6 +49,18 @@ export default function ValuesPage() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  // Function to handle tab changes with URL update
+  const handleTabChange = (tab: 'core' | 'supporting' | 'quotes') => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (tab === 'core') {
+      // Remove tab param for core (default), keeps URL clean
+      params.delete('tab');
+    } else {
+      params.set('tab', tab);
+    }
+    router.push(`?${params.toString()}`, { scroll: false });
+  };
 
   const fetchData = async () => {
     try {
@@ -353,7 +380,7 @@ export default function ValuesPage() {
         </h2>
         <nav className="-mb-px flex space-x-8">
           <button
-            onClick={() => setActiveTab('core')}
+            onClick={() => handleTabChange('core')}
             className={`py-2 px-1 border-b-2 font-medium text-sm ${
               activeTab === 'core'
                 ? 'border-yellow-400 text-yellow-400'
@@ -363,7 +390,7 @@ export default function ValuesPage() {
             Core Values ({coreValues.length})
           </button>
           <button
-            onClick={() => setActiveTab('supporting')}
+            onClick={() => handleTabChange('supporting')}
             className={`py-2 px-1 border-b-2 font-medium text-sm ${
               activeTab === 'supporting'
                 ? 'border-yellow-400 text-yellow-400'
@@ -373,7 +400,7 @@ export default function ValuesPage() {
             Supporting Values ({supportingValues.length})
           </button>
           <button
-            onClick={() => setActiveTab('quotes')}
+            onClick={() => handleTabChange('quotes')}
             className={`py-2 px-1 border-b-2 font-medium text-sm ${
               activeTab === 'quotes'
                 ? 'border-yellow-400 text-yellow-400'
