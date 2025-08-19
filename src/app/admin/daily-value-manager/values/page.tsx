@@ -18,6 +18,8 @@ export default function ValuesPage() {
   // Form states
   const [showCoreForm, setShowCoreForm] = useState(false);
   const [showSupportingForm, setShowSupportingForm] = useState(false);
+  const [editingCore, setEditingCore] = useState<CoreValue | null>(null);
+  const [editingSupporting, setEditingSupporting] = useState<ExtendedSupportingValue | null>(null);
 
   useEffect(() => {
     fetchData();
@@ -78,12 +80,12 @@ export default function ValuesPage() {
     }
   };
 
-  const handleCreateSupporting = async (value: string, description?: string, coreValueId?: string) => {
+  const handleCreateSupporting = async (value: string, description?: string, coreValueIds?: string[]) => {
     try {
       const response = await fetch('/api/admin/supporting-values', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ value, description, coreValueId, isActive: true })
+        body: JSON.stringify({ value, description, coreValueIds, isActive: true })
       });
       if (response.ok) {
         setShowSupportingForm(false);
@@ -91,6 +93,39 @@ export default function ValuesPage() {
       }
     } catch (error) {
       console.error('Failed to create supporting value:', error);
+    }
+  };
+
+  const handleUpdateCore = async (id: string, value: string, description?: string) => {
+    try {
+      const response = await fetch(`/api/admin/core-values/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ value, description, isActive: true })
+      });
+      if (response.ok) {
+        setEditingCore(null);
+        fetchData();
+      }
+    } catch (error) {
+      console.error('Failed to update core value:', error);
+    }
+  };
+
+  const handleArchiveCore = async (id: string) => {
+    if (!confirm('Are you sure you want to archive this core value?')) return;
+    
+    try {
+      const response = await fetch(`/api/admin/core-values/${id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'archive' })
+      });
+      if (response.ok) {
+        fetchData();
+      }
+    } catch (error) {
+      console.error('Failed to archive core value:', error);
     }
   };
 
@@ -104,6 +139,39 @@ export default function ValuesPage() {
       }
     } catch (error) {
       console.error('Failed to delete core value:', error);
+    }
+  };
+
+  const handleUpdateSupporting = async (id: string, value: string, description?: string, coreValueIds?: string[]) => {
+    try {
+      const response = await fetch(`/api/admin/supporting-values/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ value, description, coreValueIds, isActive: true })
+      });
+      if (response.ok) {
+        setEditingSupporting(null);
+        fetchData();
+      }
+    } catch (error) {
+      console.error('Failed to update supporting value:', error);
+    }
+  };
+
+  const handleArchiveSupporting = async (id: string) => {
+    if (!confirm('Are you sure you want to archive this supporting value?')) return;
+    
+    try {
+      const response = await fetch(`/api/admin/supporting-values/${id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'archive' })
+      });
+      if (response.ok) {
+        fetchData();
+      }
+    } catch (error) {
+      console.error('Failed to archive supporting value:', error);
     }
   };
 
@@ -184,6 +252,16 @@ export default function ValuesPage() {
             />
           )}
 
+          {editingCore && (
+            <ValueForm
+              onSubmit={(value, description) => handleUpdateCore(editingCore.id, value, description)}
+              onCancel={() => setEditingCore(null)}
+              title="Update Core Value"
+              initialValue={editingCore.value}
+              initialDescription={editingCore.description}
+            />
+          )}
+
           <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-800 shadow overflow-hidden sm:rounded-md">
             <ul className="divide-y divide-gray-800">
               {coreValues.map((value) => {
@@ -221,7 +299,19 @@ export default function ValuesPage() {
                             </div>
                           )}
                         </div>
-                        <div className="ml-2 flex-shrink-0 flex">
+                        <div className="ml-2 flex-shrink-0 flex flex-col space-y-1">
+                          <button
+                            onClick={() => setEditingCore(value)}
+                            className="text-blue-400 hover:text-blue-300 text-sm font-medium"
+                          >
+                            Update
+                          </button>
+                          <button
+                            onClick={() => handleArchiveCore(value.id)}
+                            className="text-yellow-400 hover:text-yellow-300 text-sm font-medium"
+                          >
+                            Archive
+                          </button>
                           <button
                             onClick={() => handleDeleteCore(value.id)}
                             className="text-red-400 hover:text-red-300 text-sm font-medium"
@@ -266,6 +356,18 @@ export default function ValuesPage() {
             />
           )}
 
+          {editingSupporting && (
+            <SupportingValueForm
+              coreValues={coreValues}
+              onSubmit={(value, description, coreValueIds) => handleUpdateSupporting(editingSupporting.id, value, description, coreValueIds)}
+              onCancel={() => setEditingSupporting(null)}
+              title="Update Supporting Value"
+              initialValue={editingSupporting.value}
+              initialDescription={editingSupporting.description}
+              initialCoreValueIds={editingSupporting.coreValueIds}
+            />
+          )}
+
           <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-800 shadow overflow-hidden sm:rounded-md">
             <ul className="divide-y divide-gray-800">
               {supportingValues.map((value) => (
@@ -303,7 +405,19 @@ export default function ValuesPage() {
                           </p>
                         )}
                       </div>
-                      <div className="ml-2 flex-shrink-0 flex">
+                      <div className="ml-2 flex-shrink-0 flex flex-col space-y-1">
+                        <button
+                          onClick={() => setEditingSupporting(value)}
+                          className="text-blue-400 hover:text-blue-300 text-sm font-medium"
+                        >
+                          Update
+                        </button>
+                        <button
+                          onClick={() => handleArchiveSupporting(value.id)}
+                          className="text-yellow-400 hover:text-yellow-300 text-sm font-medium"
+                        >
+                          Archive
+                        </button>
                         <button
                           onClick={() => handleDeleteSupporting(value.id)}
                           className="text-red-400 hover:text-red-300 text-sm font-medium"
@@ -332,14 +446,18 @@ export default function ValuesPage() {
 function ValueForm({ 
   onSubmit, 
   onCancel, 
-  title 
+  title,
+  initialValue = '',
+  initialDescription = ''
 }: { 
   onSubmit: (value: string, description?: string) => void;
   onCancel: () => void;
   title: string;
+  initialValue?: string;
+  initialDescription?: string;
 }) {
-  const [value, setValue] = useState('');
-  const [description, setDescription] = useState('');
+  const [value, setValue] = useState(initialValue);
+  const [description, setDescription] = useState(initialDescription);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -404,24 +522,38 @@ function SupportingValueForm({
   coreValues,
   onSubmit, 
   onCancel, 
-  title 
+  title,
+  initialValue = '',
+  initialDescription = '',
+  initialCoreValueIds = []
 }: { 
   coreValues: CoreValue[];
-  onSubmit: (value: string, description?: string, coreValueId?: string) => void;
+  onSubmit: (value: string, description?: string, coreValueIds?: string[]) => void;
   onCancel: () => void;
   title: string;
+  initialValue?: string;
+  initialDescription?: string;
+  initialCoreValueIds?: string[];
 }) {
-  const [value, setValue] = useState('');
-  const [description, setDescription] = useState('');
-  const [selectedCoreValueId, setSelectedCoreValueId] = useState('');
+  const [value, setValue] = useState(initialValue);
+  const [description, setDescription] = useState(initialDescription);
+  const [selectedCoreValueIds, setSelectedCoreValueIds] = useState<string[]>(initialCoreValueIds);
+
+  const handleCoreValueToggle = (coreValueId: string) => {
+    setSelectedCoreValueIds(prev => 
+      prev.includes(coreValueId)
+        ? prev.filter(id => id !== coreValueId)
+        : [...prev, coreValueId]
+    );
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (value.trim() && selectedCoreValueId) {
-      onSubmit(value.trim(), description.trim() || undefined, selectedCoreValueId);
+    if (value.trim() && selectedCoreValueIds.length > 0) {
+      onSubmit(value.trim(), description.trim() || undefined, selectedCoreValueIds);
       setValue('');
       setDescription('');
-      setSelectedCoreValueId('');
+      setSelectedCoreValueIds([]);
     }
   };
 
@@ -445,24 +577,44 @@ function SupportingValueForm({
         
         <div>
           <label className="block text-sm font-medium text-gray-300 mb-1">
-            Link to Core Value *
+            Link to Core Values * (select one or more)
           </label>
-          <select
-            value={selectedCoreValueId}
-            onChange={(e) => setSelectedCoreValueId(e.target.value)}
-            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-md focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
-            required
-          >
-            <option value="">Select a core value...</option>
+          <div className="bg-gray-700 border border-gray-600 rounded-md p-3 max-h-48 overflow-y-auto">
             {coreValues.map((cv) => (
-              <option key={cv.id} value={cv.id}>
-                {cv.value}
-              </option>
+              <label key={cv.id} className="flex items-center space-x-3 py-2 hover:bg-gray-600 rounded px-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={selectedCoreValueIds.includes(cv.id)}
+                  onChange={() => handleCoreValueToggle(cv.id)}
+                  className="w-4 h-4 text-yellow-600 bg-gray-700 border-gray-600 rounded focus:ring-yellow-500 focus:ring-2"
+                />
+                <span className="text-white">{cv.value}</span>
+                {cv.description && (
+                  <span className="text-gray-400 text-xs">({cv.description})</span>
+                )}
+              </label>
             ))}
-          </select>
+          </div>
           <p className="mt-1 text-xs text-gray-400">
-            Supporting values must be linked to a core value to show thematic relationships
+            Supporting values can be linked to multiple core values to show thematic relationships
           </p>
+          {selectedCoreValueIds.length > 0 && (
+            <div className="mt-2">
+              <p className="text-xs text-yellow-400 mb-1">
+                Selected ({selectedCoreValueIds.length}):
+              </p>
+              <div className="flex flex-wrap gap-1">
+                {selectedCoreValueIds.map(id => {
+                  const coreValue = coreValues.find(cv => cv.id === id);
+                  return (
+                    <span key={id} className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-900 text-yellow-300">
+                      {coreValue?.value}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
         
         <div>
@@ -487,10 +639,10 @@ function SupportingValueForm({
           </button>
           <button
             type="submit"
-            disabled={!selectedCoreValueId}
+            disabled={selectedCoreValueIds.length === 0}
             className="px-4 py-2 text-sm font-medium text-black bg-yellow-600 hover:bg-yellow-700 disabled:bg-gray-600 disabled:text-gray-400 disabled:cursor-not-allowed rounded-md"
           >
-            Add Supporting Value
+            {title.includes('Update') ? 'Update' : 'Add'} Supporting Value
           </button>
         </div>
       </form>

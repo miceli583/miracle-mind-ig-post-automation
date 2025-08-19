@@ -48,7 +48,7 @@
       "description": "Embodying the principle of long-term establishment",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:04:09.562Z"
     },
     {
       "id": "L8x2v0tPhWfj4XSawQ8-u",
@@ -149,18 +149,18 @@
     {
       "id": "t-bqnMvZHR9XqgN7KeIyz",
       "value": "Patience",
-      "description": "Embodying the principle of patience",
+      "description": "Calm endurance and understanding that growth takes time",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.302Z"
     },
     {
       "id": "dNeqaSAcAo-94cd08SS3J",
       "value": "Awareness",
-      "description": "Embodying the principle of awareness",
+      "description": "Conscious understanding of self, others, and situations",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.297Z"
     },
     {
       "id": "1aMTo_PvBLAOPsWLSt-8V",
@@ -197,10 +197,10 @@
     {
       "id": "lgytjddwlgCyDYd_fkUZK",
       "value": "Gratitude",
-      "description": "Embodying the principle of gratitude",
+      "description": "Appreciation for what exists and recognition of life's gifts",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.306Z"
     },
     {
       "id": "snXt9KcxAoqnxKa0wfspG",
@@ -221,34 +221,34 @@
     {
       "id": "SfzZ9kSbtHBwC_LfP2LYE",
       "value": "Flow",
-      "description": "Embodying the principle of flow",
+      "description": "Natural rhythm and effortless engagement with life",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.300Z"
     },
     {
       "id": "yIHIWr7RzCJUAZslDBnA3",
       "value": "Emotional Intelligence",
-      "description": "Embodying the principle of emotional intelligence",
+      "description": "Understanding and managing emotions effectively for self and others",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.303Z"
     },
     {
       "id": "--03JVvmELbvWVRPbiVUr",
       "value": "Presence",
-      "description": "Embodying the principle of presence",
+      "description": "Being fully engaged and attentive in the current moment",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.301Z"
     },
     {
       "id": "BYx3ZntUAdwjqHLOmKNKM",
       "value": "Trust",
-      "description": "Embodying the principle of trust",
+      "description": "Building reliable connections and faith in oneself and others",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.293Z"
     },
     {
       "id": "5h9T2Bf4Um8diQe9kxy2U",
@@ -309,18 +309,18 @@
     {
       "id": "aHi7-xfbjTo5EP33ihdZp",
       "value": "Courage",
-      "description": "Embodying the principle of courage",
+      "description": "Strength to face challenges and take meaningful action",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.296Z"
     },
     {
       "id": "AvcqFgm8Ywi07vhwu4i-u",
       "value": "Resilience",
-      "description": "Embodying the principle of resilience",
+      "description": "Ability to bounce back from challenges and adapt to change",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.305Z"
     },
     {
       "id": "N368T6urq7O2gB3PFTBKu",
@@ -333,10 +333,10 @@
     {
       "id": "aVXxu_I4PbfJImFbA7TPG",
       "value": "Creativity",
-      "description": "Embodying the principle of creativity",
+      "description": "Innovative thinking and expressing unique solutions and ideas",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T03:19:37.304Z"
     },
     {
       "id": "Sp6kAWFkqWCqzx66w7cqs",
@@ -441,6 +441,126 @@
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
       "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "ZMxrvb9Wmyfx95FxMdtYY",
+      "value": "Boundaries",
+      "description": "Setting healthy limits that protect your energy and values",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.307Z",
+      "updatedAt": "2025-08-19T03:19:37.307Z"
+    },
+    {
+      "id": "1ylcq2uwpT24MJJhfGj0Y",
+      "value": "Self-Compassion",
+      "description": "Treating yourself with kindness and understanding during difficulties",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.309Z",
+      "updatedAt": "2025-08-19T03:19:37.309Z"
+    },
+    {
+      "id": "lG3mxK1UXVNiXCtoC2vus",
+      "value": "Purpose",
+      "description": "Clear sense of meaning and direction in life",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.311Z",
+      "updatedAt": "2025-08-19T03:19:37.311Z"
+    },
+    {
+      "id": "LoM-2MupzyA_YAk351_4N",
+      "value": "Mindfulness",
+      "description": "Present-moment awareness without judgment",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.312Z",
+      "updatedAt": "2025-08-19T03:19:37.312Z"
+    },
+    {
+      "id": "fE6iwR_CJilRXna0gu0_g",
+      "value": "Acceptance",
+      "description": "Embracing reality while maintaining capacity for change",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.314Z",
+      "updatedAt": "2025-08-19T03:19:37.314Z"
+    },
+    {
+      "id": "-boAxDjgeo3Gq32TOJTNJ",
+      "value": "Vulnerability",
+      "description": "Courage to be open and honest about struggles and imperfections",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.318Z",
+      "updatedAt": "2025-08-19T03:19:37.318Z"
+    },
+    {
+      "id": "CT5I8mlfNdalk7fP2eCNA",
+      "value": "Discipline",
+      "description": "Consistent action aligned with values and long-term goals",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.320Z",
+      "updatedAt": "2025-08-19T03:19:37.320Z"
+    },
+    {
+      "id": "T7SwDdfkO6RuavzcNXIqK",
+      "value": "Joy",
+      "description": "Natural expression of happiness and celebration of life",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.322Z",
+      "updatedAt": "2025-08-19T03:19:37.322Z"
+    },
+    {
+      "id": "3qilT2NmywRD8f7W1yVTB",
+      "value": "Responsibility",
+      "description": "Ownership of choices and their impact on self and others",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.324Z",
+      "updatedAt": "2025-08-19T03:19:37.324Z"
+    },
+    {
+      "id": "w2KS0efKuJipSuMcayB5q",
+      "value": "Wisdom",
+      "description": "Deep understanding gained through experience and reflection",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.328Z",
+      "updatedAt": "2025-08-19T03:19:37.328Z"
+    },
+    {
+      "id": "FOA4bGKjFbhdbNlQnzFvx",
+      "value": "Innovation",
+      "description": "Creative problem-solving and pioneering new approaches",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.330Z",
+      "updatedAt": "2025-08-19T03:19:37.330Z"
+    },
+    {
+      "id": "gpNK4EeLhwH710vCgsCt8",
+      "value": "Collaboration",
+      "description": "Working together effectively while honoring individual strengths",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.333Z",
+      "updatedAt": "2025-08-19T03:19:37.333Z"
+    },
+    {
+      "id": "tXNeXPO75W6ASynHVdp_9",
+      "value": "Goal-Setting",
+      "description": "Creating clear objectives and pathways for achievement",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.336Z",
+      "updatedAt": "2025-08-19T03:19:37.336Z"
+    },
+    {
+      "id": "RtwJfydOPA58P6ukl-l2S",
+      "value": "Time Management",
+      "description": "Conscious allocation of time aligned with priorities and values",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.339Z",
+      "updatedAt": "2025-08-19T03:19:37.339Z"
+    },
+    {
+      "id": "F1xxgPrm1y_tNyP-VgyGi",
+      "value": "Communication",
+      "description": "Clear, honest, and effective exchange of ideas and feelings",
+      "isActive": true,
+      "createdAt": "2025-08-19T03:19:37.341Z",
+      "updatedAt": "2025-08-19T03:19:37.341Z"
     }
   ],
   "authors": [
@@ -1106,12 +1226,6 @@
   ],
   "coreValueSupportingValues": [
     {
-      "id": "DRQ4DmNPD3x9TmHDN5N8s",
-      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
-      "supportingValueId": "k-sMWQddB1JqKjy6cI5o9",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "aPU53f89WeLrIJEu5OzTk",
       "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
       "supportingValueId": "L8x2v0tPhWfj4XSawQ8-u",
@@ -1163,12 +1277,6 @@
       "id": "8V1wQ2gG2s_nqtoaLdpzp",
       "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
       "supportingValueId": "hujWSZH3LEzHtQpEFYM8Y",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "E22wIkuiN2UXAUXglttOi",
-      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
-      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
@@ -1232,45 +1340,9 @@
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
-      "id": "utDQBkPhUFTrtHNt00UPV",
-      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
-      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "bFPMZw_-tj4weLZOcotcH",
-      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
-      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "P9e3nIAioEHOftNu0DclT",
-      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
-      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "0Hdy3-uEs-cCHhOvKopgj",
       "coreValueId": "dS73lG-tIiJusOEyZJFHV",
       "supportingValueId": "N368T6urq7O2gB3PFTBKu",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "iP3i_xBhL7HocfbN3WSbM",
-      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
-      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "vfs81Gqe43VJzCH87PIIs",
-      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
-      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "g_jfOP_Pac8boAqG-lvfZ",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "k-sMWQddB1JqKjy6cI5o9",
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
@@ -1358,12 +1430,6 @@
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
-      "id": "q9t0L5lhMZ3F7aHlfOtBD",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "9LLMuUrLlFkjhi4oK-9sr",
       "coreValueId": "8UxW_NzRj0WISD41fv2G6",
       "supportingValueId": "FpKTSn-unfI_EMTJOVYdI",
@@ -1379,12 +1445,6 @@
       "id": "is743L-fYMLOKz8yWX6N8",
       "coreValueId": "8UxW_NzRj0WISD41fv2G6",
       "supportingValueId": "kjcutrCNo-WauyCfYDydZ",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "tBpUE9ZxO_hKtIapIwXFk",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
@@ -1430,24 +1490,6 @@
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
-      "id": "BhEAz0qbwLdiYdvyigoFu",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "W0wQo-uqT5vlWjYqFKMqm",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "og_MQe4jIapwvvwJaDGX2",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "vXU4dFX8moeMBBZymdkpO",
       "coreValueId": "8UxW_NzRj0WISD41fv2G6",
       "supportingValueId": "rYU-sn1Me7jYVizO69VX0",
@@ -1460,33 +1502,9 @@
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
-      "id": "hC37OF9UqHMQe0nTFkgEX",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "6vNzMPdPA36UZgS9qmnaT",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "--03JVvmELbvWVRPbiVUr",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "s1J__erAWSiM6g9TTzc2Q",
       "coreValueId": "8UxW_NzRj0WISD41fv2G6",
       "supportingValueId": "N368T6urq7O2gB3PFTBKu",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "5M2babinaJalrZ8dFUsdx",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "T1dRUgcvkdqx-5niuOOIW",
-      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
-      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
@@ -1574,12 +1592,6 @@
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
-      "id": "cGA4E84YJ6ZFA5yRHukF4",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "WJIVNBfAkIup8piPERqD3",
       "coreValueId": "JihadnHcDuF-B-Xf7124W",
       "supportingValueId": "FpKTSn-unfI_EMTJOVYdI",
@@ -1592,21 +1604,9 @@
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
-      "id": "-qgv03-xD3xW4nbvoyy3b",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "T4qBlpuqg2IQVcCNtkac6",
       "coreValueId": "JihadnHcDuF-B-Xf7124W",
       "supportingValueId": "hujWSZH3LEzHtQpEFYM8Y",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "BQx3UOsmVgCmwUcz_ExjP",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
@@ -1634,18 +1634,6 @@
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
-      "id": "HqRPE6bonSdodFQ2kcLQv",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "3Sp9UVh0nyrWqf5-KcV0k",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "mHNm9eRdowWHZaH3DV2sd",
       "coreValueId": "JihadnHcDuF-B-Xf7124W",
       "supportingValueId": "rYU-sn1Me7jYVizO69VX0",
@@ -1658,33 +1646,9 @@
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
-      "id": "dqcEmx853EsIXukMuEvRI",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "qiCvvV6uzMsaQCuKsH5Ng",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "--03JVvmELbvWVRPbiVUr",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
       "id": "j2RdwpqJYUk7vuP45A2Gt",
       "coreValueId": "JihadnHcDuF-B-Xf7124W",
       "supportingValueId": "N368T6urq7O2gB3PFTBKu",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "N4geG_jGYUUrD7uW6KIfq",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
-      "createdAt": "2025-08-18T06:13:47.327Z"
-    },
-    {
-      "id": "cQXIHkHEKpaJUQXF1RaTO",
-      "coreValueId": "JihadnHcDuF-B-Xf7124W",
-      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
       "createdAt": "2025-08-18T06:13:47.327Z"
     },
     {
@@ -1712,22 +1676,586 @@
       "createdAt": "2025-08-19T02:36:56.154Z"
     },
     {
-      "id": "c4XEQTk89LXBM3Hmt2RaF",
-      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
-      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
-      "createdAt": "2025-08-19T02:36:56.155Z"
-    },
-    {
-      "id": "3cwZlqCDO_Ts2RSBD1d4r",
-      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
-      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
-      "createdAt": "2025-08-19T02:36:56.156Z"
-    },
-    {
       "id": "rBxNdA8GFtAw8cRsblcGd",
       "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
       "supportingValueId": "1aMTo_PvBLAOPsWLSt-8V",
       "createdAt": "2025-08-19T02:36:56.158Z"
+    },
+    {
+      "id": "22QFn1XMivwgNThR7pmU-",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "k-sMWQddB1JqKjy6cI5o9",
+      "createdAt": "2025-08-19T03:04:09.562Z"
+    },
+    {
+      "id": "S8PqRDGNgUix-LcNxNsQ7",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "k-sMWQddB1JqKjy6cI5o9",
+      "createdAt": "2025-08-19T03:04:09.562Z"
+    },
+    {
+      "id": "Jp9bq-os9cp0Il0bqWa39",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
+      "createdAt": "2025-08-19T03:19:37.293Z"
+    },
+    {
+      "id": "7yXw6usNLEGg_OIejn6zY",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
+      "createdAt": "2025-08-19T03:19:37.293Z"
+    },
+    {
+      "id": "S6dtz7S9YqZE6YaKSt5cT",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
+      "createdAt": "2025-08-19T03:19:37.293Z"
+    },
+    {
+      "id": "5WcoV79-Bj2qASUhHhLLQ",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
+      "createdAt": "2025-08-19T03:19:37.293Z"
+    },
+    {
+      "id": "KvAjYAyjy20voZg-qXPqn",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
+      "createdAt": "2025-08-19T03:19:37.293Z"
+    },
+    {
+      "id": "Ykdpns5jm3eV1ZOjoJ6xL",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "createdAt": "2025-08-19T03:19:37.296Z"
+    },
+    {
+      "id": "vVaKXVih8OHqitqqlVnzp",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "createdAt": "2025-08-19T03:19:37.296Z"
+    },
+    {
+      "id": "CZZjZ8wWhtLoXNlt-o7QZ",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "createdAt": "2025-08-19T03:19:37.296Z"
+    },
+    {
+      "id": "JIHEFWUn6bpkcpKqq_MFX",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "createdAt": "2025-08-19T03:19:37.296Z"
+    },
+    {
+      "id": "P5x-_9bCtAE3TxoPlDoCS",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "createdAt": "2025-08-19T03:19:37.296Z"
+    },
+    {
+      "id": "S23AdI8NzG1r1sJOiBdkD",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
+      "createdAt": "2025-08-19T03:19:37.297Z"
+    },
+    {
+      "id": "GAXXAN6xIWuEpBCQwYEaw",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
+      "createdAt": "2025-08-19T03:19:37.297Z"
+    },
+    {
+      "id": "ffuUoA1ukPvYWUpYZepJj",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
+      "createdAt": "2025-08-19T03:19:37.297Z"
+    },
+    {
+      "id": "LOrbdqnmbbJVa_nEEYW7B",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
+      "createdAt": "2025-08-19T03:19:37.297Z"
+    },
+    {
+      "id": "fGa83Ct4B2HtaXRbtuNf-",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
+      "createdAt": "2025-08-19T03:19:37.297Z"
+    },
+    {
+      "id": "hBDI1eAIGQpHgx-NTl2CP",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
+      "createdAt": "2025-08-19T03:19:37.300Z"
+    },
+    {
+      "id": "gvUpzrg4ZoKVFYecSLTq8",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
+      "createdAt": "2025-08-19T03:19:37.300Z"
+    },
+    {
+      "id": "WCIUNyFI4fzRldhb2eQFt",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
+      "createdAt": "2025-08-19T03:19:37.300Z"
+    },
+    {
+      "id": "Seo0dprvyeRTTUMGFHAmH",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
+      "createdAt": "2025-08-19T03:19:37.300Z"
+    },
+    {
+      "id": "PzBJ2asKYhAX0-2KAS9iT",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "--03JVvmELbvWVRPbiVUr",
+      "createdAt": "2025-08-19T03:19:37.301Z"
+    },
+    {
+      "id": "1yYwteNRveEohVlFNZ0aC",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "--03JVvmELbvWVRPbiVUr",
+      "createdAt": "2025-08-19T03:19:37.301Z"
+    },
+    {
+      "id": "ZVDMMkb9BzdpA5nLPhM1v",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "--03JVvmELbvWVRPbiVUr",
+      "createdAt": "2025-08-19T03:19:37.301Z"
+    },
+    {
+      "id": "Bhwn5kcbtXIAqz17ItuTF",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "--03JVvmELbvWVRPbiVUr",
+      "createdAt": "2025-08-19T03:19:37.301Z"
+    },
+    {
+      "id": "lASJ2avzQ9yn7gqRFO9Ap",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "createdAt": "2025-08-19T03:19:37.302Z"
+    },
+    {
+      "id": "QtySdC4R-uF7YZdSL3XnB",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "createdAt": "2025-08-19T03:19:37.302Z"
+    },
+    {
+      "id": "6zNGB3PhzwTVVmIy3xlLL",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "createdAt": "2025-08-19T03:19:37.302Z"
+    },
+    {
+      "id": "_BwcIknk-2I6dRl1kmxFl",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "createdAt": "2025-08-19T03:19:37.302Z"
+    },
+    {
+      "id": "DCYjUMjpCNWcjebssrjWQ",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "createdAt": "2025-08-19T03:19:37.302Z"
+    },
+    {
+      "id": "9B6o0fvf9vL-0AcAhBolN",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
+      "createdAt": "2025-08-19T03:19:37.303Z"
+    },
+    {
+      "id": "AtgcQAyygSCLxP7SLVTDd",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
+      "createdAt": "2025-08-19T03:19:37.303Z"
+    },
+    {
+      "id": "L5QjJEq5DS2hs9LLTNZue",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
+      "createdAt": "2025-08-19T03:19:37.303Z"
+    },
+    {
+      "id": "aKCsMMyC1coF4HnzOobOg",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
+      "createdAt": "2025-08-19T03:19:37.303Z"
+    },
+    {
+      "id": "-l6hFhag2wfVRKBhWSvSL",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
+      "createdAt": "2025-08-19T03:19:37.303Z"
+    },
+    {
+      "id": "T3uBRkO5Lw2GXw_55TDr0",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "createdAt": "2025-08-19T03:19:37.304Z"
+    },
+    {
+      "id": "g1bEXeQcTqbNs7W7NaM39",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "createdAt": "2025-08-19T03:19:37.304Z"
+    },
+    {
+      "id": "zr8M01Rk7DbdFU7z2tuQV",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "createdAt": "2025-08-19T03:19:37.304Z"
+    },
+    {
+      "id": "Zh83DGI66hdE6-aivaySk",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "createdAt": "2025-08-19T03:19:37.304Z"
+    },
+    {
+      "id": "yO-echRQIoXTkcTveUHCz",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "createdAt": "2025-08-19T03:19:37.304Z"
+    },
+    {
+      "id": "4HLNTaDLLiJ2Y5umtgU0A",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
+      "createdAt": "2025-08-19T03:19:37.305Z"
+    },
+    {
+      "id": "qB57xHXeXkA7nTEJFkPTS",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
+      "createdAt": "2025-08-19T03:19:37.305Z"
+    },
+    {
+      "id": "VvSOi90Z4foU70p4J6g9T",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
+      "createdAt": "2025-08-19T03:19:37.305Z"
+    },
+    {
+      "id": "xuLSfzgcXJiKmi0LuGxlC",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
+      "createdAt": "2025-08-19T03:19:37.305Z"
+    },
+    {
+      "id": "I-YM5LyCUmeAvnw632-Rc",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
+      "createdAt": "2025-08-19T03:19:37.305Z"
+    },
+    {
+      "id": "j4FkjKiuj4VA2mn1m-bzA",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
+      "createdAt": "2025-08-19T03:19:37.306Z"
+    },
+    {
+      "id": "9OqVyYsGRsoADBwrSaCmi",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
+      "createdAt": "2025-08-19T03:19:37.306Z"
+    },
+    {
+      "id": "vGpYyN-KZoQ8h-o6uGINE",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
+      "createdAt": "2025-08-19T03:19:37.306Z"
+    },
+    {
+      "id": "wN0Bq2nyjk4zcFmci3sks",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
+      "createdAt": "2025-08-19T03:19:37.306Z"
+    },
+    {
+      "id": "L78Yron5EwX80M7tTZ9VH",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
+      "createdAt": "2025-08-19T03:19:37.306Z"
+    },
+    {
+      "id": "cl7rpP83TUXTIe0ZN12tE",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "ZMxrvb9Wmyfx95FxMdtYY",
+      "createdAt": "2025-08-19T03:19:37.307Z"
+    },
+    {
+      "id": "v7sqXnTlGL5gNdlOvb_4O",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "ZMxrvb9Wmyfx95FxMdtYY",
+      "createdAt": "2025-08-19T03:19:37.307Z"
+    },
+    {
+      "id": "fnBpARtnysczRauM737MU",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "ZMxrvb9Wmyfx95FxMdtYY",
+      "createdAt": "2025-08-19T03:19:37.307Z"
+    },
+    {
+      "id": "7bGMIqsBEuuhZocyQWjbO",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "ZMxrvb9Wmyfx95FxMdtYY",
+      "createdAt": "2025-08-19T03:19:37.307Z"
+    },
+    {
+      "id": "T8U_dwfNeMQ3GIhxX7pPj",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "1ylcq2uwpT24MJJhfGj0Y",
+      "createdAt": "2025-08-19T03:19:37.309Z"
+    },
+    {
+      "id": "DVIByq2tMlAesOcp8V05P",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "1ylcq2uwpT24MJJhfGj0Y",
+      "createdAt": "2025-08-19T03:19:37.309Z"
+    },
+    {
+      "id": "RYB29ZGm3bEqSTx5iuKD6",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "1ylcq2uwpT24MJJhfGj0Y",
+      "createdAt": "2025-08-19T03:19:37.309Z"
+    },
+    {
+      "id": "DCdBkq9p4HSjq4t2qa2iq",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "lG3mxK1UXVNiXCtoC2vus",
+      "createdAt": "2025-08-19T03:19:37.311Z"
+    },
+    {
+      "id": "mN_xDs31ZVfCWq-UPtkcA",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "lG3mxK1UXVNiXCtoC2vus",
+      "createdAt": "2025-08-19T03:19:37.311Z"
+    },
+    {
+      "id": "HQ2ToODfxQeGbVfetVpa5",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "lG3mxK1UXVNiXCtoC2vus",
+      "createdAt": "2025-08-19T03:19:37.311Z"
+    },
+    {
+      "id": "QkFf5ORvPRsvDY-352u99",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "LoM-2MupzyA_YAk351_4N",
+      "createdAt": "2025-08-19T03:19:37.312Z"
+    },
+    {
+      "id": "xihKIxuwFczWFVLbglviY",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "LoM-2MupzyA_YAk351_4N",
+      "createdAt": "2025-08-19T03:19:37.312Z"
+    },
+    {
+      "id": "YzrEVfDa9rUTE1EmGbkh6",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "LoM-2MupzyA_YAk351_4N",
+      "createdAt": "2025-08-19T03:19:37.312Z"
+    },
+    {
+      "id": "fK_LMC_dEj5xC2sg8A1-1",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "LoM-2MupzyA_YAk351_4N",
+      "createdAt": "2025-08-19T03:19:37.312Z"
+    },
+    {
+      "id": "qw3HiThh6TjPr5BQRU3Zv",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "fE6iwR_CJilRXna0gu0_g",
+      "createdAt": "2025-08-19T03:19:37.314Z"
+    },
+    {
+      "id": "qnXGPb06tFbjmgrpm13uZ",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "fE6iwR_CJilRXna0gu0_g",
+      "createdAt": "2025-08-19T03:19:37.314Z"
+    },
+    {
+      "id": "8X1EjH2opki7CtWsiGvKz",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "fE6iwR_CJilRXna0gu0_g",
+      "createdAt": "2025-08-19T03:19:37.314Z"
+    },
+    {
+      "id": "wADFf0WyuwR6DaG5Pd_3Y",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "-boAxDjgeo3Gq32TOJTNJ",
+      "createdAt": "2025-08-19T03:19:37.318Z"
+    },
+    {
+      "id": "ywegCmNLC9EB_9IZU-vJm",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "-boAxDjgeo3Gq32TOJTNJ",
+      "createdAt": "2025-08-19T03:19:37.318Z"
+    },
+    {
+      "id": "_UwoFKHLMqcP4x9gg2-A_",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "-boAxDjgeo3Gq32TOJTNJ",
+      "createdAt": "2025-08-19T03:19:37.318Z"
+    },
+    {
+      "id": "ryOHl1Jtgx152-IKyAe9t",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "CT5I8mlfNdalk7fP2eCNA",
+      "createdAt": "2025-08-19T03:19:37.320Z"
+    },
+    {
+      "id": "f-NyPMXs_9CCNKYyX3xmI",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "CT5I8mlfNdalk7fP2eCNA",
+      "createdAt": "2025-08-19T03:19:37.320Z"
+    },
+    {
+      "id": "4HeVygryN3jWrkB8NhcZa",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "CT5I8mlfNdalk7fP2eCNA",
+      "createdAt": "2025-08-19T03:19:37.320Z"
+    },
+    {
+      "id": "-gm5F3urrn5uPpUO6PDNG",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "T7SwDdfkO6RuavzcNXIqK",
+      "createdAt": "2025-08-19T03:19:37.322Z"
+    },
+    {
+      "id": "RBpISarv9_5BfSXB6qzOY",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "T7SwDdfkO6RuavzcNXIqK",
+      "createdAt": "2025-08-19T03:19:37.322Z"
+    },
+    {
+      "id": "k7tRSSk-q6bh7A6VOBgFD",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "T7SwDdfkO6RuavzcNXIqK",
+      "createdAt": "2025-08-19T03:19:37.322Z"
+    },
+    {
+      "id": "vXvjD-OTOnq0IvVxt2NMD",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "3qilT2NmywRD8f7W1yVTB",
+      "createdAt": "2025-08-19T03:19:37.324Z"
+    },
+    {
+      "id": "9wf6E8HIhfulK3i92zI4K",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "3qilT2NmywRD8f7W1yVTB",
+      "createdAt": "2025-08-19T03:19:37.324Z"
+    },
+    {
+      "id": "12UZDkFob-bDCVSCEIIEX",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "3qilT2NmywRD8f7W1yVTB",
+      "createdAt": "2025-08-19T03:19:37.324Z"
+    },
+    {
+      "id": "oRawIE-vc4rrpTbBFfSKk",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "w2KS0efKuJipSuMcayB5q",
+      "createdAt": "2025-08-19T03:19:37.328Z"
+    },
+    {
+      "id": "Qxsz6Cc8u3b7KE2g05ry8",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "w2KS0efKuJipSuMcayB5q",
+      "createdAt": "2025-08-19T03:19:37.328Z"
+    },
+    {
+      "id": "chwOr1Fo9xWZYt2MNeCma",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "w2KS0efKuJipSuMcayB5q",
+      "createdAt": "2025-08-19T03:19:37.328Z"
+    },
+    {
+      "id": "HxHfIyRyjNCGHBM9x4DNm",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "FOA4bGKjFbhdbNlQnzFvx",
+      "createdAt": "2025-08-19T03:19:37.330Z"
+    },
+    {
+      "id": "IKs421O_RDATeaX-gWsXH",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "FOA4bGKjFbhdbNlQnzFvx",
+      "createdAt": "2025-08-19T03:19:37.330Z"
+    },
+    {
+      "id": "zlND59PK7jmRx1LxwMJph",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "FOA4bGKjFbhdbNlQnzFvx",
+      "createdAt": "2025-08-19T03:19:37.330Z"
+    },
+    {
+      "id": "bVW9rWLcuvIUisG46fmoO",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "gpNK4EeLhwH710vCgsCt8",
+      "createdAt": "2025-08-19T03:19:37.333Z"
+    },
+    {
+      "id": "V6CPZUsti3BOsXbkzS8Ey",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "gpNK4EeLhwH710vCgsCt8",
+      "createdAt": "2025-08-19T03:19:37.333Z"
+    },
+    {
+      "id": "-kcyghzx2QZHfxhzk38pJ",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "gpNK4EeLhwH710vCgsCt8",
+      "createdAt": "2025-08-19T03:19:37.333Z"
+    },
+    {
+      "id": "_Anu2UMSdkXh4IcmV8NWN",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "tXNeXPO75W6ASynHVdp_9",
+      "createdAt": "2025-08-19T03:19:37.336Z"
+    },
+    {
+      "id": "r2qBcQUX53dlt9TFfwBgc",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "tXNeXPO75W6ASynHVdp_9",
+      "createdAt": "2025-08-19T03:19:37.336Z"
+    },
+    {
+      "id": "5ZdoZCRceUOEYsekgclwc",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "RtwJfydOPA58P6ukl-l2S",
+      "createdAt": "2025-08-19T03:19:37.339Z"
+    },
+    {
+      "id": "EZ8nOLxd8mZNgFetusqaQ",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "RtwJfydOPA58P6ukl-l2S",
+      "createdAt": "2025-08-19T03:19:37.339Z"
+    },
+    {
+      "id": "IHEICXaYq1KaGGz_XNMyT",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "RtwJfydOPA58P6ukl-l2S",
+      "createdAt": "2025-08-19T03:19:37.339Z"
+    },
+    {
+      "id": "5M1FFmw_yomTBIHk_Oe5O",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "F1xxgPrm1y_tNyP-VgyGi",
+      "createdAt": "2025-08-19T03:19:37.341Z"
+    },
+    {
+      "id": "WV83wKSt9gFvvSzQcCsAA",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "F1xxgPrm1y_tNyP-VgyGi",
+      "createdAt": "2025-08-19T03:19:37.341Z"
+    },
+    {
+      "id": "zOZo1zxnnue65LHc8MqYZ",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "F1xxgPrm1y_tNyP-VgyGi",
+      "createdAt": "2025-08-19T03:19:37.341Z"
     }
   ],
   "coreValueQuotes": [

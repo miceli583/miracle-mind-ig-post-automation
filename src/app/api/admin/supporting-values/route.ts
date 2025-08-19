@@ -17,7 +17,7 @@ export async function GET() {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { value, description, coreValueId, isActive = true } = body;
+    const { value, description, coreValueId, coreValueIds, isActive = true } = body;
 
     if (!value || typeof value !== 'string') {
       return NextResponse.json(
@@ -26,10 +26,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Validate that at least one core value is provided
+    if (!coreValueId && (!coreValueIds || !Array.isArray(coreValueIds) || coreValueIds.length === 0)) {
+      return NextResponse.json(
+        { error: 'At least one core value must be specified' },
+        { status: 400 }
+      );
+    }
+
     const supportingValue = await createSupportingValue({
       value: value.trim(),
       description: description?.trim(),
       coreValueId,
+      coreValueIds,
       isActive
     });
 

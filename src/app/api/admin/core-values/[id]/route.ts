@@ -1,14 +1,86 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { deleteCoreValue } from '@/lib/database-relational';
+import { updateCoreValue, archiveCoreValue, deleteCoreValue } from '@/lib/database-relational';
 
-// TODO: Implement updateCoreValue function in database-relational.ts if needed
+export async function PUT(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  try {
+    const { id } = await params;
+    const body = await request.json();
+    const { value, description, isActive } = body;
+
+    if (!value || typeof value !== 'string') {
+      return NextResponse.json(
+        { error: 'Value is required and must be a string' },
+        { status: 400 }
+      );
+    }
+
+    const updatedValue = await updateCoreValue(id, {
+      value: value.trim(),
+      description: description?.trim(),
+      isActive
+    });
+
+    if (!updatedValue) {
+      return NextResponse.json(
+        { error: 'Core value not found' },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json(updatedValue);
+  } catch (error) {
+    console.error('Error updating core value:', error);
+    return NextResponse.json(
+      { error: 'Failed to update core value' },
+      { status: 500 }
+    );
+  }
+}
+
+export async function PATCH(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  try {
+    const { id } = await params;
+    const body = await request.json();
+    
+    if (body.action === 'archive') {
+      const success = await archiveCoreValue(id);
+      
+      if (!success) {
+        return NextResponse.json(
+          { error: 'Core value not found' },
+          { status: 404 }
+        );
+      }
+
+      return NextResponse.json({ success: true, message: 'Core value archived' });
+    }
+
+    return NextResponse.json(
+      { error: 'Invalid action' },
+      { status: 400 }
+    );
+  } catch (error) {
+    console.error('Error archiving core value:', error);
+    return NextResponse.json(
+      { error: 'Failed to archive core value' },
+      { status: 500 }
+    );
+  }
+}
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const deleted = await deleteCoreValue(params.id);
+    const { id } = await params;
+    const deleted = await deleteCoreValue(id);
 
     if (!deleted) {
       return NextResponse.json(

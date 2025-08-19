@@ -145,6 +145,40 @@ export async function createCoreValue(input: CreateCoreValueInput): Promise<Core
   return coreValue;
 }
 
+export async function updateCoreValue(id: string, input: Partial<CreateCoreValueInput>): Promise<CoreValue | null> {
+  const db = await loadDatabase();
+  const index = db.coreValues.findIndex(cv => cv.id === id);
+  
+  if (index === -1) return null;
+  
+  const now = new Date();
+  db.coreValues[index] = {
+    ...db.coreValues[index],
+    ...input,
+    updatedAt: now,
+  };
+  
+  await saveDatabase(db);
+  return db.coreValues[index];
+}
+
+export async function archiveCoreValue(id: string): Promise<boolean> {
+  const db = await loadDatabase();
+  const index = db.coreValues.findIndex(cv => cv.id === id);
+  
+  if (index === -1) return false;
+  
+  const now = new Date();
+  db.coreValues[index] = {
+    ...db.coreValues[index],
+    isActive: false,
+    updatedAt: now,
+  };
+  
+  await saveDatabase(db);
+  return true;
+}
+
 export async function deleteCoreValue(id: string): Promise<boolean> {
   const db = await loadDatabase();
   const index = db.coreValues.findIndex(cv => cv.id === id);
@@ -185,12 +219,12 @@ export async function getSupportingValuesForCore(coreValueId: string): Promise<S
   );
 }
 
-export async function createSupportingValue(input: CreateSupportingValueInput & { coreValueId?: string }): Promise<SupportingValue> {
+export async function createSupportingValue(input: CreateSupportingValueInput & { coreValueId?: string; coreValueIds?: string[] }): Promise<SupportingValue> {
   const db = await loadDatabase();
   const now = new Date();
   
-  // Extract coreValueId from input before creating supporting value
-  const { coreValueId, ...supportingValueData } = input;
+  // Extract coreValueId(s) from input before creating supporting value
+  const { coreValueId, coreValueIds, ...supportingValueData } = input;
   
   const supportingValue: SupportingValue = {
     id: nanoid(),
@@ -201,11 +235,13 @@ export async function createSupportingValue(input: CreateSupportingValueInput & 
   
   db.supportingValues.push(supportingValue);
   
-  // Create relationship if coreValueId is provided
-  if (coreValueId) {
+  // Create relationships for multiple core values
+  const coreValueIdsToLink = coreValueIds || (coreValueId ? [coreValueId] : []);
+  
+  for (const cvId of coreValueIdsToLink) {
     const relationship: CoreValueSupportingValue = {
       id: nanoid(),
-      coreValueId,
+      coreValueId: cvId,
       supportingValueId: supportingValue.id,
       createdAt: now,
     };
@@ -214,6 +250,62 @@ export async function createSupportingValue(input: CreateSupportingValueInput & 
   
   await saveDatabase(db);
   return supportingValue;
+}
+
+export async function updateSupportingValue(id: string, input: Partial<CreateSupportingValueInput> & { coreValueIds?: string[] }): Promise<SupportingValue | null> {
+  const db = await loadDatabase();
+  const index = db.supportingValues.findIndex(sv => sv.id === id);
+  
+  if (index === -1) return null;
+  
+  const now = new Date();
+  const { coreValueIds, ...supportingValueData } = input;
+  
+  // Update the supporting value
+  db.supportingValues[index] = {
+    ...db.supportingValues[index],
+    ...supportingValueData,
+    updatedAt: now,
+  };
+  
+  // Update relationships if coreValueIds provided
+  if (coreValueIds !== undefined) {
+    // Remove existing relationships
+    db.coreValueSupportingValues = db.coreValueSupportingValues.filter(
+      rel => rel.supportingValueId !== id
+    );
+    
+    // Add new relationships
+    for (const coreValueId of coreValueIds) {
+      const relationship: CoreValueSupportingValue = {
+        id: nanoid(),
+        coreValueId,
+        supportingValueId: id,
+        createdAt: now,
+      };
+      db.coreValueSupportingValues.push(relationship);
+    }
+  }
+  
+  await saveDatabase(db);
+  return db.supportingValues[index];
+}
+
+export async function archiveSupportingValue(id: string): Promise<boolean> {
+  const db = await loadDatabase();
+  const index = db.supportingValues.findIndex(sv => sv.id === id);
+  
+  if (index === -1) return false;
+  
+  const now = new Date();
+  db.supportingValues[index] = {
+    ...db.supportingValues[index],
+    isActive: false,
+    updatedAt: now,
+  };
+  
+  await saveDatabase(db);
+  return true;
 }
 
 export async function deleteSupportingValue(id: string): Promise<boolean> {
@@ -340,26 +432,30 @@ export async function createQuote(input: CreateQuoteInput & { coreValueId?: stri
 export async function getQuotePosts(): Promise<QuotePostWithData[]> {
   const db = await loadDatabase();
   
-  return db.quotePosts.map(qp => {
-    const coreValue = db.coreValues.find(cv => cv.id === qp.coreValueId);
-    const supportingValue = db.supportingValues.find(sv => sv.id === qp.supportingValueId);
-    const quote = db.quotes.find(q => q.id === qp.quoteId);
-    const author = quote?.authorId ? db.authors.find(a => a.id === quote.authorId) : undefined;
-    
-    if (!coreValue || !supportingValue || !quote) {
-      throw new Error(`Invalid quote post ${qp.id}: missing referenced data`);
-    }
-    
-    return {
-      ...qp,
-      coreValue,
-      supportingValue,
-      quote: {
-        ...quote,
-        author
+  return db.quotePosts
+    .map(qp => {
+      const coreValue = db.coreValues.find(cv => cv.id === qp.coreValueId);
+      const supportingValue = db.supportingValues.find(sv => sv.id === qp.supportingValueId);
+      const quote = db.quotes.find(q => q.id === qp.quoteId);
+      const author = quote?.authorId ? db.authors.find(a => a.id === quote.authorId) : undefined;
+      
+      // Skip posts with missing references instead of throwing errors
+      if (!coreValue || !supportingValue || !quote) {
+        console.warn(`Skipping invalid quote post ${qp.id}: missing referenced data`);
+        return null;
       }
-    };
-  });
+      
+      return {
+        ...qp,
+        coreValue,
+        supportingValue,
+        quote: {
+          ...quote,
+          author
+        }
+      };
+    })
+    .filter((qp): qp is QuotePostWithData => qp !== null);
 }
 
 export async function createQuotePost(input: CreateQuotePostInput): Promise<QuotePost> {
