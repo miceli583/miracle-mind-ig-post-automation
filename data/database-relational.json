@@ -626,6 +626,55 @@
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
       "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "mkWcUIk5Qr62T0kVAumsB",
+      "name": "Coco Chanel",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:17:19.665Z",
+      "updatedAt": "2025-08-19T16:17:19.665Z"
+    },
+    {
+      "id": "wC2RODPd0TYscPnkj5mCj",
+      "name": "George Bernard Shaw",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:17:19.697Z",
+      "updatedAt": "2025-08-19T16:17:19.697Z"
+    },
+    {
+      "id": "Pt_kcZpE4GD0lgojIRjrG",
+      "name": "Mahatma Gandhi",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:17:19.727Z",
+      "updatedAt": "2025-08-19T16:17:19.727Z"
+    },
+    {
+      "id": "cor4tD41Jnvwt8sSja3uY",
+      "name": "Tony Robbins",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:17:19.752Z",
+      "updatedAt": "2025-08-19T16:17:19.752Z"
+    },
+    {
+      "id": "WLpQGlex7Jcm7q8qAuqPg",
+      "name": "Joseph Campbell",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:22:31.234Z",
+      "updatedAt": "2025-08-19T16:22:31.234Z"
+    },
+    {
+      "id": "voOOlpfz2uMjpXSsQZLug",
+      "name": "Wayne Dyer",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:22:31.269Z",
+      "updatedAt": "2025-08-19T16:22:31.269Z"
+    },
+    {
+      "id": "QIKqjYndzhi_4S8VZX4Xs",
+      "name": "Chinese Proverb",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:22:31.351Z",
+      "updatedAt": "2025-08-19T16:22:31.351Z"
     }
   ],
   "quotes": [
@@ -641,11 +690,10 @@
     {
       "id": "cVbrYASkhrqFX--QhIg9W",
       "text": "Don't build a castle on scattered energy. Harness it. Re-harmonize. Create systems that support your soul.",
-      "authorId": null,
       "category": "General Wisdom",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T16:07:58.691Z"
     },
     {
       "id": "ZuNhvcFd4PbUYVR5jCbNJ",
@@ -695,20 +743,18 @@
     {
       "id": "wGXK3Vg4RL3191vdwZE4T",
       "text": "Routine is the drumbeat that cultivates your daily flow state. Allow routine to be the heartbeat of your devotion.",
-      "authorId": null,
       "category": "Love & Compassion",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T16:08:44.307Z"
     },
     {
       "id": "xWhjTJ30w9WI76tjdLUDw",
       "text": "Your breath is the key that unlocks the present.",
-      "authorId": null,
       "category": "Peace & Presence",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T16:08:44.409Z"
     },
     {
       "id": "lABa6mmi4-iiS12WKn20x",
@@ -722,11 +768,10 @@
     {
       "id": "c8RwJ4lQzFQNKqv9G9iXO",
       "text": "Slow is smooth, and smooth is fast.",
-      "authorId": null,
       "category": "General Wisdom",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T16:08:44.496Z"
     },
     {
       "id": "sRxQ0DhSdiIzJn0SzDrZ1",
@@ -798,7 +843,7 @@
       "category": "General Wisdom",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T16:08:48.981Z"
     },
     {
       "id": "cPqe7-vJreXEKI_OR3vmo",
@@ -816,7 +861,7 @@
       "category": "General Wisdom",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T16:08:49.091Z"
     },
     {
       "id": "72HrGoPuCzGnykn2B5Zs1",
@@ -825,7 +870,7 @@
       "category": "General Wisdom",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T16:08:49.168Z"
     },
     {
       "id": "RSsD4Q_Uj60hf_YPBsuLJ",
@@ -843,7 +888,7 @@
       "category": "Love & Compassion",
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
-      "updatedAt": "2025-08-18T06:13:47.327Z"
+      "updatedAt": "2025-08-19T16:08:49.245Z"
     },
     {
       "id": "EVOLPPqKcTK86iNevJJEc",
@@ -1222,6 +1267,99 @@
       "isActive": true,
       "createdAt": "2025-08-18T06:13:47.327Z",
       "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "djkRN99c6MxdDPZh-JnCH",
+      "text": "The cave you fear to enter holds the treasure you seek.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:00:29.451Z",
+      "updatedAt": "2025-08-19T16:22:58.129Z",
+      "authorId": "WLpQGlex7Jcm7q8qAuqPg"
+    },
+    {
+      "id": "XGWqt8FKMOS0JejF7Lxco",
+      "text": "You are not stuck where you are unless you decide to be.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:00:29.516Z",
+      "updatedAt": "2025-08-19T16:22:58.245Z",
+      "authorId": "voOOlpfz2uMjpXSsQZLug"
+    },
+    {
+      "id": "6uE8TmXES1CM_p9yoggvv",
+      "text": "Your impact is not measured by what you achieve for yourself, but by what you inspire in others.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:00:29.545Z",
+      "updatedAt": "2025-08-19T16:14:11.890Z"
+    },
+    {
+      "id": "1Xnbpr5pWJ7hqFEX29j7s",
+      "text": "Progress, not perfection, is the goal. Every step forward matters.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:00:29.572Z",
+      "updatedAt": "2025-08-19T16:14:11.965Z"
+    },
+    {
+      "id": "xg1GKTc2htnFbWuqYufI6",
+      "text": "The most courageous act is still to think for yourself. Aloud.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:00:33.995Z",
+      "updatedAt": "2025-08-19T16:17:45.821Z",
+      "authorId": "mkWcUIk5Qr62T0kVAumsB"
+    },
+    {
+      "id": "B4ipzL7z3UvYRELkYRNGR",
+      "text": "Life is not about finding yourself. Life is about creating yourself.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:00:34.029Z",
+      "updatedAt": "2025-08-19T16:17:45.914Z",
+      "authorId": "wC2RODPd0TYscPnkj5mCj"
+    },
+    {
+      "id": "AwcfHuYC3EfIvl6XU3s8R",
+      "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:00:34.060Z",
+      "updatedAt": "2025-08-19T16:22:58.358Z",
+      "authorId": "QIKqjYndzhi_4S8VZX4Xs"
+    },
+    {
+      "id": "E1nstcboK7U0if2oDpfbi",
+      "text": "Freedom is not worth having if it does not include the freedom to make mistakes.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:00:34.096Z",
+      "updatedAt": "2025-08-19T16:17:45.999Z",
+      "authorId": "Pt_kcZpE4GD0lgojIRjrG"
+    },
+    {
+      "id": "sga0YtDuSiDJZz6TDF0BK",
+      "text": "In a gentle way, you can shake the world.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:01:20.691Z",
+      "updatedAt": "2025-08-19T16:17:46.112Z",
+      "authorId": "Pt_kcZpE4GD0lgojIRjrG"
+    },
+    {
+      "id": "NO9BJOa7wA8iONZOitnOJ",
+      "text": "The only impossible journey is the one you never begin.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:01:20.721Z",
+      "updatedAt": "2025-08-19T16:17:49.885Z",
+      "authorId": "cor4tD41Jnvwt8sSja3uY"
+    },
+    {
+      "id": "S-Ik6D1597F76JhZqPm_b",
+      "text": "Your authentic self is who you are when you have nothing left to lose.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:01:20.748Z",
+      "updatedAt": "2025-08-19T16:14:16.676Z"
+    },
+    {
+      "id": "TdRWuDRCR5Cm_3uz1g40P",
+      "text": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
+      "isActive": true,
+      "createdAt": "2025-08-19T16:01:20.778Z",
+      "updatedAt": "2025-08-19T16:17:50.000Z",
+      "authorId": "PjUBXosnCKzIfIT0mojH7"
     }
   ],
   "coreValueSupportingValues": [
@@ -2738,6 +2876,258 @@
       "coreValueId": "JihadnHcDuF-B-Xf7124W",
       "quoteId": "l7zzIJhHVD1JPBipwg6wQ",
       "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "DN5r40I1v8EKLMucy_Wzy",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "cVbrYASkhrqFX--QhIg9W",
+      "createdAt": "2025-08-19T16:07:58.691Z"
+    },
+    {
+      "id": "i8jSwVcu85OemKckbCCdI",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "cVbrYASkhrqFX--QhIg9W",
+      "createdAt": "2025-08-19T16:07:58.691Z"
+    },
+    {
+      "id": "r45sFxq8h-odR-JWTWGdD",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "wGXK3Vg4RL3191vdwZE4T",
+      "createdAt": "2025-08-19T16:08:44.307Z"
+    },
+    {
+      "id": "7sc7H7rF7iDWnvPEVu0Ge",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "wGXK3Vg4RL3191vdwZE4T",
+      "createdAt": "2025-08-19T16:08:44.307Z"
+    },
+    {
+      "id": "v2uQie3bTWHCwi8-LiFRL",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "xWhjTJ30w9WI76tjdLUDw",
+      "createdAt": "2025-08-19T16:08:44.409Z"
+    },
+    {
+      "id": "VE9avc8rzyFRMg_GpVjcV",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "c8RwJ4lQzFQNKqv9G9iXO",
+      "createdAt": "2025-08-19T16:08:44.496Z"
+    },
+    {
+      "id": "Gr-oDyqoA0exF61Lq63Vr",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "c8RwJ4lQzFQNKqv9G9iXO",
+      "createdAt": "2025-08-19T16:08:44.496Z"
+    },
+    {
+      "id": "H7oLJNCi2STz0lf_2zK41",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "_og7YyKc7pN6MhN6UTrAl",
+      "createdAt": "2025-08-19T16:08:48.981Z"
+    },
+    {
+      "id": "fxHzNd0OHvqQoJBo7APOo",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "_og7YyKc7pN6MhN6UTrAl",
+      "createdAt": "2025-08-19T16:08:48.981Z"
+    },
+    {
+      "id": "NqsWyi5EcmWIa0O57SgjX",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "fssuyXrB--qJ8CEDjpFGq",
+      "createdAt": "2025-08-19T16:08:49.091Z"
+    },
+    {
+      "id": "8EDE4cMvIhDAzELpjv-0y",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "fssuyXrB--qJ8CEDjpFGq",
+      "createdAt": "2025-08-19T16:08:49.091Z"
+    },
+    {
+      "id": "rIt8NG0fiBUjBbct-Umnb",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "72HrGoPuCzGnykn2B5Zs1",
+      "createdAt": "2025-08-19T16:08:49.168Z"
+    },
+    {
+      "id": "lCT9AfHERnK-f-UKXSoLI",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "72HrGoPuCzGnykn2B5Zs1",
+      "createdAt": "2025-08-19T16:08:49.168Z"
+    },
+    {
+      "id": "g3-S3_yZENdWef4ufUo6P",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "Xhk5nNKz8EZ0oSQNxBUwM",
+      "createdAt": "2025-08-19T16:08:49.245Z"
+    },
+    {
+      "id": "hrlhT5TbcWG5Zy9ylC4c2",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "Xhk5nNKz8EZ0oSQNxBUwM",
+      "createdAt": "2025-08-19T16:08:49.245Z"
+    },
+    {
+      "id": "Z42YohYXIBeb_gwaD5OSF",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "6uE8TmXES1CM_p9yoggvv",
+      "createdAt": "2025-08-19T16:14:11.890Z"
+    },
+    {
+      "id": "39zx7Bdfolty2CmeA-eUI",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "6uE8TmXES1CM_p9yoggvv",
+      "createdAt": "2025-08-19T16:14:11.890Z"
+    },
+    {
+      "id": "q47N81M4P9nmECtSgJBou",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "1Xnbpr5pWJ7hqFEX29j7s",
+      "createdAt": "2025-08-19T16:14:11.965Z"
+    },
+    {
+      "id": "vAgiV6RMw-bnrCtHSH9fw",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "1Xnbpr5pWJ7hqFEX29j7s",
+      "createdAt": "2025-08-19T16:14:11.965Z"
+    },
+    {
+      "id": "zFDxbNZ_ECV_5dQRbGAQs",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "S-Ik6D1597F76JhZqPm_b",
+      "createdAt": "2025-08-19T16:14:16.676Z"
+    },
+    {
+      "id": "iGRVNlw-9u25E9bpffsz-",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "S-Ik6D1597F76JhZqPm_b",
+      "createdAt": "2025-08-19T16:14:16.676Z"
+    },
+    {
+      "id": "A__1b8babwJzqe1XapHua",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "xg1GKTc2htnFbWuqYufI6",
+      "createdAt": "2025-08-19T16:17:45.821Z"
+    },
+    {
+      "id": "J__eTCrSIqs6WGZt2wxJ2",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "xg1GKTc2htnFbWuqYufI6",
+      "createdAt": "2025-08-19T16:17:45.821Z"
+    },
+    {
+      "id": "oHoi825rjyCuoAg3Y6e2L",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "B4ipzL7z3UvYRELkYRNGR",
+      "createdAt": "2025-08-19T16:17:45.914Z"
+    },
+    {
+      "id": "cPtknM3mhAd6EPgYEcUQe",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "B4ipzL7z3UvYRELkYRNGR",
+      "createdAt": "2025-08-19T16:17:45.914Z"
+    },
+    {
+      "id": "hxiyZmXavWOvwWhf6xbCZ",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "E1nstcboK7U0if2oDpfbi",
+      "createdAt": "2025-08-19T16:17:45.999Z"
+    },
+    {
+      "id": "QKu5ZrIESxeNilM5LTsOh",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "E1nstcboK7U0if2oDpfbi",
+      "createdAt": "2025-08-19T16:17:45.999Z"
+    },
+    {
+      "id": "TQYm0HAoFj9auH7sG-m6v",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "sga0YtDuSiDJZz6TDF0BK",
+      "createdAt": "2025-08-19T16:17:46.112Z"
+    },
+    {
+      "id": "yPivb5VUuj-feDY8pu-97",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "sga0YtDuSiDJZz6TDF0BK",
+      "createdAt": "2025-08-19T16:17:46.112Z"
+    },
+    {
+      "id": "MMjNXBI2KofbUbpK2rYcx",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "NO9BJOa7wA8iONZOitnOJ",
+      "createdAt": "2025-08-19T16:17:49.885Z"
+    },
+    {
+      "id": "LPHh4uRLhmtX4AXEW2JbX",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "NO9BJOa7wA8iONZOitnOJ",
+      "createdAt": "2025-08-19T16:17:49.885Z"
+    },
+    {
+      "id": "AjjxEoHe3b6gC-Uka9TUA",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "TdRWuDRCR5Cm_3uz1g40P",
+      "createdAt": "2025-08-19T16:17:50.000Z"
+    },
+    {
+      "id": "JHoufLWg2BU1bOpevPWpW",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "TdRWuDRCR5Cm_3uz1g40P",
+      "createdAt": "2025-08-19T16:17:50.000Z"
+    },
+    {
+      "id": "qaQyFhTCTwWT3EG9CkWlc",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "TdRWuDRCR5Cm_3uz1g40P",
+      "createdAt": "2025-08-19T16:17:50.000Z"
+    },
+    {
+      "id": "4rhs8ufIzzkx1qGzROWyY",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "TdRWuDRCR5Cm_3uz1g40P",
+      "createdAt": "2025-08-19T16:17:50.000Z"
+    },
+    {
+      "id": "uMyxLdDFc_eUppV82-rBy",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "TdRWuDRCR5Cm_3uz1g40P",
+      "createdAt": "2025-08-19T16:17:50.000Z"
+    },
+    {
+      "id": "FP1jaCnKAA-qPf1thhSii",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "djkRN99c6MxdDPZh-JnCH",
+      "createdAt": "2025-08-19T16:22:58.129Z"
+    },
+    {
+      "id": "nQ-U8-n1j5twMVkmPPBvG",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "djkRN99c6MxdDPZh-JnCH",
+      "createdAt": "2025-08-19T16:22:58.129Z"
+    },
+    {
+      "id": "oWze3j1RKXh5yLmeiV591",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "XGWqt8FKMOS0JejF7Lxco",
+      "createdAt": "2025-08-19T16:22:58.245Z"
+    },
+    {
+      "id": "fZlFtWmH2mZ03jqXCNC5w",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "XGWqt8FKMOS0JejF7Lxco",
+      "createdAt": "2025-08-19T16:22:58.245Z"
+    },
+    {
+      "id": "hfcjath2tkg9OqFuGGuY_",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "AwcfHuYC3EfIvl6XU3s8R",
+      "createdAt": "2025-08-19T16:22:58.358Z"
+    },
+    {
+      "id": "FBJ2o8uTXvMa1NnARbcWI",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "AwcfHuYC3EfIvl6XU3s8R",
+      "createdAt": "2025-08-19T16:22:58.358Z"
     }
   ],
   "quotePosts": [

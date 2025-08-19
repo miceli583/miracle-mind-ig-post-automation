@@ -17,7 +17,7 @@ export async function GET() {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { text, authorId, category, tags, coreValueId, isActive = true } = body;
+    const { text, authorId, category, tags, coreValueId, coreValueIds, isActive = true } = body;
 
     if (!text || typeof text !== 'string') {
       return NextResponse.json(
@@ -32,6 +32,7 @@ export async function POST(request: NextRequest) {
       category,
       tags,
       coreValueId,
+      coreValueIds,
       isActive
     });
 

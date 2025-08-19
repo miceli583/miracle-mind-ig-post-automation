@@ -397,12 +397,12 @@ export async function getQuotesForCore(coreValueId: string): Promise<QuoteWithAu
     }));
 }
 
-export async function createQuote(input: CreateQuoteInput & { coreValueId?: string }): Promise<Quote> {
+export async function createQuote(input: CreateQuoteInput & { coreValueId?: string; coreValueIds?: string[] }): Promise<Quote> {
   const db = await loadDatabase();
   const now = new Date();
   
-  // Extract coreValueId from input before creating quote
-  const { coreValueId, ...quoteData } = input;
+  // Extract coreValueId(s) from input before creating quote
+  const { coreValueId, coreValueIds, ...quoteData } = input;
   
   const quote: Quote = {
     id: nanoid(),
@@ -413,11 +413,13 @@ export async function createQuote(input: CreateQuoteInput & { coreValueId?: stri
   
   db.quotes.push(quote);
   
-  // Create relationship if coreValueId is provided
-  if (coreValueId) {
+  // Create relationships for multiple core values
+  const coreValueIdsToLink = coreValueIds || (coreValueId ? [coreValueId] : []);
+  
+  for (const cvId of coreValueIdsToLink) {
     const relationship: CoreValueQuote = {
       id: nanoid(),
-      coreValueId,
+      coreValueId: cvId,
       quoteId: quote.id,
       createdAt: now,
     };
@@ -426,6 +428,47 @@ export async function createQuote(input: CreateQuoteInput & { coreValueId?: stri
   
   await saveDatabase(db);
   return quote;
+}
+
+export async function updateQuote(id: string, input: Partial<CreateQuoteInput> & { coreValueIds?: string[] }): Promise<Quote | null> {
+  const db = await loadDatabase();
+  const now = new Date();
+  
+  // Extract coreValueIds from input
+  const { coreValueIds, ...updateData } = input;
+  
+  // Find and update the quote
+  const quoteIndex = db.quotes.findIndex(q => q.id === id);
+  if (quoteIndex === -1) {
+    return null;
+  }
+  
+  // Update quote data
+  db.quotes[quoteIndex] = {
+    ...db.quotes[quoteIndex],
+    ...updateData,
+    updatedAt: now,
+  };
+  
+  // Update core value relationships if provided
+  if (coreValueIds !== undefined) {
+    // Remove existing relationships
+    db.coreValueQuotes = db.coreValueQuotes.filter(rel => rel.quoteId !== id);
+    
+    // Add new relationships
+    for (const cvId of coreValueIds) {
+      const relationship: CoreValueQuote = {
+        id: nanoid(),
+        coreValueId: cvId,
+        quoteId: id,
+        createdAt: now,
+      };
+      db.coreValueQuotes.push(relationship);
+    }
+  }
+  
+  await saveDatabase(db);
+  return db.quotes[quoteIndex];
 }
 
 // Quote Posts
