@@ -174,15 +174,6 @@ export default function DailyValueManagerDashboard() {
                 <span>Values</span>
               </a>
               <a
-                href="/admin/daily-value-manager/quotes"
-                className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
-              >
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                </svg>
-                <span>Quotes</span>
-              </a>
-              <a
                 href="/admin/daily-value-manager/posts"
                 className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
               >
@@ -249,41 +240,6 @@ export default function DailyValueManagerDashboard() {
             </div>
           </a>
 
-          <a
-            href="/admin/daily-value-manager/quotes"
-            className="group relative block bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-700 rounded-2xl p-10 transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-yellow-400/10"
-          >
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-400/5 to-cyan-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
-            <div className="relative flex items-center space-x-8">
-              <div className="flex-shrink-0">
-                <div className="relative">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-xl flex items-center justify-center shadow-lg">
-                    <svg className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                    </svg>
-                  </div>
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-cyan-400 rounded-full"></div>
-                </div>
-              </div>
-              
-              <div className="flex-1 min-w-0">
-                <h3 className="text-2xl font-semibold text-white group-hover:text-yellow-400 transition-colors duration-300 mb-3">
-                  Quote Library
-                </h3>
-                <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300 text-lg leading-relaxed">
-                  Manage your inspirational quotes with author attribution
-                </p>
-              </div>
-              
-              <div className="flex-shrink-0 opacity-40 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
-                <svg className="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </div>
-            </div>
-          </a>
 
           <a
             href="/admin/daily-value-manager/image-gen"
