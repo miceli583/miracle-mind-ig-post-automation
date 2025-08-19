@@ -1,0 +1,2289 @@
+{
+  "coreValues": [
+    {
+      "id": "VeLCIO47Ofj0Y69R9MSht",
+      "value": "Contribution",
+      "description": "Making a positive impact and serving others meaningfully",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "dS73lG-tIiJusOEyZJFHV",
+      "value": "Freedom",
+      "description": "Liberation from limitations and the power to choose your path",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "8UxW_NzRj0WISD41fv2G6",
+      "value": "Growth",
+      "description": "Continuous learning, development, and personal evolution",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "JihadnHcDuF-B-Xf7124W",
+      "value": "Authenticity",
+      "description": "Being true to your genuine self and living with integrity",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "hEcqrEbbvLDl1CQrBvQqN",
+      "value": "Balance",
+      "description": "Finding harmony and equilibrium in all aspects of life",
+      "isActive": true,
+      "createdAt": "2025-08-19T02:35:55.233Z",
+      "updatedAt": "2025-08-19T02:35:55.233Z"
+    }
+  ],
+  "supportingValues": [
+    {
+      "id": "k-sMWQddB1JqKjy6cI5o9",
+      "value": "Long-term Establishment",
+      "description": "Embodying the principle of long-term establishment",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "L8x2v0tPhWfj4XSawQ8-u",
+      "value": "Love",
+      "description": "Embodying the principle of love",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "qTYBcS6NBHXUqGrxNe1zn",
+      "value": "Flexibility",
+      "description": "Embodying the principle of flexibility",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "cyGg4Q-PlHD_iY-lCXZGL",
+      "value": "Vitality",
+      "description": "Embodying the principle of vitality",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "oDsNp0iPQFpozh8duMOv-",
+      "value": "Depth",
+      "description": "Embodying the principle of depth",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "y3HxKUWPmhVS4_oE_J_gg",
+      "value": "Ecstasy",
+      "description": "Embodying the principle of ecstasy",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "0V4TZVbhJOP9r1mR9DfS-",
+      "value": "Rest",
+      "description": "Embodying the principle of rest",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "2AVyHgktyPMUGAu_dNujv",
+      "value": "Health",
+      "description": "Embodying the principle of health",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "-cQ6bZkOpD0WfIEcXYYSo",
+      "value": "Connection",
+      "description": "Embodying the principle of connection",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "qSkOtC4E87U8miajG6aCi",
+      "value": "Purity",
+      "description": "Embodying the principle of purity",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kSX5NRtveMEr4GcQ05lpg",
+      "value": "Community",
+      "description": "Embodying the principle of community",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "PQVQCjDOIxsi9X7zcTLA6",
+      "value": "Compassion",
+      "description": "Embodying the principle of compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "cw7m8diChowttffQY20Tg",
+      "value": "Peace",
+      "description": "Embodying the principle of peace",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "t-bqnMvZHR9XqgN7KeIyz",
+      "value": "Patience",
+      "description": "Embodying the principle of patience",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "dNeqaSAcAo-94cd08SS3J",
+      "value": "Awareness",
+      "description": "Embodying the principle of awareness",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "1aMTo_PvBLAOPsWLSt-8V",
+      "value": "Sustainability",
+      "description": "Embodying the principle of sustainability",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "hujWSZH3LEzHtQpEFYM8Y",
+      "value": "Forgiveness",
+      "description": "Embodying the principle of forgiveness",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Et-T7C9YAcmAS-oUFsd-t",
+      "value": "Bliss",
+      "description": "Embodying the principle of bliss",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "t8qJuohZZN29h0k_oBrUB",
+      "value": "Vibrance",
+      "description": "Embodying the principle of vibrance",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "lgytjddwlgCyDYd_fkUZK",
+      "value": "Gratitude",
+      "description": "Embodying the principle of gratitude",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "snXt9KcxAoqnxKa0wfspG",
+      "value": "Meditation",
+      "description": "Embodying the principle of meditation",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "D1wrNTjs3KTmLh36WQF-E",
+      "value": "Celebration",
+      "description": "Embodying the principle of celebration",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "SfzZ9kSbtHBwC_LfP2LYE",
+      "value": "Flow",
+      "description": "Embodying the principle of flow",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "yIHIWr7RzCJUAZslDBnA3",
+      "value": "Emotional Intelligence",
+      "description": "Embodying the principle of emotional intelligence",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "--03JVvmELbvWVRPbiVUr",
+      "value": "Presence",
+      "description": "Embodying the principle of presence",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "BYx3ZntUAdwjqHLOmKNKM",
+      "value": "Trust",
+      "description": "Embodying the principle of trust",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "5h9T2Bf4Um8diQe9kxy2U",
+      "value": "Integrity",
+      "description": "Embodying the principle of integrity",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "WAw80s9LGBTQPlPn-f424",
+      "value": "Leadership",
+      "description": "Embodying the principle of leadership",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Bn6t9nMfpnDuoquo9BMAu",
+      "value": "Legacy",
+      "description": "Embodying the principle of legacy",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "1M7bFfC8P9-bh4jesxP2a",
+      "value": "Strategy",
+      "description": "Embodying the principle of strategy",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "lNU-tj4axOYPvYKd1i0K4",
+      "value": "Humility",
+      "description": "Embodying the principle of humility",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "fP35S7Qd93sd3NmxECSSo",
+      "value": "Service",
+      "description": "Embodying the principle of service",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "O4A4YdM3hUF3vxxcvlARp",
+      "value": "Automation",
+      "description": "Embodying the principle of automation",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "aHi7-xfbjTo5EP33ihdZp",
+      "value": "Courage",
+      "description": "Embodying the principle of courage",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "AvcqFgm8Ywi07vhwu4i-u",
+      "value": "Resilience",
+      "description": "Embodying the principle of resilience",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "N368T6urq7O2gB3PFTBKu",
+      "value": "Openness",
+      "description": "Embodying the principle of openness",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "aVXxu_I4PbfJImFbA7TPG",
+      "value": "Creativity",
+      "description": "Embodying the principle of creativity",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Sp6kAWFkqWCqzx66w7cqs",
+      "value": "Ascension",
+      "description": "Embodying the principle of ascension",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "jzp7fMb5jB-FyzjIdgOyr",
+      "value": "Intuition",
+      "description": "Embodying the principle of intuition",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "BxyiDYtBk-0XbC0cRs1YR",
+      "value": "Expressive",
+      "description": "Embodying the principle of expressive",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kpEj4vXWnY9OgSAvSO87H",
+      "value": "Self-Awareness",
+      "description": "Embodying the principle of self-awareness",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "64JpVbOPQWmRfO51b38bl",
+      "value": "Inquisitive",
+      "description": "Embodying the principle of inquisitive",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "75V-jSjzzkLopQRKgfdsh",
+      "value": "Clarity",
+      "description": "Embodying the principle of clarity",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "FpKTSn-unfI_EMTJOVYdI",
+      "value": "Intention",
+      "description": "Embodying the principle of intention",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "3dwQ7z6sZrbLw8GRmZEbS",
+      "value": "Curious",
+      "description": "Embodying the principle of curious",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kjcutrCNo-WauyCfYDydZ",
+      "value": "Learning",
+      "description": "Embodying the principle of learning",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "r0oTDm8zTKlvm1CwwnX8D",
+      "value": "Focus",
+      "description": "Embodying the principle of focus",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "YBy7KPWsgyXYArIXxvAjV",
+      "value": "Persistence",
+      "description": "Embodying the principle of persistence",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "rYU-sn1Me7jYVizO69VX0",
+      "value": "Vision",
+      "description": "Embodying the principle of vision",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "_MjxZcH1oZ_6yQY-gRjMG",
+      "value": "Soul Embodiment",
+      "description": "Embodying the principle of soul embodiment",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    }
+  ],
+  "authors": [
+    {
+      "id": "X8m3eo6I89Cd4l4QJVaV6",
+      "name": "A Course in Miracles",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "mbC7BE4eRJlIoFGk50GlQ",
+      "name": "The Gene Keys",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "jgcAgGIk3oTewhMpYe2vk",
+      "name": "Tao Te Ching",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "ZgTnheqiIfvTmFsfrWSa9",
+      "name": "A Return to Love",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "PjUBXosnCKzIfIT0mojH7",
+      "name": "Rumi",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "q8V5E6nfo1z_aNmPlPGuV",
+      "name": "Marcus Aurelius",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "8KNj_cYbyhqOZKmaakXUa",
+      "name": "Ralph Waldo Emerson",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "QTGkSsa6staPnMw4vzVIQ",
+      "name": "Richard Rudd",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "d3oQP9L3YZl4x24WOETy5",
+      "name": "Erwin Raphael McManus",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "0xDEfGMAVmf2qEDUirYB0",
+      "text": "Wisdom is not static. It flows like a river, answering the call of the present.",
+      "authorId": null,
+      "category": "Wisdom & Insight",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "cVbrYASkhrqFX--QhIg9W",
+      "text": "Don't build a castle on scattered energy. Harness it. Re-harmonize. Create systems that support your soul.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "ZuNhvcFd4PbUYVR5jCbNJ",
+      "text": "When discipline is met with Love, effort becomes ease and grind becomes grace. Let your discipline transform into devotion.",
+      "authorId": null,
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "e4MLfo42uZ2Ny0YGVXrcX",
+      "text": "Your body is living sacred technology. When you listen to its signals, you open the channel to higher wisdom.",
+      "authorId": null,
+      "category": "Wisdom & Insight",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "buFuMdce2zmL8ywFxn5zT",
+      "text": "Faith isn't the absence of fear—it's the willingness, however small, to trust Love more than you believe in fear.",
+      "authorId": null,
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "-nDkQrMnItfuPqksrm0vW",
+      "text": "The altar to God is the mind that knows no judgment. To forget this is to forget who you are, and to forget who you are is to lose sight of your purpose.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "nSc6BWHoTxT34aiZe9oDy",
+      "text": "Let all emotions flow—sorrow and even joy. To trap one is to trap the other.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "wGXK3Vg4RL3191vdwZE4T",
+      "text": "Routine is the drumbeat that cultivates your daily flow state. Allow routine to be the heartbeat of your devotion.",
+      "authorId": null,
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "xWhjTJ30w9WI76tjdLUDw",
+      "text": "Your breath is the key that unlocks the present.",
+      "authorId": null,
+      "category": "Peace & Presence",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "lABa6mmi4-iiS12WKn20x",
+      "text": "Be still and know: the life you are working for already exists within you. Treat the world as though you've already arrived.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "c8RwJ4lQzFQNKqv9G9iXO",
+      "text": "Slow is smooth, and smooth is fast.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "sRxQ0DhSdiIzJn0SzDrZ1",
+      "text": "When in doubt, take inventory: Is this action born of fear or of faith, from guilt or from grace? Clarity begins with asking.",
+      "authorId": null,
+      "category": "Courage & Strength",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "IcmfE4LUQYWTTfP6ZVRpb",
+      "text": "To extend forgiveness is to receive it.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "yzaIiMHFS_kBdoa1bVL0U",
+      "text": "When you act from your essence, life aligns itself around you like iron filings to a magnet.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Z2tcjjU_uXemx8bCNTh_K",
+      "text": "When you stop trying to control life, life begins to reveal its magic.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "hgGYwyujrhfMoIPYzTsrc",
+      "text": "When you realize there is nothing lacking, the whole world belongs to you.",
+      "authorId": "jgcAgGIk3oTewhMpYe2vk",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "p0a2XqGEUvTNTQ-2uIMqh",
+      "text": "Surrender means the decision to stop fighting the world and start loving it instead.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "qJKPXuiil1DJBv60czRh_",
+      "text": "Forgiveness is the key to happiness.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "_og7YyKc7pN6MhN6UTrAl",
+      "text": "Joy is what happens to us when we recognize how good things really are.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "cPqe7-vJreXEKI_OR3vmo",
+      "text": "Surrender is not giving up; it is giving in to the greater flow of Life.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "fssuyXrB--qJ8CEDjpFGq",
+      "text": "What you seek is seeking you.",
+      "authorId": "PjUBXosnCKzIfIT0mojH7",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "72HrGoPuCzGnykn2B5Zs1",
+      "text": "The softest thing in the universe overcomes the hardest.",
+      "authorId": "jgcAgGIk3oTewhMpYe2vk",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "RSsD4Q_Uj60hf_YPBsuLJ",
+      "text": "The more you trust in life, the more life can trust in you.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Xhk5nNKz8EZ0oSQNxBUwM",
+      "text": "In the presence of love, fear cannot survive.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "EVOLPPqKcTK86iNevJJEc",
+      "text": "You have power over your mind — not outside events. Realize this, and you will find strength.",
+      "authorId": "q8V5E6nfo1z_aNmPlPGuV",
+      "category": "Courage & Strength",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "l7zzIJhHVD1JPBipwg6wQ",
+      "text": "Try to accept the changing seasons of your heart, even as you have always accepted the changing seasons of the fields.",
+      "authorId": "PjUBXosnCKzIfIT0mojH7",
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "tab4ztV6t1tE5JDRiymE4",
+      "text": "Each moment of fear contains within it the opportunity to cultivate deeper connection with the Divine.",
+      "authorId": null,
+      "category": "Courage & Strength",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "5PZWNe356gAEYQY89LJV8",
+      "text": "Sometimes the person in front of you is the very answer to your prayer.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "7VtFaIqUoaFTI8fqrtqVL",
+      "text": "Deep Roots = Many Fruits.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "lzcR67Z_29HzEaCdrkpyg",
+      "text": "Miracles open the way to true healing. Healing creates wholeness, and wholeness is the source from which all manifestations flow. Begin by asking for connection with the Divine.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "wN_WEeiAODOZDp_C17ArB",
+      "text": "Whenever you meet anyone, remember it is a holy encounter. As you see him you will see yourself. As you treat him you will treat yourself. As you think of him you will think of yourself. Never forget this, for in him you will find yourself or lose yourself.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "HSLijec8Xwg5dHG5lVooo",
+      "text": "We are not held back by the love we didn't receive in the past, but by the love we're not extending now.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "hVg0Ev6LJChUYUkZqjQCE",
+      "text": "In every encounter, we are either extending love or calling for love.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kdWRGyebR5Dvv0E6jMb0z",
+      "text": "You are a child of God. Your playing small does not serve the world.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Pvd1Qjoz53g40VjzFi3eg",
+      "text": "The only thing that can be lacking in any situation is that which you have not given.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "rq80u-cveAi6zrkUJFYzz",
+      "text": "As we are liberated from our own fear, our presence automatically liberates others.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "Courage & Strength",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Za3PLPG8wq36t5sUV1Px1",
+      "text": "As we let our own light shine, we unconsciously give others permission to do the same.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "_JDl549DKrqETfSjBPIzS",
+      "text": "The practice of forgiveness is our most important contribution to the healing of the world.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "FOlhu4Wf7fGf3guy38B2h",
+      "text": "Your higher purpose is encoded in the patterns of your suffering.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "0yrmqO9FZxNiu3BhMdSUV",
+      "text": "The real journey is from the head to the heart, and from the heart into the world.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "f5YPeRXrlmQPE0UIUjBU7",
+      "text": "Do not go where the path may lead. Go instead where there is no path and leave a trail.",
+      "authorId": "8KNj_cYbyhqOZKmaakXUa",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "yvdNu43CIb_bhmUGkI-Nr",
+      "text": "Fear defines the edge of your freedom. Each act of courage expands the map of your life.",
+      "authorId": null,
+      "category": "Courage & Strength",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "xRWa-JvBOQh1gpoUxu7fc",
+      "text": "Your destiny is shaped by your choices—an ever-present frequency you can choose to tune into each day.",
+      "authorId": null,
+      "category": "Peace & Presence",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "uFRrLQMzSNFpW8MHyqmAj",
+      "text": "If you don't like the game you're playing, play a different game.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "TXXcM_l5Zhxd-A1Wfx7Pd",
+      "text": "Nature is messy. You are nature… be messy. Take messy action.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "p-OzJyNCvlqbSFWrOLPqO",
+      "text": "The only person you are destined to become is the person you decide to be.",
+      "authorId": "8KNj_cYbyhqOZKmaakXUa",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "R9CpbLmLiX2lULP110mTQ",
+      "text": "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness, that most frightens us.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "Courage & Strength",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "OfjGhgu-JXDY9MEwRCxP4",
+      "text": "The key to abundance is meeting limited circumstances with unlimited thoughts.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "z5yAXl7X_Tzrc0cMbNmkL",
+      "text": "Commitment is akin to trust, which can neither be forced nor willed. It flows like a great river from deep within your being and out into your actions. With commitment, you have no need to think about the future or the goal because the commitment contains the seed of the goal within it.",
+      "authorId": "QTGkSsa6staPnMw4vzVIQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "j8VM9pSDDafYCvkW7RC7_",
+      "text": "Growth isn't a breakthrough—it's the quiet decision to keep going, even when progress is invisible.",
+      "authorId": null,
+      "category": "Growth & Transformation",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "8AFjaYUHgveWrfRY0K3Wm",
+      "text": "Growth is not always a big leap—it is the sacred decision to keep going, even when no one sees you, not even yourself.",
+      "authorId": null,
+      "category": "Growth & Transformation",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "X8EA6ZvyKZfZey9b1BERp",
+      "text": "What are the feedback loops in your life? These loops are the channels through which small adjustments compound into exponential growth.",
+      "authorId": null,
+      "category": "Growth & Transformation",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "c6j6VwgB0qefBeeK-s5x3",
+      "text": "The shape of your character is the shape of your future.",
+      "authorId": "d3oQP9L3YZl4x24WOETy5",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "gieKpb7j1x3qtFybUjOwL",
+      "text": "Purpose feels like home, yet calls you beyond your comfort. It grounds you in who you are while pulling you toward who you're meant to become.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "H_SnAaRbi04n0RUtVyQCF",
+      "text": "All wounds are doorways to higher consciousness.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "uxlMDiC0Yht1GsDxjzBWV",
+      "text": "The spiritual journey is the relinquishment, or unlearning, of fear and the acceptance of love back into our hearts.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "uuTLj1CVp5n3pzETrm9Yi",
+      "text": "The shadow is not to be feared; it is to be embraced, for it is the seed of the gift.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "Courage & Strength",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "IUE_QpHgo5OYRiPdIDYr5",
+      "text": "Your challenges are invitations from life to evolve.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "fqKLuqhidiK5-3UVECeeU",
+      "text": "Within the shadow is hidden the seed of the gift.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "cmkgeuACfFe4TdIuyYbzy",
+      "text": "God gave David Goliath, not a crown.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kUsp8v1xl-GpVSyOjen5y",
+      "text": "True power lies in the art of phrasing, not in force.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "7PSg7zU38FWYEVcpCPRAF",
+      "text": "The frequency you embody determines the reality you experience.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "fL7XANubtnwfoQ8ZRVayi",
+      "text": "Authenticity carries no projections, no defenses. In its raw presence, it creates openings where walls once stood.",
+      "authorId": null,
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "0stqXSfYwbacBDipNajzR",
+      "text": "Love is what we were born with. Fear is what we have learned here.",
+      "authorId": "ZgTnheqiIfvTmFsfrWSa9",
+      "category": "Love & Compassion",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "uWZ7pwSNjQBo2ojX4FkRF",
+      "text": "Genius is nothing more than the natural expression of your true nature.",
+      "authorId": "mbC7BE4eRJlIoFGk50GlQ",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "joWARDKCG-WyrCEqb8LZF",
+      "text": "What you believe you are determines your perception of what you believe the world is.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "category": "General Wisdom",
+      "isActive": true,
+      "createdAt": "2025-08-18T06:13:47.327Z",
+      "updatedAt": "2025-08-18T06:13:47.327Z"
+    }
+  ],
+  "coreValueSupportingValues": [
+    {
+      "id": "DRQ4DmNPD3x9TmHDN5N8s",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "k-sMWQddB1JqKjy6cI5o9",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "aPU53f89WeLrIJEu5OzTk",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "L8x2v0tPhWfj4XSawQ8-u",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Rqx7nN9m9cdQ0PIyQv3Bv",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "5h9T2Bf4Um8diQe9kxy2U",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "jBqcVxt6CGdAZCQSKanC6",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "WAw80s9LGBTQPlPn-f424",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "pxZhQEXEfbLJISFuC8iJM",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "-cQ6bZkOpD0WfIEcXYYSo",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "rhpajWOdj-IeoxKgJWbsI",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "Bn6t9nMfpnDuoquo9BMAu",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "N2vdEgDRr1wSqcvnsINK8",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "kSX5NRtveMEr4GcQ05lpg",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "fzJ1IWWz16JMCdR85Hqw0",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "PQVQCjDOIxsi9X7zcTLA6",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "_KuY1s6XaaPdzHVXtx6w6",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "1aMTo_PvBLAOPsWLSt-8V",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "8V1wQ2gG2s_nqtoaLdpzp",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "hujWSZH3LEzHtQpEFYM8Y",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "E22wIkuiN2UXAUXglttOi",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "it3RnAst0eFI0yerLq0Zl",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "1M7bFfC8P9-bh4jesxP2a",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "LAMO9Wr-tfLCQsedPXUto",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "lNU-tj4axOYPvYKd1i0K4",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "YEOGww-WERcOChY2betCH",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "D1wrNTjs3KTmLh36WQF-E",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Qvepsd6bh6Wb90PYj-MaH",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "fP35S7Qd93sd3NmxECSSo",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "6NBke3ntHCG6K5QrmxZcD",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "qTYBcS6NBHXUqGrxNe1zn",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "APKTHh-B26BlJmj17PIja",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "cyGg4Q-PlHD_iY-lCXZGL",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "DK-e-5ZoNIKjH4U3nWWxL",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "y3HxKUWPmhVS4_oE_J_gg",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "-r37LNTHZ3163jypBsAFe",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "Et-T7C9YAcmAS-oUFsd-t",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "yLCd_n9Fb9mFkFRS83BgQ",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "t8qJuohZZN29h0k_oBrUB",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "AoM7EKEM64ublhBg1MNOo",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "O4A4YdM3hUF3vxxcvlARp",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "utDQBkPhUFTrtHNt00UPV",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "bFPMZw_-tj4weLZOcotcH",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "P9e3nIAioEHOftNu0DclT",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "0Hdy3-uEs-cCHhOvKopgj",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "N368T6urq7O2gB3PFTBKu",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "iP3i_xBhL7HocfbN3WSbM",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "vfs81Gqe43VJzCH87PIIs",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "g_jfOP_Pac8boAqG-lvfZ",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "k-sMWQddB1JqKjy6cI5o9",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "u6BdQyhyUCbtg39-W8OVX",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "Sp6kAWFkqWCqzx66w7cqs",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "_Ft_hfAM_p691qg5fLYnD",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "qTYBcS6NBHXUqGrxNe1zn",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "STlutzmBbKiHREMoXfVU0",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "jzp7fMb5jB-FyzjIdgOyr",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "sGvtepjQ2nonfZTELcaRX",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "cyGg4Q-PlHD_iY-lCXZGL",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "mSOBb-2CGa3ZgzMb5ajL0",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "oDsNp0iPQFpozh8duMOv-",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "z-hzbf5B1tI22niWE8ids",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "WAw80s9LGBTQPlPn-f424",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "v5VILjlW9kyIvuUzOWdUZ",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "y3HxKUWPmhVS4_oE_J_gg",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "BZ-R6Gf5cEfWlguQMymkk",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "2AVyHgktyPMUGAu_dNujv",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "d4aVf2Vydg8vg6QOFZ6Ga",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "BxyiDYtBk-0XbC0cRs1YR",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "5MGNUEr2Wq2GqWKwS0b0J",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "-cQ6bZkOpD0WfIEcXYYSo",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "-tqlfRAWREnlKrkzAr5H2",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "kpEj4vXWnY9OgSAvSO87H",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "81UXREioq0f3ZUuRtCugW",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "Bn6t9nMfpnDuoquo9BMAu",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "XHhdgh6E4k7RQyYiAS9AT",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "64JpVbOPQWmRfO51b38bl",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "5IiMNRjQZkBoztO96JyVk",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "75V-jSjzzkLopQRKgfdsh",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "q9t0L5lhMZ3F7aHlfOtBD",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "9LLMuUrLlFkjhi4oK-9sr",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "FpKTSn-unfI_EMTJOVYdI",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "efYqC5MYIWs4jHGh-htBr",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "3dwQ7z6sZrbLw8GRmZEbS",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "is743L-fYMLOKz8yWX6N8",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "kjcutrCNo-WauyCfYDydZ",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "tBpUE9ZxO_hKtIapIwXFk",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "LunhPILQK6Dn7uROVjeK2",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "t8qJuohZZN29h0k_oBrUB",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "oFgGM_CgPUfztOzbipuBU",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "r0oTDm8zTKlvm1CwwnX8D",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "SMKKHnnICbGR14trV2oPD",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "1M7bFfC8P9-bh4jesxP2a",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "yyTYGxEsT-kkzpYfYsPAL",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "snXt9KcxAoqnxKa0wfspG",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "j2CsKWi6zmOHqLfZTBKMw",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "D1wrNTjs3KTmLh36WQF-E",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "A4zASQHui7mJ0H0e8JKJP",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "O4A4YdM3hUF3vxxcvlARp",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "qI6CNZHXuypWY4z0BsjLV",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "YBy7KPWsgyXYArIXxvAjV",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "BhEAz0qbwLdiYdvyigoFu",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "W0wQo-uqT5vlWjYqFKMqm",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "og_MQe4jIapwvvwJaDGX2",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "vXU4dFX8moeMBBZymdkpO",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "rYU-sn1Me7jYVizO69VX0",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kVLLaUMnC7B7BtqgTmb5P",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "_MjxZcH1oZ_6yQY-gRjMG",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "hC37OF9UqHMQe0nTFkgEX",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "6vNzMPdPA36UZgS9qmnaT",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "--03JVvmELbvWVRPbiVUr",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "s1J__erAWSiM6g9TTzc2Q",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "N368T6urq7O2gB3PFTBKu",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "5M2babinaJalrZ8dFUsdx",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "T1dRUgcvkdqx-5niuOOIW",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Ipv-JcWDgtnBuYU_Q2FPF",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "Sp6kAWFkqWCqzx66w7cqs",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "4Yo8urbivtctaB3wN-K9S",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "L8x2v0tPhWfj4XSawQ8-u",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "WJBs7ZDcWSTCIbBrauB03",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "jzp7fMb5jB-FyzjIdgOyr",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "w4eDKUsCz200vWxWyqEAx",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "oDsNp0iPQFpozh8duMOv-",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "ajMdqqOtUlr_wlewhWeL7",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "5h9T2Bf4Um8diQe9kxy2U",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "LAIKvz0UkRMeGMtxOsXN7",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "WAw80s9LGBTQPlPn-f424",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "t0t6zcSoxHJ-shpzQl3km",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "BxyiDYtBk-0XbC0cRs1YR",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "lcfhkUf8jhcPH6KZGoA6t",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "-cQ6bZkOpD0WfIEcXYYSo",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "jVgIRK6zUKYMO0LCoOnji",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "kpEj4vXWnY9OgSAvSO87H",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "pOOdHj0dWZO4ves3GYG1S",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "qSkOtC4E87U8miajG6aCi",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "fD7ARXZ-O0KGxxGa0IQHE",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "Bn6t9nMfpnDuoquo9BMAu",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "nL1YDxzFjuo7_USBNfhem",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "PQVQCjDOIxsi9X7zcTLA6",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "PaBHMDdqd9NX-LjhYdj_q",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "64JpVbOPQWmRfO51b38bl",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "swFrV4cIyvLJDS9WLQHTd",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "75V-jSjzzkLopQRKgfdsh",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "cGA4E84YJ6ZFA5yRHukF4",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "WJIVNBfAkIup8piPERqD3",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "FpKTSn-unfI_EMTJOVYdI",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "7OPVEJHm0KIGOrZvoK68T",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "3dwQ7z6sZrbLw8GRmZEbS",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "-qgv03-xD3xW4nbvoyy3b",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "T4qBlpuqg2IQVcCNtkac6",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "hujWSZH3LEzHtQpEFYM8Y",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "BQx3UOsmVgCmwUcz_ExjP",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "7jzEIGMRPmwXGrVGXJQYc",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "r0oTDm8zTKlvm1CwwnX8D",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Vlqn6gB9Oa3M0hqrWUvNX",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "lNU-tj4axOYPvYKd1i0K4",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "SDJ0znqx45B1gjxxvxuTi",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "snXt9KcxAoqnxKa0wfspG",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "CmkDypjQ8whUpt88Q4SvD",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "YBy7KPWsgyXYArIXxvAjV",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "HqRPE6bonSdodFQ2kcLQv",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "3Sp9UVh0nyrWqf5-KcV0k",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "yIHIWr7RzCJUAZslDBnA3",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "mHNm9eRdowWHZaH3DV2sd",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "rYU-sn1Me7jYVizO69VX0",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "EZylhdsxqx3BibdhijhkX",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "_MjxZcH1oZ_6yQY-gRjMG",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "dqcEmx853EsIXukMuEvRI",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "AvcqFgm8Ywi07vhwu4i-u",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "qiCvvV6uzMsaQCuKsH5Ng",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "--03JVvmELbvWVRPbiVUr",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "j2RdwpqJYUk7vuP45A2Gt",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "N368T6urq7O2gB3PFTBKu",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "N4geG_jGYUUrD7uW6KIfq",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "BYx3ZntUAdwjqHLOmKNKM",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "cQXIHkHEKpaJUQXF1RaTO",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "P2GBk3i391P6unLHQSb0Q",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "qTYBcS6NBHXUqGrxNe1zn",
+      "createdAt": "2025-08-19T02:36:56.147Z"
+    },
+    {
+      "id": "Z09CR7ccb4ZzF4a9gQYLj",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "0V4TZVbhJOP9r1mR9DfS-",
+      "createdAt": "2025-08-19T02:36:56.149Z"
+    },
+    {
+      "id": "wbfYYwlw9Y6MqBJalhZrh",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "2AVyHgktyPMUGAu_dNujv",
+      "createdAt": "2025-08-19T02:36:56.150Z"
+    },
+    {
+      "id": "VUMEIpUgTqys4uo3j2XFT",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "cw7m8diChowttffQY20Tg",
+      "createdAt": "2025-08-19T02:36:56.154Z"
+    },
+    {
+      "id": "c4XEQTk89LXBM3Hmt2RaF",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "createdAt": "2025-08-19T02:36:56.155Z"
+    },
+    {
+      "id": "3cwZlqCDO_Ts2RSBD1d4r",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "dNeqaSAcAo-94cd08SS3J",
+      "createdAt": "2025-08-19T02:36:56.156Z"
+    },
+    {
+      "id": "rBxNdA8GFtAw8cRsblcGd",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "1aMTo_PvBLAOPsWLSt-8V",
+      "createdAt": "2025-08-19T02:36:56.158Z"
+    }
+  ],
+  "coreValueQuotes": [
+    {
+      "id": "T81eK4j1yOgMct58n7TVG",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "tab4ztV6t1tE5JDRiymE4",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "P30hjCYIEbEcsabSJuBlK",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "5PZWNe356gAEYQY89LJV8",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "DHO3tyOLq33oD_17f8KKl",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "7VtFaIqUoaFTI8fqrtqVL",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "K3Q17bAVDkZ_Vau1gC9KJ",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "lzcR67Z_29HzEaCdrkpyg",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "622637NmFzCSXQOpMSEby",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "wN_WEeiAODOZDp_C17ArB",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "pNZKyUOJqOp4XiDWPmVG4",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "IcmfE4LUQYWTTfP6ZVRpb",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "2mzr9b5sf511CjHOGfnrD",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "HSLijec8Xwg5dHG5lVooo",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "gYY4yOiEjDcD-M6gWvTVU",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "hVg0Ev6LJChUYUkZqjQCE",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "rDV4qQxR8rAsNG9LA_05K",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "kdWRGyebR5Dvv0E6jMb0z",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Xhjk9joK7Y75MoxxIDO6F",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "p0a2XqGEUvTNTQ-2uIMqh",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "BNfrcDfnyybiCUMOPY3-e",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "Pvd1Qjoz53g40VjzFi3eg",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "l2UORpTwUVF5Oyg-ZdHjI",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "rq80u-cveAi6zrkUJFYzz",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "jTYpX_0V-IRg6Lsh_pVMc",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "Za3PLPG8wq36t5sUV1Px1",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "bJTQXvhj5gdR-_-0cq4ol",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "_JDl549DKrqETfSjBPIzS",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "SUInEmMDfkv1SN5zmH0lw",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "qJKPXuiil1DJBv60czRh_",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "i9rL2Q62p8dPXCt_SiIY5",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "FOlhu4Wf7fGf3guy38B2h",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "g3-LidQJCretPgvhaaZFS",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "0yrmqO9FZxNiu3BhMdSUV",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "UGFxm_ua1w-dG-ulSJJcN",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "f5YPeRXrlmQPE0UIUjBU7",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "7JgBaP2nvoHR11Ai0sT-P",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "yvdNu43CIb_bhmUGkI-Nr",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "dxD6Av6S98jYrxo9kQQS8",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "xRWa-JvBOQh1gpoUxu7fc",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "yx4Mx3kRQNwoG23ROXZGY",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "uFRrLQMzSNFpW8MHyqmAj",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "GM6U3iEkuYIIIttwLwSzC",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "TXXcM_l5Zhxd-A1Wfx7Pd",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "hf69rPZn1NYSp5LbBDUT5",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "p-OzJyNCvlqbSFWrOLPqO",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "VMSLGNiiBWpNSyWIgX-mf",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "Z2tcjjU_uXemx8bCNTh_K",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "yYolaXj9ZmSicGLvw5jlf",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "hgGYwyujrhfMoIPYzTsrc",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "HAZ9f8fWB3ICuOIeaWJpV",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "rq80u-cveAi6zrkUJFYzz",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "PnBf2ll1ud3ktIxacn1pV",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "cPqe7-vJreXEKI_OR3vmo",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "xb41ukbN8r-6RcqjupCpj",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "R9CpbLmLiX2lULP110mTQ",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kUcYOCFGsf7cjvMXDOkje",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "EVOLPPqKcTK86iNevJJEc",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "wJX5e5L6ZqxoyDnH2XKnb",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "OfjGhgu-JXDY9MEwRCxP4",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "hLHmDGWWcHgGAmmJzUjQ5",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "0xDEfGMAVmf2qEDUirYB0",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "vqkY24Ne-liZUVDhSm-TX",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "tab4ztV6t1tE5JDRiymE4",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "mx3lZV4q6eCvAFII_xIss",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "ZuNhvcFd4PbUYVR5jCbNJ",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "NjHs-Q4kLwj9bMCzmUx5U",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "buFuMdce2zmL8ywFxn5zT",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Kld4JUew6ilD7N-jWk_El",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "yvdNu43CIb_bhmUGkI-Nr",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "KkgkK6MIu5stueXnxXgYb",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "7VtFaIqUoaFTI8fqrtqVL",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "T6ObP9NnPD4RkTrzvoaEm",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "xRWa-JvBOQh1gpoUxu7fc",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "S1vThX7wA_g7xIVCiadNw",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "z5yAXl7X_Tzrc0cMbNmkL",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "QKw9cmXfOfNaBTu8iPAld",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "lzcR67Z_29HzEaCdrkpyg",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kbly-dRAKCGz0Fu9bTZ01",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "j8VM9pSDDafYCvkW7RC7_",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Tr7y0VLubkE57g_T5ztme",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "8AFjaYUHgveWrfRY0K3Wm",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "7-YFtI0hOvKs6LNI6G5c4",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "X8EA6ZvyKZfZey9b1BERp",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "kYftI16oi8sg0J0felWSS",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "c6j6VwgB0qefBeeK-s5x3",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "V2R04FPIo4Jwbq43UVyNQ",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "gieKpb7j1x3qtFybUjOwL",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "33Rc9KCAkvWaPfKXX4kpl",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "H_SnAaRbi04n0RUtVyQCF",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "bXjv1NRqkocj3XJOd8xPF",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "uxlMDiC0Yht1GsDxjzBWV",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "AzjIJ27IfuAO5Apn8ZYYT",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "uuTLj1CVp5n3pzETrm9Yi",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "C1z9qqki_JCVItrTbnp6k",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "FOlhu4Wf7fGf3guy38B2h",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "AexsnnY9KdCe1Rl41cbla",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "IUE_QpHgo5OYRiPdIDYr5",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "s-3lytAzX-s2PdE3V4p79",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "0yrmqO9FZxNiu3BhMdSUV",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "NzY4A20aKfBWzgF33JG7Y",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "fqKLuqhidiK5-3UVECeeU",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "nsotUIyPXpC1BumSrVMg7",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "RSsD4Q_Uj60hf_YPBsuLJ",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "798WAwwdhUrYHzueq-x6P",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "cmkgeuACfFe4TdIuyYbzy",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "8CGwJqKrvyMOTQ4ryDeme",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "OfjGhgu-JXDY9MEwRCxP4",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "j4njsm39xE6bAUDoyDFA1",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "f5YPeRXrlmQPE0UIUjBU7",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "qu2LkrSpXwtVFmj1yg1-r",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "e4MLfo42uZ2Ny0YGVXrcX",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "5tpbsc_q9ZoJkUthuLqON",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "z5yAXl7X_Tzrc0cMbNmkL",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "xM_rBQgIfZT4EkkTbjOVP",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "wN_WEeiAODOZDp_C17ArB",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "b8WTFMRFrJsS4fsVg_LtM",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "-nDkQrMnItfuPqksrm0vW",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "vvdH5aoMSLUdEAo74stK8",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "nSc6BWHoTxT34aiZe9oDy",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "pUPvFOOCc5e2SlerSaq0K",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "TXXcM_l5Zhxd-A1Wfx7Pd",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "NQmVyulF9cGFs7b32zDfT",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "8AFjaYUHgveWrfRY0K3Wm",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "4OvHWfMv2PhKEbTv9-MaU",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "lABa6mmi4-iiS12WKn20x",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "ru5SQtvfoqICSYg1SNXeA",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "c6j6VwgB0qefBeeK-s5x3",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "5mBTyaBiqU2f-YJDdALRv",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "sRxQ0DhSdiIzJn0SzDrZ1",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "t6Yl64bi7FbGRLVHetTE3",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "gieKpb7j1x3qtFybUjOwL",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Mv6W0hNxKFXU9eBsVObkq",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "yzaIiMHFS_kBdoa1bVL0U",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "8EzVsj94Rl-nLcYLdgkya",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "kUsp8v1xl-GpVSyOjen5y",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "BbuVDvyU6wRFS1EmCtodY",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "p-OzJyNCvlqbSFWrOLPqO",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "PsGtOhl8Aavy_ZgylJXDo",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "kdWRGyebR5Dvv0E6jMb0z",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "YIKqp-kB0SiEAopzouTqN",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "7PSg7zU38FWYEVcpCPRAF",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "eB6PzzJzhrGnasPSSnWPo",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "Za3PLPG8wq36t5sUV1Px1",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "Mg6yTZnqdYSvebFskkPSH",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "uuTLj1CVp5n3pzETrm9Yi",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "2vA2sjPQExx0gJLisY4KK",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "fL7XANubtnwfoQ8ZRVayi",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "q9IcXTsKltROFJ79jIKX8",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "fqKLuqhidiK5-3UVECeeU",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "B-VZfYdDoCQWodsw3P1Go",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "R9CpbLmLiX2lULP110mTQ",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "vLL-jYrCj-avj6WuCJCSZ",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "0stqXSfYwbacBDipNajzR",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "_9Gv8GmWAz6_YwZi4llRO",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "uWZ7pwSNjQBo2ojX4FkRF",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "_TxbzB9RUVwmX1Yce5_KV",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "joWARDKCG-WyrCEqb8LZF",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    },
+    {
+      "id": "4XvtaQ_9Kb3U36V46kj0B",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "l7zzIJhHVD1JPBipwg6wQ",
+      "createdAt": "2025-08-18T06:13:47.327Z"
+    }
+  ],
+  "quotePosts": [
+    {
+      "id": "QcYNbPYrEv5kIj1_FD0SO",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "Et-T7C9YAcmAS-oUFsd-t",
+      "quoteId": "xRWa-JvBOQh1gpoUxu7fc",
+      "isPublished": false,
+      "createdAt": "2025-08-18T06:29:56.952Z",
+      "updatedAt": "2025-08-18T06:29:56.952Z"
+    },
+    {
+      "id": "UX_4jeZj_5JiUVGc0Re-k",
+      "coreValueId": "A-A20QHtmpElv0fbZV3hd",
+      "supportingValueId": "D1wrNTjs3KTmLh36WQF-E",
+      "quoteId": "c8RwJ4lQzFQNKqv9G9iXO",
+      "isPublished": false,
+      "createdAt": "2025-08-18T06:29:58.063Z",
+      "updatedAt": "2025-08-18T06:29:58.063Z"
+    },
+    {
+      "id": "el4WWTij2VIjyog-NGkpp",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "aHi7-xfbjTo5EP33ihdZp",
+      "quoteId": "gieKpb7j1x3qtFybUjOwL",
+      "isPublished": false,
+      "createdAt": "2025-08-18T06:31:26.117Z",
+      "updatedAt": "2025-08-18T06:31:26.117Z"
+    },
+    {
+      "id": "0YwUHzumfeIkI209lmfhU",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "t-bqnMvZHR9XqgN7KeIyz",
+      "quoteId": "c6j6VwgB0qefBeeK-s5x3",
+      "isPublished": false,
+      "createdAt": "2025-08-18T06:31:26.222Z",
+      "updatedAt": "2025-08-18T06:31:26.222Z"
+    },
+    {
+      "id": "dd5m6YVrbLlGQOi9NfG3l",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "y3HxKUWPmhVS4_oE_J_gg",
+      "quoteId": "R9CpbLmLiX2lULP110mTQ",
+      "isPublished": false,
+      "createdAt": "2025-08-18T06:31:30.177Z",
+      "updatedAt": "2025-08-18T06:31:30.177Z"
+    },
+    {
+      "id": "JcGqE2Lp41J3eD0B-NszB",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
+      "quoteId": "EVOLPPqKcTK86iNevJJEc",
+      "isPublished": false,
+      "createdAt": "2025-08-18T06:31:31.658Z",
+      "updatedAt": "2025-08-18T06:31:31.658Z"
+    },
+    {
+      "id": "FBdpeTEPdi_wuIlVu1Riy",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "D1wrNTjs3KTmLh36WQF-E",
+      "quoteId": "yvdNu43CIb_bhmUGkI-Nr",
+      "isPublished": false,
+      "createdAt": "2025-08-18T06:32:35.508Z",
+      "updatedAt": "2025-08-18T06:32:35.508Z"
+    },
+    {
+      "id": "6T6nO0Be7kisoaZbLEas-",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "k-sMWQddB1JqKjy6cI5o9",
+      "quoteId": "H_SnAaRbi04n0RUtVyQCF",
+      "isPublished": false,
+      "createdAt": "2025-08-18T21:14:42.593Z",
+      "updatedAt": "2025-08-18T21:14:42.593Z"
+    }
+  ]
+}
