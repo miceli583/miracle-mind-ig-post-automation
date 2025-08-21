@@ -1,0 +1,113 @@
+{
+  "summary": {
+    "total": 17,
+    "passed": 15,
+    "failed": 2,
+    "passRate": "88.2"
+  },
+  "results": [
+    {
+      "test": "Core Value CREATE",
+      "passed": true,
+      "details": "Created ID: 98w4FQ94URCEihvpEfUT9",
+      "timestamp": "2025-08-21T01:56:08.057Z"
+    },
+    {
+      "test": "Core Value READ",
+      "passed": true,
+      "details": "Item found in list",
+      "timestamp": "2025-08-21T01:56:08.102Z"
+    },
+    {
+      "test": "Core Value UPDATE",
+      "passed": true,
+      "details": "Value updated successfully",
+      "timestamp": "2025-08-21T01:56:08.917Z"
+    },
+    {
+      "test": "Core Value ARCHIVE",
+      "passed": true,
+      "details": "Archived successfully",
+      "timestamp": "2025-08-21T01:56:08.972Z"
+    },
+    {
+      "test": "Core Value DELETE",
+      "passed": true,
+      "details": "Deleted successfully",
+      "timestamp": "2025-08-21T01:56:09.024Z"
+    },
+    {
+      "test": "Supporting Value CREATE",
+      "passed": false,
+      "details": "Invalid response",
+      "timestamp": "2025-08-21T01:56:09.303Z"
+    },
+    {
+      "test": "Quote CREATE",
+      "passed": true,
+      "details": "Created ID: khXZnfleTKrB55WRRm5zK",
+      "timestamp": "2025-08-21T01:56:09.410Z"
+    },
+    {
+      "test": "Quote READ",
+      "passed": true,
+      "details": "Item found in list",
+      "timestamp": "2025-08-21T01:56:09.475Z"
+    },
+    {
+      "test": "Quote UPDATE",
+      "passed": true,
+      "details": "Quote updated successfully",
+      "timestamp": "2025-08-21T01:56:10.001Z"
+    },
+    {
+      "test": "Quote DELETE",
+      "passed": true,
+      "details": "Delete endpoint responded successfully",
+      "timestamp": "2025-08-21T01:56:10.094Z"
+    },
+    {
+      "test": "Empty Value Validation",
+      "passed": true,
+      "details": "Should reject empty values",
+      "timestamp": "2025-08-21T01:56:10.127Z"
+    },
+    {
+      "test": "Missing Required Field",
+      "passed": true,
+      "details": "Should reject missing value field",
+      "timestamp": "2025-08-21T01:56:10.151Z"
+    },
+    {
+      "test": "Invalid ID Handling",
+      "passed": true,
+      "details": "Should return 404 for invalid ID",
+      "timestamp": "2025-08-21T01:56:10.173Z"
+    },
+    {
+      "test": "Missing Relationship Validation",
+      "passed": true,
+      "details": "Should require core value relationship",
+      "timestamp": "2025-08-21T01:56:10.258Z"
+    },
+    {
+      "test": "Core Values Structure",
+      "passed": true,
+      "details": "5 items validated",
+      "timestamp": "2025-08-21T01:56:10.324Z"
+    },
+    {
+      "test": "Supporting Values Structure",
+      "passed": false,
+      "details": "66 invalid items found",
+      "timestamp": "2025-08-21T01:56:10.324Z"
+    },
+    {
+      "test": "Quotes Structure",
+      "passed": true,
+      "details": "80 items validated",
+      "timestamp": "2025-08-21T01:56:10.324Z"
+    }
+  ],
+  "timestamp": "2025-08-21T01:56:10.325Z"
+}

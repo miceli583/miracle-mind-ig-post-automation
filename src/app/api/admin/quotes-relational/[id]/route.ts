@@ -1,15 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { updateQuote } from '@/lib/database-relational';
+import { updateQuote, archiveQuote, deleteQuote } from '@/lib/database-relational';
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const body = await request.json();
     const { text, authorId, coreValueIds, isActive } = body;
 
-    const updatedQuote = await updateQuote(params.id, {
+    const updatedQuote = await updateQuote(id, {
       text,
       authorId,
       coreValueIds,
@@ -33,16 +34,55 @@ export async function PUT(
   }
 }
 
-// For now, we'll implement a simple deletion by setting isActive to false
-// You can extend this with the actual database functions when needed
-export async function DELETE(
+export async function PATCH(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    // Since we don't have delete functions implemented yet, we'll just return success
-    // In a real implementation, you would call deleteQuote(params.id)
+    const { id } = await params;
+    const body = await request.json();
     
+    if (body.action === 'archive') {
+      const success = await archiveQuote(id);
+      
+      if (!success) {
+        return NextResponse.json(
+          { error: 'Quote not found' },
+          { status: 404 }
+        );
+      }
+
+      return NextResponse.json({ success: true, message: 'Quote archived' });
+    }
+
+    return NextResponse.json(
+      { error: 'Invalid action' },
+      { status: 400 }
+    );
+  } catch (error) {
+    console.error('Error archiving quote:', error);
+    return NextResponse.json(
+      { error: 'Failed to archive quote' },
+      { status: 500 }
+    );
+  }
+}
+
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  try {
+    const { id } = await params;
+    const deleted = await deleteQuote(id);
+
+    if (!deleted) {
+      return NextResponse.json(
+        { error: 'Quote not found' },
+        { status: 404 }
+      );
+    }
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Error deleting quote:', error);

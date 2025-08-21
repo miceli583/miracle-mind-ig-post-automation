@@ -471,6 +471,45 @@ export async function updateQuote(id: string, input: Partial<CreateQuoteInput> &
   return db.quotes[quoteIndex];
 }
 
+export async function archiveQuote(id: string): Promise<boolean> {
+  const db = await loadDatabase();
+  const quoteIndex = db.quotes.findIndex(q => q.id === id);
+  
+  if (quoteIndex === -1) {
+    return false;
+  }
+  
+  db.quotes[quoteIndex] = {
+    ...db.quotes[quoteIndex],
+    isActive: false,
+    updatedAt: new Date(),
+  };
+  
+  await saveDatabase(db);
+  return true;
+}
+
+export async function deleteQuote(id: string): Promise<boolean> {
+  const db = await loadDatabase();
+  const quoteIndex = db.quotes.findIndex(q => q.id === id);
+  
+  if (quoteIndex === -1) {
+    return false;
+  }
+  
+  // Remove the quote
+  db.quotes.splice(quoteIndex, 1);
+  
+  // Remove all related core value relationships
+  db.coreValueQuotes = db.coreValueQuotes.filter(cvq => cvq.quoteId !== id);
+  
+  // Remove any quote posts that reference this quote
+  db.quotePosts = db.quotePosts.filter(qp => qp.quoteId !== id);
+  
+  await saveDatabase(db);
+  return true;
+}
+
 // Quote Posts
 export async function getQuotePosts(): Promise<QuotePostWithData[]> {
   const db = await loadDatabase();
