@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sparticuz/chromium": "^138.0.2",
     "@types/dompurify": "^3.0.5",
     "dompurify": "^3.2.6",
     "isomorphic-dompurify": "^2.26.0",
     "next": "15.4.6",
-    "puppeteer": "^24.16.2",
+    "puppeteer-core": "^24.17.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "sharp": "^0.34.3",
@@ -27,6 +28,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
+    "puppeteer": "^24.16.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

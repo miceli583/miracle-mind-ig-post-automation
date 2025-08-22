@@ -1,4 +1,4 @@
-import puppeteer, { Browser, Page } from 'puppeteer';
+import { Browser, Page } from 'puppeteer-core';
 import { DESIGN_CONFIG } from '@/config/design';
 
 class BrowserPool {
@@ -30,20 +30,38 @@ class BrowserPool {
   }
 
   private async createBrowser(): Promise<Browser> {
-    return puppeteer.launch({
-      headless: true,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
-        '--no-first-run',
-        '--no-zygote',
-        '--disable-gpu',
-        '--single-process'
-      ],
-      timeout: 30000,
-    });
+    // Dynamic imports based on environment
+    if (process.env.VERCEL || process.env.NODE_ENV === 'production') {
+      // Production/Vercel environment - use puppeteer-core with chromium
+      const puppeteer = (await import('puppeteer-core')).default;
+      const chromium = (await import('@sparticuz/chromium')).default;
+      
+      return puppeteer.launch({
+        args: [...chromium.args, '--hide-scrollbars', '--disable-web-security'],
+        defaultViewport: chromium.defaultViewport,
+        executablePath: await chromium.executablePath(),
+        headless: chromium.headless,
+        ignoreHTTPSErrors: true,
+      });
+    } else {
+      // Local development - use full puppeteer
+      const puppeteer = (await import('puppeteer')).default;
+      
+      return puppeteer.launch({
+        headless: true,
+        args: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-accelerated-2d-canvas',
+          '--no-first-run',
+          '--no-zygote',
+          '--disable-gpu',
+          '--single-process'
+        ],
+        timeout: 30000,
+      });
+    }
   }
 
   async createPage(): Promise<Page> {
