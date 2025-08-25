@@ -80,9 +80,20 @@ async function loadDatabase(): Promise<DatabaseSchema> {
 }
 
 async function saveDatabase(db: DatabaseSchema): Promise<void> {
-  await ensureDataDirectory();
-  await fs.writeFile(DB_FILE, JSON.stringify(db, null, 2));
-  cachedDb = db;
+  try {
+    await ensureDataDirectory();
+    await fs.writeFile(DB_FILE, JSON.stringify(db, null, 2));
+    cachedDb = db;
+  } catch (error) {
+    // In production (Vercel), file system is read-only
+    // Just cache in memory instead of persisting to disk
+    if ((error as NodeJS.ErrnoException).code === 'EROFS') {
+      console.log('Read-only file system detected, using memory-only storage');
+      cachedDb = db;
+      return;
+    }
+    throw error;
+  }
 }
 
 // Core Values
