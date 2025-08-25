@@ -1,8 +1,11 @@
 import { NextResponse } from 'next/server';
-import { getRandomQuotePostData, createQuotePost } from '@/lib/database-relational';
+import { getRandomQuotePostData, createQuotePost, seedDatabase } from '@/lib/database-relational';
 
 export async function POST() {
   try {
+    // Ensure database is seeded with sample data if empty
+    await seedDatabase();
+    
     const randomData = await getRandomQuotePostData();
     
     if (!randomData) {
