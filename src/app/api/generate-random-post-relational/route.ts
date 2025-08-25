@@ -9,6 +9,18 @@ export async function POST() {
     const randomData = await getRandomQuotePostData();
     
     if (!randomData) {
+      // Add better error logging to understand what's missing
+      const { getCoreValues, getSupportingValues, getQuotes } = await import('@/lib/database-relational');
+      const coreValues = await getCoreValues();
+      const supportingValues = await getSupportingValues();
+      const quotes = await getQuotes();
+      
+      console.error('Random post generation failed:', {
+        coreValuesCount: coreValues.length,
+        supportingValuesCount: supportingValues.length,
+        quotesCount: quotes.length
+      });
+      
       return NextResponse.json(
         { error: 'Not enough thematically related data available. Please import your Notion data first.' },
         { status: 400 }

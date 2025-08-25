@@ -561,21 +561,31 @@ export async function getRandomQuotePostData(): Promise<{
   
   // Get all active core values
   const activeCoreValues = db.coreValues.filter(cv => cv.isActive);
-  if (activeCoreValues.length === 0) return null;
+  if (activeCoreValues.length === 0) {
+    console.log('No active core values found');
+    return null;
+  }
   
   // Pick a random core value
   const randomCoreValue = activeCoreValues[Math.floor(Math.random() * activeCoreValues.length)];
+  console.log('Selected core value:', randomCoreValue.value);
   
   // Get supporting values for this core value
   const supportingValueIds = db.coreValueSupportingValues
     .filter(rel => rel.coreValueId === randomCoreValue.id)
     .map(rel => rel.supportingValueId);
   
+  console.log('Core-Supporting relationships found:', db.coreValueSupportingValues.length);
+  console.log('Supporting value IDs for core:', supportingValueIds);
+  
   const availableSupportingValues = db.supportingValues.filter(sv => 
     supportingValueIds.includes(sv.id) && sv.isActive
   );
   
-  if (availableSupportingValues.length === 0) return null;
+  if (availableSupportingValues.length === 0) {
+    console.log('No supporting values found for core value:', randomCoreValue.value);
+    return null;
+  }
   
   // Pick a random supporting value
   const randomSupportingValue = availableSupportingValues[Math.floor(Math.random() * availableSupportingValues.length)];
@@ -585,9 +595,15 @@ export async function getRandomQuotePostData(): Promise<{
     .filter(rel => rel.coreValueId === randomCoreValue.id)
     .map(rel => rel.quoteId);
   
+  console.log('Core-Quote relationships found:', db.coreValueQuotes.length);
+  console.log('Quote IDs for core:', quoteIds);
+  
   const availableQuotes = db.quotes.filter(q => quoteIds.includes(q.id) && q.isActive);
   
-  if (availableQuotes.length === 0) return null;
+  if (availableQuotes.length === 0) {
+    console.log('No quotes found for core value:', randomCoreValue.value);
+    return null;
+  }
   
   // Pick a random quote
   const randomQuote = availableQuotes[Math.floor(Math.random() * availableQuotes.length)];
