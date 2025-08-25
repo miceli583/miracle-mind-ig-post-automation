@@ -132,7 +132,7 @@ export default function PostsPage() {
                       )}
                     </div>
                     <blockquote className="text-white text-lg font-medium leading-relaxed mb-3 italic">
-                      "{post.quote.text}"
+                      &quot;{post.quote.text}&quot;
                     </blockquote>
                     {post.quote.author && (
                       <p className="text-gray-400 text-sm mb-3 font-medium">
@@ -194,7 +194,7 @@ export default function PostsPage() {
                   </li>
                   <li className="flex items-start space-x-2">
                     <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Use "Generate Image" to create social media-ready visuals</span>
+                    <span>Use &quot;Generate Image&quot; to create social media-ready visuals</span>
                   </li>
                 </ul>
                 <ul className="text-sm text-gray-300 space-y-3">

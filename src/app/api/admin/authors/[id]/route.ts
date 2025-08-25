@@ -8,6 +8,7 @@ export async function DELETE(
     const { id } = await params;
     // For now, just return success
     // In a real implementation, you would call deleteAuthor(id)
+    console.log('Delete request for author:', id, 'from:', request.url);
     
     return NextResponse.json({ success: true });
   } catch (error) {

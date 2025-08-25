@@ -1,5 +1,9 @@
-import { Browser, Page } from 'puppeteer-core';
+import type { Browser as PuppeteerCoreBrowser, Page as PuppeteerCorePage } from 'puppeteer-core';
+import type { Browser as PuppeteerBrowser, Page as PuppeteerPage } from 'puppeteer';
 import { DESIGN_CONFIG } from '@/config/design';
+
+type Browser = PuppeteerCoreBrowser | PuppeteerBrowser;
+type Page = PuppeteerCorePage | PuppeteerPage;
 
 class BrowserPool {
   private browser: Browser | null = null;
@@ -38,10 +42,9 @@ class BrowserPool {
       
       return puppeteer.launch({
         args: [...chromium.args, '--hide-scrollbars', '--disable-web-security'],
-        defaultViewport: chromium.defaultViewport,
+        defaultViewport: { width: 1920, height: 1080 },
         executablePath: await chromium.executablePath(),
-        headless: chromium.headless,
-        ignoreHTTPSErrors: true,
+        headless: true,
       });
     } else {
       // Local development - use full puppeteer
@@ -75,7 +78,7 @@ class BrowserPool {
     });
 
     // Set longer timeout for font loading
-    await page.setDefaultTimeout(10000);
+    page.setDefaultTimeout(10000);
     
     return page;
   }
@@ -95,7 +98,12 @@ class BrowserPool {
 
   async isHealthy(): Promise<boolean> {
     try {
-      return this.browser ? this.browser.isConnected() : false;
+      if (!this.browser) return false;
+      try {
+        return this.browser.isConnected();
+      } catch {
+        return false;
+      }
     } catch {
       return false;
     }

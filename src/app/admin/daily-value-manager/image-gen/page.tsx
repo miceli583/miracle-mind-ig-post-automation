@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface QuoteData {
   coreValue: string;
   supportingValue: string;
   quote: string;
   author: string;
-  style: string;
 }
 
 interface LoadingState {
@@ -21,14 +21,9 @@ export default function ImageGenerator() {
     coreValue: '',
     supportingValue: '',
     quote: '',
-    author: '',
-    style: 'style1'
+    author: ''
   });
 
-  const imageStyles = [
-    { id: 'style1', name: 'Style 1', description: 'Classic elegant design with gradient background' },
-    { id: 'style2', name: 'Style 2', description: 'Modern dark theme matching app aesthetic' }
-  ];
   const [loadingState, setLoadingState] = useState<LoadingState>({ isGenerating: false });
   const [imageUrl, setImageUrl] = useState<string>('');
 
@@ -83,8 +78,7 @@ export default function ImageGenerator() {
           coreValue: formData.coreValue,
           supportingValue: formData.supportingValue,
           quote: formData.quote,
-          author: formData.author,
-          style: formData.style
+          author: formData.author
         }),
       });
 
@@ -224,26 +218,6 @@ export default function ImageGenerator() {
                 />
               </div>
 
-              <div>
-                <label htmlFor="style" className="block text-sm font-medium text-gray-300 mb-2">
-                  Image Style
-                </label>
-                <select
-                  id="style"
-                  value={formData.style}
-                  onChange={(e) => handleInputChange('style', e.target.value)}
-                  className="block w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition-all duration-300 hover:border-gray-600"
-                >
-                  {imageStyles.map((style) => (
-                    <option key={style.id} value={style.id} className="bg-gray-800 text-white">
-                      {style.name}
-                    </option>
-                  ))}
-                </select>
-                <p className="mt-1 text-xs text-gray-500">
-                  {imageStyles.find(s => s.id === formData.style)?.description}
-                </p>
-              </div>
             </div>
 
             <div className="mt-8">
@@ -291,9 +265,11 @@ export default function ImageGenerator() {
             ) : imageUrl ? (
               <div className="space-y-6">
                 <div className="border border-gray-700 rounded-xl overflow-hidden bg-gray-800/30 p-2">
-                  <img
+                  <Image
                     src={imageUrl}
                     alt="Generated quote image"
+                    width={800}
+                    height={800}
                     className="w-full h-auto rounded-lg shadow-lg"
                   />
                 </div>
@@ -322,7 +298,7 @@ export default function ImageGenerator() {
                     Your generated image will appear here
                   </p>
                   <p className="text-xs text-gray-500 mt-1">
-                    Fill in the form and click "Generate Image" to get started
+                    Fill in the form and click &ldquo;Generate Image&rdquo; to get started
                   </p>
                 </div>
               </div>
@@ -346,7 +322,7 @@ export default function ImageGenerator() {
               <ul className="text-sm text-gray-300 space-y-3">
                 <li className="flex items-start space-x-2">
                   <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Use "Generate Random Combination" for thematically matched content</span>
+                  <span>Use &quot;Generate Random Combination&quot; for thematically matched content</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>

@@ -675,6 +675,13 @@
       "isActive": true,
       "createdAt": "2025-08-19T16:22:31.351Z",
       "updatedAt": "2025-08-19T16:22:31.351Z"
+    },
+    {
+      "id": "h7cXCqGIFoJpnJkMuHPEH",
+      "name": "Antoine de Saint Exupéry",
+      "isActive": true,
+      "createdAt": "2025-08-25T01:20:23.235Z",
+      "updatedAt": "2025-08-25T01:20:23.235Z"
     }
   ],
   "quotes": [
@@ -1360,6 +1367,46 @@
       "createdAt": "2025-08-19T16:01:20.778Z",
       "updatedAt": "2025-08-19T16:17:50.000Z",
       "authorId": "PjUBXosnCKzIfIT0mojH7"
+    },
+    {
+      "id": "UmKnIximxcDgc0p3L8_W-",
+      "text": "If you want to build a ship, don't drum up people to collect wood and don't assign them tasks and work, but rather teach them to long for the endless immensity of the sea.",
+      "authorId": "h7cXCqGIFoJpnJkMuHPEH",
+      "isActive": true,
+      "createdAt": "2025-08-25T01:20:23.359Z",
+      "updatedAt": "2025-08-25T01:20:23.359Z"
+    },
+    {
+      "id": "2C5LyQdGQ9K0YsG6uObc7",
+      "text": "Nothing real can be threatened. Nothing unreal exists. Herein lies the peace of God",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "isActive": true,
+      "createdAt": "2025-08-25T01:21:25.785Z",
+      "updatedAt": "2025-08-25T01:21:25.785Z"
+    },
+    {
+      "id": "qMWq5lzM2ADwsXvFGHnNN",
+      "text": "The opposite of love is not hate; it's fear",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "isActive": true,
+      "createdAt": "2025-08-25T01:22:12.544Z",
+      "updatedAt": "2025-08-25T01:22:12.544Z"
+    },
+    {
+      "id": "SvlQY5-4vJEZYFBjJeR4O",
+      "text": "In quietness are all things answered.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "isActive": true,
+      "createdAt": "2025-08-25T01:24:31.591Z",
+      "updatedAt": "2025-08-25T01:24:31.591Z"
+    },
+    {
+      "id": "sFU7kBlawJcF3q302TB1k",
+      "text": "Forgiveness is the healing of the perception of separation.",
+      "authorId": "X8m3eo6I89Cd4l4QJVaV6",
+      "isActive": true,
+      "createdAt": "2025-08-25T01:25:25.257Z",
+      "updatedAt": "2025-08-25T01:25:25.257Z"
     }
   ],
   "coreValueSupportingValues": [
@@ -3128,6 +3175,120 @@
       "coreValueId": "8UxW_NzRj0WISD41fv2G6",
       "quoteId": "AwcfHuYC3EfIvl6XU3s8R",
       "createdAt": "2025-08-19T16:22:58.358Z"
+    },
+    {
+      "id": "Q0Lh3nWPjUoBIbsxRL5me",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "UmKnIximxcDgc0p3L8_W-",
+      "createdAt": "2025-08-25T01:20:23.359Z"
+    },
+    {
+      "id": "yEVGd1gCUvKXsn_37o7gx",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "UmKnIximxcDgc0p3L8_W-",
+      "createdAt": "2025-08-25T01:20:23.359Z"
+    },
+    {
+      "id": "cqM37iE_iQtg7P5TI6BZr",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "UmKnIximxcDgc0p3L8_W-",
+      "createdAt": "2025-08-25T01:20:23.359Z"
+    },
+    {
+      "id": "eBkBqlLXbPBJElotJnizy",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "2C5LyQdGQ9K0YsG6uObc7",
+      "createdAt": "2025-08-25T01:21:25.785Z"
+    },
+    {
+      "id": "neZGY6HnM_fJLOd24zUMg",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "2C5LyQdGQ9K0YsG6uObc7",
+      "createdAt": "2025-08-25T01:21:25.785Z"
+    },
+    {
+      "id": "wSli4iJWWFCLxNHTBzw20",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "2C5LyQdGQ9K0YsG6uObc7",
+      "createdAt": "2025-08-25T01:21:25.785Z"
+    },
+    {
+      "id": "BBslIBlMjAYj6LvCdcvni",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "2C5LyQdGQ9K0YsG6uObc7",
+      "createdAt": "2025-08-25T01:21:25.785Z"
+    },
+    {
+      "id": "M0qdHpz-dLbc6WwIcpjLq",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "2C5LyQdGQ9K0YsG6uObc7",
+      "createdAt": "2025-08-25T01:21:25.785Z"
+    },
+    {
+      "id": "BUgPOPPnVsfSmMXvQZv6t",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "quoteId": "qMWq5lzM2ADwsXvFGHnNN",
+      "createdAt": "2025-08-25T01:22:12.544Z"
+    },
+    {
+      "id": "hdU8UalrrHaRBPERnRofC",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "qMWq5lzM2ADwsXvFGHnNN",
+      "createdAt": "2025-08-25T01:22:12.544Z"
+    },
+    {
+      "id": "TGlPfIUv5MhdMedRPiLB6",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "qMWq5lzM2ADwsXvFGHnNN",
+      "createdAt": "2025-08-25T01:22:12.544Z"
+    },
+    {
+      "id": "Na3hOzQoJUq68I2K9URw8",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "qMWq5lzM2ADwsXvFGHnNN",
+      "createdAt": "2025-08-25T01:22:12.544Z"
+    },
+    {
+      "id": "ToCg2IClYZ340nO901uq3",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "qMWq5lzM2ADwsXvFGHnNN",
+      "createdAt": "2025-08-25T01:22:12.544Z"
+    },
+    {
+      "id": "lzemHgTsOE4Ve0jCl7Pu3",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "SvlQY5-4vJEZYFBjJeR4O",
+      "createdAt": "2025-08-25T01:24:31.591Z"
+    },
+    {
+      "id": "5o8vRbd66SVeN09m0ZYvL",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "quoteId": "SvlQY5-4vJEZYFBjJeR4O",
+      "createdAt": "2025-08-25T01:24:31.591Z"
+    },
+    {
+      "id": "BZvNNZEfeHRm2oO5jxobX",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "quoteId": "SvlQY5-4vJEZYFBjJeR4O",
+      "createdAt": "2025-08-25T01:24:31.591Z"
+    },
+    {
+      "id": "GmM-7o37E1GAXnuMDC_SF",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "SvlQY5-4vJEZYFBjJeR4O",
+      "createdAt": "2025-08-25T01:24:31.591Z"
+    },
+    {
+      "id": "qn9G9X8jzydgNtFr3Tj0p",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "quoteId": "sFU7kBlawJcF3q302TB1k",
+      "createdAt": "2025-08-25T01:25:25.257Z"
+    },
+    {
+      "id": "p8_KcvJ0gWb-3YzEK3n9L",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "quoteId": "sFU7kBlawJcF3q302TB1k",
+      "createdAt": "2025-08-25T01:25:25.257Z"
     }
   ],
   "quotePosts": [
@@ -3292,6 +3453,123 @@
       "isPublished": false,
       "createdAt": "2025-08-22T05:18:21.915Z",
       "updatedAt": "2025-08-22T05:18:21.915Z"
+    },
+    {
+      "id": "c5n23mM_eMwsq7Th6jvu8",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "lgytjddwlgCyDYd_fkUZK",
+      "quoteId": "_JDl549DKrqETfSjBPIzS",
+      "isPublished": false,
+      "createdAt": "2025-08-22T05:31:31.411Z",
+      "updatedAt": "2025-08-22T05:31:31.411Z"
+    },
+    {
+      "id": "-wakM3EZIxAzSSKq8ahUT",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "LoM-2MupzyA_YAk351_4N",
+      "quoteId": "TXXcM_l5Zhxd-A1Wfx7Pd",
+      "isPublished": false,
+      "createdAt": "2025-08-25T01:18:09.114Z",
+      "updatedAt": "2025-08-25T01:18:09.114Z"
+    },
+    {
+      "id": "amPeiqnwesxbaZfCa0Aqz",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "FOA4bGKjFbhdbNlQnzFvx",
+      "quoteId": "qJKPXuiil1DJBv60czRh_",
+      "isPublished": false,
+      "createdAt": "2025-08-25T01:50:51.910Z",
+      "updatedAt": "2025-08-25T01:50:51.910Z"
+    },
+    {
+      "id": "0f7QD21hVBGVXLxxzVv19",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "qTYBcS6NBHXUqGrxNe1zn",
+      "quoteId": "TdRWuDRCR5Cm_3uz1g40P",
+      "isPublished": false,
+      "createdAt": "2025-08-25T01:57:42.635Z",
+      "updatedAt": "2025-08-25T01:57:42.635Z"
+    },
+    {
+      "id": "7TVCwPbEONppiN9ZJ2erJ",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "FOA4bGKjFbhdbNlQnzFvx",
+      "quoteId": "cPqe7-vJreXEKI_OR3vmo",
+      "isPublished": false,
+      "createdAt": "2025-08-25T02:09:41.477Z",
+      "updatedAt": "2025-08-25T02:09:41.477Z"
+    },
+    {
+      "id": "eYxpEJ2x09gwGUhUu4jN-",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "k-sMWQddB1JqKjy6cI5o9",
+      "quoteId": "NO9BJOa7wA8iONZOitnOJ",
+      "isPublished": false,
+      "createdAt": "2025-08-25T02:24:46.848Z",
+      "updatedAt": "2025-08-25T02:24:46.848Z"
+    },
+    {
+      "id": "WILZ4hlq4e12Y-YZcrbcQ",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "t8qJuohZZN29h0k_oBrUB",
+      "quoteId": "2C5LyQdGQ9K0YsG6uObc7",
+      "isPublished": false,
+      "createdAt": "2025-08-25T02:59:39.570Z",
+      "updatedAt": "2025-08-25T02:59:39.570Z"
+    },
+    {
+      "id": "4QVuB07JuYmce3AzQhY4D",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "T7SwDdfkO6RuavzcNXIqK",
+      "quoteId": "72HrGoPuCzGnykn2B5Zs1",
+      "isPublished": false,
+      "createdAt": "2025-08-25T03:19:17.488Z",
+      "updatedAt": "2025-08-25T03:19:17.488Z"
+    },
+    {
+      "id": "xbWsSbU6E_Zk7TEYGVGfT",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "quoteId": "FOlhu4Wf7fGf3guy38B2h",
+      "isPublished": false,
+      "createdAt": "2025-08-25T03:23:40.011Z",
+      "updatedAt": "2025-08-25T03:23:40.011Z"
+    },
+    {
+      "id": "AB4XKI77Nmx41KsqTCpqJ",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "cw7m8diChowttffQY20Tg",
+      "quoteId": "2C5LyQdGQ9K0YsG6uObc7",
+      "isPublished": false,
+      "createdAt": "2025-08-25T03:26:12.481Z",
+      "updatedAt": "2025-08-25T03:26:12.481Z"
+    },
+    {
+      "id": "5bixtdkOTlE7ZME3a0qtC",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "T7SwDdfkO6RuavzcNXIqK",
+      "quoteId": "qMWq5lzM2ADwsXvFGHnNN",
+      "isPublished": false,
+      "createdAt": "2025-08-25T03:29:02.121Z",
+      "updatedAt": "2025-08-25T03:29:02.121Z"
+    },
+    {
+      "id": "EyVuX8EFSHVCaJFfzbhq2",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "SfzZ9kSbtHBwC_LfP2LYE",
+      "quoteId": "gieKpb7j1x3qtFybUjOwL",
+      "isPublished": false,
+      "createdAt": "2025-08-25T03:54:29.252Z",
+      "updatedAt": "2025-08-25T03:54:29.252Z"
+    },
+    {
+      "id": "mT6wKj-lL2nY52fw78JVX",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "qTYBcS6NBHXUqGrxNe1zn",
+      "quoteId": "1Xnbpr5pWJ7hqFEX29j7s",
+      "isPublished": false,
+      "createdAt": "2025-08-25T14:24:45.407Z",
+      "updatedAt": "2025-08-25T14:24:45.407Z"
     }
   ]
 }

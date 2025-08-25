@@ -10,7 +10,7 @@ function loadIconSvg(): string {
     // Create a data URI for the SVG
     const base64 = Buffer.from(svgContent).toString('base64');
     return `data:image/svg+xml;base64,${base64}`;
-  } catch (error) {
+  } catch {
     console.warn('Could not load custom icon, using fallback');
     // Fallback to simple SVG
     return `data:image/svg+xml;base64,${Buffer.from(`

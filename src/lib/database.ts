@@ -40,7 +40,7 @@ async function loadDatabase(): Promise<DatabaseSchema> {
     const data = await fs.readFile(DB_FILE, 'utf-8');
     cachedDb = JSON.parse(data);
     return cachedDb!;
-  } catch (error) {
+  } catch {
     // Initialize with empty database if file doesn't exist
     const defaultDb: DatabaseSchema = {
       coreValues: [],

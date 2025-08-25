@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { CoreValue, SupportingValue, CoreValueSupportingValue, QuoteWithAuthor, Author, CoreValueQuote } from '@/types/database-relational';
 
@@ -14,7 +14,7 @@ interface ExtendedQuote extends QuoteWithAuthor {
   coreValueNames?: string[];
 }
 
-export default function ValuesPage() {
+function ValuesPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   
@@ -22,8 +22,6 @@ export default function ValuesPage() {
   const [supportingValues, setSupportingValues] = useState<ExtendedSupportingValue[]>([]);
   const [quotes, setQuotes] = useState<ExtendedQuote[]>([]);
   const [authors, setAuthors] = useState<Author[]>([]);
-  const [relationships, setRelationships] = useState<CoreValueSupportingValue[]>([]);
-  const [quoteRelationships, setQuoteRelationships] = useState<CoreValueQuote[]>([]);
   const [loading, setLoading] = useState(true);
   
   // Get current tab from URL, with fallback to 'core'
@@ -74,8 +72,8 @@ export default function ValuesPage() {
         if (data.supportingValues) setSupportingValues(data.supportingValues);
         if (data.quotes) setQuotes(data.quotes);
         if (data.authors) setAuthors(data.authors);
-        if (data.coreValueSupportingValues) setRelationships(data.coreValueSupportingValues);
-        if (data.coreValueQuotes) setQuoteRelationships(data.coreValueQuotes);
+        // if (data.coreValueSupportingValues) setRelationships(data.coreValueSupportingValues);
+        // if (data.coreValueQuotes) setQuoteRelationships(data.coreValueQuotes);
         
         // Enhance supporting values with core value relationships
         if (data.supportingValues && data.coreValueSupportingValues && data.coreValues) {
@@ -1102,5 +1100,13 @@ function QuoteForm({
         </div>
       </form>
     </div>
+  );
+}
+
+export default function ValuesPage() {
+  return (
+    <Suspense fallback={<div className="p-6">Loading...</div>}>
+      <ValuesPageContent />
+    </Suspense>
   );
 }

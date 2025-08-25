@@ -14,15 +14,10 @@ import type {
   CoreValueSupportingValue,
   CoreValueQuote,
   CreateCoreValueInput,
-  UpdateCoreValueInput,
   CreateSupportingValueInput,
-  UpdateSupportingValueInput,
   CreateAuthorInput,
-  UpdateAuthorInput,
   CreateQuoteInput,
-  UpdateQuoteInput,
   CreateQuotePostInput,
-  UpdateQuotePostInput,
 } from '@/types/database-relational';
 import { parseNotionCSV } from './data-parser';
 
@@ -49,11 +44,11 @@ async function loadDatabase(): Promise<DatabaseSchema> {
     const parsed = JSON.parse(data);
     
     // Convert date strings back to Date objects
-    const convertDates = (obj: any) => {
-      if (obj.createdAt) obj.createdAt = new Date(obj.createdAt);
-      if (obj.updatedAt) obj.updatedAt = new Date(obj.updatedAt);
-      if (obj.publishedAt) obj.publishedAt = new Date(obj.publishedAt);
-      if (obj.scheduledFor) obj.scheduledFor = new Date(obj.scheduledFor);
+    const convertDates = (obj: Record<string, unknown>) => {
+      if (obj.createdAt && typeof obj.createdAt === 'string') obj.createdAt = new Date(obj.createdAt);
+      if (obj.updatedAt && typeof obj.updatedAt === 'string') obj.updatedAt = new Date(obj.updatedAt);
+      if (obj.publishedAt && typeof obj.publishedAt === 'string') obj.publishedAt = new Date(obj.publishedAt);
+      if (obj.scheduledFor && typeof obj.scheduledFor === 'string') obj.scheduledFor = new Date(obj.scheduledFor);
       return obj;
     };
     
@@ -67,7 +62,7 @@ async function loadDatabase(): Promise<DatabaseSchema> {
     
     cachedDb = parsed;
     return cachedDb!;
-  } catch (error) {
+  } catch {
     // Initialize with empty database if file doesn't exist
     const defaultDb: DatabaseSchema = {
       coreValues: [],
@@ -514,30 +509,32 @@ export async function deleteQuote(id: string): Promise<boolean> {
 export async function getQuotePosts(): Promise<QuotePostWithData[]> {
   const db = await loadDatabase();
   
-  return db.quotePosts
-    .map(qp => {
-      const coreValue = db.coreValues.find(cv => cv.id === qp.coreValueId);
-      const supportingValue = db.supportingValues.find(sv => sv.id === qp.supportingValueId);
-      const quote = db.quotes.find(q => q.id === qp.quoteId);
-      const author = quote?.authorId ? db.authors.find(a => a.id === quote.authorId) : undefined;
-      
-      // Skip posts with missing references instead of throwing errors
-      if (!coreValue || !supportingValue || !quote) {
-        console.warn(`Skipping invalid quote post ${qp.id}: missing referenced data`);
-        return null;
+  const validQuotePosts: QuotePostWithData[] = [];
+  
+  for (const qp of db.quotePosts) {
+    const coreValue = db.coreValues.find(cv => cv.id === qp.coreValueId);
+    const supportingValue = db.supportingValues.find(sv => sv.id === qp.supportingValueId);
+    const quote = db.quotes.find(q => q.id === qp.quoteId);
+    const author = quote?.authorId ? db.authors.find(a => a.id === quote.authorId) : undefined;
+    
+    // Skip posts with missing references instead of throwing errors
+    if (!coreValue || !supportingValue || !quote) {
+      console.warn(`Skipping invalid quote post ${qp.id}: missing referenced data`);
+      continue;
+    }
+    
+    validQuotePosts.push({
+      ...qp,
+      coreValue,
+      supportingValue,
+      quote: {
+        ...quote,
+        author
       }
-      
-      return {
-        ...qp,
-        coreValue,
-        supportingValue,
-        quote: {
-          ...quote,
-          author
-        }
-      };
-    })
-    .filter((qp): qp is QuotePostWithData => qp !== null);
+    });
+  }
+  
+  return validQuotePosts;
 }
 
 export async function createQuotePost(input: CreateQuotePostInput): Promise<QuotePost> {

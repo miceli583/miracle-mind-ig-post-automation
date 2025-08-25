@@ -19,11 +19,6 @@ export const quoteSchema = z.object({
     .trim()
     .optional()
     .or(z.literal('')),
-  style: z.string()
-    .default('style1')
-    .refine((val) => ['style1', 'style2'].includes(val), {
-      message: 'Invalid style selected'
-    })
 });
 
 export type QuoteInput = z.infer<typeof quoteSchema>;

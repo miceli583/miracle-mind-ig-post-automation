@@ -5,13 +5,6 @@ import React from 'react';
 
 export const runtime = 'edge';
 
-const BRAND_COLORS = {
-  SACRED_RED: '#C41E3A',
-  MIRACLE_GOLD: '#D4AF37', 
-  TURQUOISE: '#40E0D0',
-  DARK: '#0f0f0f',
-  DARKER: '#080808'
-};
 
 export async function POST(request: NextRequest) {
   try {
@@ -133,7 +126,7 @@ export async function POST(request: NextRequest) {
                 
                 React.createElement('div', {
                   style: {
-                    fontSize: '24px',
+                    fontSize: '25px',
                     fontWeight: '300',
                     color: '#ffffff',
                     lineHeight: '1.2',
@@ -155,7 +148,7 @@ export async function POST(request: NextRequest) {
               },
                 React.createElement('div', {
                   style: {
-                    fontSize: '48px',
+                    fontSize: '68px',
                     fontWeight: '300',
                     color: '#ffffff',
                     lineHeight: '1.3',

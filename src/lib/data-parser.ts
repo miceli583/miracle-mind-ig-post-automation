@@ -96,12 +96,12 @@ export function parseNotionCSV(csvContent: string): DatabaseSchema {
     const cleanQuote = cleanValue(pair.quote);
     if (!uniqueQuotes.has(cleanQuote)) {
       uniqueQuotes.add(cleanQuote);
-      const author = pair.author ? authors.find(a => a.name === cleanValue(pair.author)) : undefined;
+      const author = pair.author ? authors.find(a => a.name === cleanValue(pair.author!)) : undefined;
       
       quotes.push({
         id: nanoid(),
         text: cleanQuote,
-        authorId: author?.id || null,
+        authorId: author?.id || undefined,
         category: categorizeQuote(cleanQuote),
         isActive: true,
         createdAt: now,

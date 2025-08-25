@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
       coreValue: quotePost.coreValue.value,
       supportingValue: quotePost.supportingValue.value,
       quote: quotePost.quote.text,
-      author: quotePost.quote.author || ''
+      author: typeof quotePost.quote.author === 'string' ? quotePost.quote.author : (quotePost.quote.author?.name || '')
     };
     
     // Generate HTML template
@@ -46,10 +46,11 @@ export async function POST(request: NextRequest) {
     await page.setContent(html, { waitUntil: 'networkidle0' });
     
     // Enhanced font loading check
-    await page.evaluate(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    await (page as any).evaluate(() => {
       return Promise.all([
         document.fonts.ready,
-        new Promise(resolve => {
+        new Promise<boolean>(resolve => {
           if (document.fonts.status === 'loaded') {
             resolve(true);
           } else {
