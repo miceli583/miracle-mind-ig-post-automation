@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
             style: {
               width: '100%',
               height: '100%',
-              background: styles.background,
+              background: '#000000',
               borderRadius: '20px',
               display: 'flex',
               flexDirection: 'column',

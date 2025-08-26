@@ -147,7 +147,7 @@ export const stylePresets: StylePreset[] = [
   {
     id: 'daily-anchor-2',
     name: 'Daily Anchor 2',
-    description: 'Gold border variation of Daily Anchor design',
+    description: 'Gold border with gradient background (backup before pure black)',
     archived: false,
     createdAt: '2025-08-26',
     dimensions: {
