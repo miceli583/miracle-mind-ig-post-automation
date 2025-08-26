@@ -1,6 +1,7 @@
 import { ImageResponse } from '@vercel/og';
 import { NextRequest } from 'next/server';
 import { validateQuoteData, getFieldErrors } from '@/lib/validation';
+import { getActiveStylePresets } from '@/config/style-presets';
 import React from 'react';
 
 export const runtime = 'edge';
@@ -34,6 +35,18 @@ export async function POST(request: NextRequest) {
     const sanitizedData = validation.data;
     const { coreValue, supportingValue, quote, author } = sanitizedData;
 
+    const activePresets = getActiveStylePresets();
+    const currentPreset = activePresets[0];
+    
+    if (!currentPreset) {
+      return new Response(
+        JSON.stringify({ error: 'No active style preset found', code: 'NO_PRESET' }),
+        { status: 500, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
+    const styles = currentPreset.styles;
+
     return new ImageResponse(
       React.createElement('div', {
         style: {
@@ -49,9 +62,9 @@ export async function POST(request: NextRequest) {
           style: {
             width: '1076px',
             height: '1346px',
-            background: 'linear-gradient(45deg, #40E0D0 0%, #C41E3A 25%, #D4AF37 50%, #C41E3A 75%, #40E0D0 100%)',
-            borderRadius: '24px',
-            padding: '2px',
+            background: styles.border.gradient,
+            borderRadius: styles.border.radius,
+            padding: styles.border.padding,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -61,14 +74,14 @@ export async function POST(request: NextRequest) {
             style: {
               width: '100%',
               height: '100%',
-              background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)',
+              background: styles.background,
               borderRadius: '20px',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'space-between',
               padding: '60px 40px',
-              fontFamily: 'sans-serif',
+              fontFamily: 'Palatino, serif',
             }
           },
             React.createElement('div', {
@@ -102,7 +115,7 @@ export async function POST(request: NextRequest) {
                     marginBottom: '25px',
                     textAlign: 'center',
                   }
-                }, "Today's Anchor"),
+                }, "Your Daily Anchor"),
                 
                 React.createElement('div', {
                   style: {
@@ -153,11 +166,11 @@ export async function POST(request: NextRequest) {
                     color: '#ffffff',
                     lineHeight: '1.3',
                     textAlign: 'center',
-                    marginBottom: '20px',
+                    marginBottom: author ? '20px' : '0px',
                   }
                 }, '"' + (quote || 'Every moment is a fresh beginning, a chance to choose love over fear.') + '"'),
                 
-                React.createElement('div', {
+                ...(author ? [React.createElement('div', {
                   style: {
                     fontSize: '20px',
                     fontWeight: '300',
@@ -166,7 +179,7 @@ export async function POST(request: NextRequest) {
                     textAlign: 'center',
                     opacity: 0.8,
                   }
-                }, '— ' + (author || 'Unknown'))
+                }, '— ' + author)] : [])
               ),
               
               React.createElement('div', { style: { height: '20px' } })
