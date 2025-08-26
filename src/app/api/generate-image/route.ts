@@ -35,6 +35,18 @@ export async function POST(request: NextRequest) {
     const sanitizedData = validation.data;
     const { coreValue, supportingValue, quote, author } = sanitizedData;
 
+    // Dynamic font sizing based on quote length
+    const getQuoteFontSize = (text: string) => {
+      const length = text.length;
+      if (length <= 80) return '68px';
+      if (length <= 120) return '56px';
+      if (length <= 180) return '48px';
+      if (length <= 240) return '42px';
+      return '36px';
+    };
+
+    const quoteFontSize = getQuoteFontSize(quote || '');
+
     const activePresets = getActiveStylePresets();
     const currentPreset = activePresets[0];
     
@@ -161,7 +173,7 @@ export async function POST(request: NextRequest) {
               },
                 React.createElement('div', {
                   style: {
-                    fontSize: '68px',
+                    fontSize: quoteFontSize,
                     fontWeight: '300',
                     color: '#ffffff',
                     lineHeight: '1.3',

@@ -3570,6 +3570,33 @@
       "isPublished": false,
       "createdAt": "2025-08-25T14:24:45.407Z",
       "updatedAt": "2025-08-25T14:24:45.407Z"
+    },
+    {
+      "id": "iL127s-KwA557zKeWnkjw",
+      "coreValueId": "8UxW_NzRj0WISD41fv2G6",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "quoteId": "qMWq5lzM2ADwsXvFGHnNN",
+      "isPublished": false,
+      "createdAt": "2025-08-26T03:16:21.836Z",
+      "updatedAt": "2025-08-26T03:16:21.836Z"
+    },
+    {
+      "id": "xb5xh29w_IBIUGQUqCWIN",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "WAw80s9LGBTQPlPn-f424",
+      "quoteId": "lABa6mmi4-iiS12WKn20x",
+      "isPublished": false,
+      "createdAt": "2025-08-26T03:22:16.527Z",
+      "updatedAt": "2025-08-26T03:22:16.527Z"
+    },
+    {
+      "id": "2bqL0BCxt_6UvkKXu3pJG",
+      "coreValueId": "dS73lG-tIiJusOEyZJFHV",
+      "supportingValueId": "Et-T7C9YAcmAS-oUFsd-t",
+      "quoteId": "xg1GKTc2htnFbWuqYufI6",
+      "isPublished": false,
+      "createdAt": "2025-08-26T03:35:27.551Z",
+      "updatedAt": "2025-08-26T03:35:27.551Z"
     }
   ]
 }
