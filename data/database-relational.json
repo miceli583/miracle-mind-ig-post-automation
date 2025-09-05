@@ -3597,6 +3597,33 @@
       "isPublished": false,
       "createdAt": "2025-08-26T03:35:27.551Z",
       "updatedAt": "2025-08-26T03:35:27.551Z"
+    },
+    {
+      "id": "6IRGEjFNabbXCiSrYsRXx",
+      "coreValueId": "hEcqrEbbvLDl1CQrBvQqN",
+      "supportingValueId": "aVXxu_I4PbfJImFbA7TPG",
+      "quoteId": "B4ipzL7z3UvYRELkYRNGR",
+      "isPublished": false,
+      "createdAt": "2025-08-26T04:33:45.970Z",
+      "updatedAt": "2025-08-26T04:33:45.970Z"
+    },
+    {
+      "id": "O1-hmFMbPoj_J9SWg78oC",
+      "coreValueId": "VeLCIO47Ofj0Y69R9MSht",
+      "supportingValueId": "-boAxDjgeo3Gq32TOJTNJ",
+      "quoteId": "rq80u-cveAi6zrkUJFYzz",
+      "isPublished": false,
+      "createdAt": "2025-08-27T05:11:54.011Z",
+      "updatedAt": "2025-08-27T05:11:54.011Z"
+    },
+    {
+      "id": "DcnROAldxl-lI6fFCz9Oz",
+      "coreValueId": "JihadnHcDuF-B-Xf7124W",
+      "supportingValueId": "FpKTSn-unfI_EMTJOVYdI",
+      "quoteId": "TXXcM_l5Zhxd-A1Wfx7Pd",
+      "isPublished": false,
+      "createdAt": "2025-09-05T18:21:39.706Z",
+      "updatedAt": "2025-09-05T18:21:39.706Z"
     }
   ]
 }

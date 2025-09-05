@@ -9,6 +9,7 @@ export const runtime = 'edge';
 
 export async function POST(request: NextRequest) {
   try {
+
     const requestBody = await request.json().catch(() => null);
     
     if (!requestBody) {
@@ -93,7 +94,7 @@ export async function POST(request: NextRequest) {
               alignItems: 'center',
               justifyContent: 'space-between',
               padding: '60px 40px',
-              fontFamily: 'Palatino, serif',
+              fontFamily: 'serif',
             }
           },
             React.createElement('div', {
