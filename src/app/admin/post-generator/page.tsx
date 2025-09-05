@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function PostGenerator() {
   const [text, setText] = useState('Test');
@@ -132,10 +133,13 @@ export default function PostGenerator() {
                   
                   <div className="flex justify-center">
                     <div className="bg-gray-800 border border-gray-700 rounded-lg p-4 shadow-2xl">
-                      <img 
+                      <Image 
                         src={imageUrl} 
                         alt="Generated post"
+                        width={384}
+                        height={384}
                         className="w-full max-w-sm h-auto rounded shadow-lg"
+                        unoptimized
                       />
                     </div>
                   </div>

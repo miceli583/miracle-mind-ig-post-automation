@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { text, style = 'basic' } = requestBody;
+    const { text } = requestBody;
 
     if (!text || typeof text !== 'string') {
       return new Response(
@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
     // Parse text for markup: *italic* and **turquoise**
     const parseTextWithMarkup = (text: string) => {
       // Split by both markups while preserving all content including spaces
-      let result = [];
+      const result = [];
       let currentIndex = 0;
       
       // Find all markup patterns
