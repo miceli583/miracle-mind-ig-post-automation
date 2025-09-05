@@ -155,7 +155,7 @@ export default function DailyValueManagerDashboard() {
           <div className="p-6">
             <nav className="space-y-2">
               <a
-                href="/admin/daily-value-manager/values"
+                href="/biztools/admin/daily-value-manager/values"
                 className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -164,7 +164,7 @@ export default function DailyValueManagerDashboard() {
                 <span>Values</span>
               </a>
               <a
-                href="/admin/daily-value-manager/image-gen"
+                href="/biztools/admin/daily-value-manager/image-gen"
                 className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -173,7 +173,7 @@ export default function DailyValueManagerDashboard() {
                 <span>Image Generator</span>
               </a>
               <a
-                href="/admin/daily-value-manager/posts"
+                href="/biztools/admin/daily-value-manager/posts"
                 className="flex items-center space-x-3 text-gray-400 hover:text-yellow-400 hover:bg-gray-800 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -195,7 +195,7 @@ export default function DailyValueManagerDashboard() {
             
             <div className="grid grid-cols-1 gap-6">
           <a
-            href="/admin/daily-value-manager/values"
+            href="/biztools/admin/daily-value-manager/values"
             className="group relative block bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-700 rounded-2xl p-10 transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-yellow-400/10"
           >
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-400/5 to-cyan-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -232,7 +232,7 @@ export default function DailyValueManagerDashboard() {
 
 
           <a
-            href="/admin/daily-value-manager/image-gen"
+            href="/biztools/admin/daily-value-manager/image-gen"
             className="group relative block bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-700 rounded-2xl p-10 transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-yellow-400/10"
           >
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-400/5 to-cyan-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -268,7 +268,7 @@ export default function DailyValueManagerDashboard() {
           </a>
 
           <a
-            href="/admin/daily-value-manager/posts"
+            href="/biztools/admin/daily-value-manager/posts"
             className="group relative block bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-700 rounded-2xl p-10 transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-yellow-400/10"
           >
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-400/5 to-cyan-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

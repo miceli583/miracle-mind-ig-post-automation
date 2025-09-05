@@ -14,13 +14,13 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               </div>
               <div className="hidden sm:ml-8 sm:flex sm:space-x-8">
                 <a
-                  href="/admin"
+                  href="/biztools/admin"
                   className="border-transparent text-gray-400 hover:text-yellow-400 hover:border-yellow-400 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-all duration-300"
                 >
                   Dashboard
                 </a>
                 <a
-                  href="/admin/daily-value-manager"
+                  href="/biztools/admin/daily-value-manager"
                   className="border-transparent text-gray-400 hover:text-yellow-400 hover:border-yellow-400 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-all duration-300"
                 >
                   Daily Value Manager
