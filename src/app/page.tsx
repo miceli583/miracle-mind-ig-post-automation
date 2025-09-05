@@ -10,9 +10,9 @@ export default function HomePage() {
     // Check if already authenticated
     const isAuthenticated = localStorage.getItem('isAuthenticated');
     if (isAuthenticated === 'true') {
-      router.push('/admin');
+      router.push('/biztools/admin');
     } else {
-      router.push('/login');
+      router.push('/biztools/login');
     }
   }, [router]);
 

@@ -21,7 +21,7 @@ export default function AdminOverview() {
         <div className="space-y-6">
           <div className="relative">
             <a
-              href="/admin/daily-value-manager"
+              href="/biztools/admin/daily-value-manager"
               className="group relative block bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-700 rounded-2xl p-10 transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-yellow-400/10"
             >
               {/* Hover glow effect */}
@@ -69,7 +69,7 @@ export default function AdminOverview() {
 
           <div className="relative">
             <a
-              href="/admin/post-generator"
+              href="/biztools/admin/post-generator"
               className="group relative block bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-700 rounded-2xl p-10 transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-cyan-400/10"
             >
               {/* Hover glow effect */}

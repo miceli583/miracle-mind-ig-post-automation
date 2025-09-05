@@ -24,7 +24,7 @@ export default function LoginPage() {
       if (response.ok) {
         // Set authentication in localStorage
         localStorage.setItem('isAuthenticated', 'true');
-        router.push('/admin');
+        router.push('/biztools/admin');
       } else {
         setError('Invalid password');
       }
