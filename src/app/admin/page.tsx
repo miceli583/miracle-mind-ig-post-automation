@@ -7,11 +7,11 @@ export default function AdminOverview() {
       <div className="text-center space-y-4">
         <div className="inline-flex items-center space-x-2">
           <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-          <h1 className="text-4xl font-light text-white tracking-wider">Business Operations Hub</h1>
+          <h1 className="text-4xl font-light text-white tracking-wider">Miracle Mind Tooling</h1>
           <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
         </div>
         <p className="text-gray-400 text-lg font-light">
-          Centralized management for all business tools and workflows
+          All-in-one business automation and content management hub
         </p>
         <div className="w-24 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto"></div>
       </div>

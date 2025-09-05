@@ -1,4 +1,4 @@
-# Claude Code Configuration - Instagram Post Automation
+# Claude Code Configuration - Miracle Mind Tooling
 
 ## 🚨 CRITICAL: CONCURRENT EXECUTION & FILE MANAGEMENT
 
@@ -27,7 +27,7 @@
 
 ## Project Overview
 
-This project is an Instagram post automation system for generating inspirational quote images with core values, supporting values, quotes, and authors.
+This is an all-in-one business automation and content management hub built with Next.js. The platform centralizes workflow management, content creation, social media automation, and various business tools for streamlined operations.
 
 ## Build Commands
 
@@ -47,10 +47,13 @@ This project is an Instagram post automation system for generating inspirational
 
 ## Key Features
 
-- **Admin Dashboard** - Manage core values, supporting values, quotes, and authors
-- **Image Generation** - Create Instagram post images with custom quotes and values
-- **Database Management** - Store and organize inspirational content
+- **Business Operations Hub** - Centralized dashboard for all business tools and workflows
+- **Content Management System** - Manage inspirational values, quotes, and authors with relational mapping
+- **Image Generation Tools** - Create custom Instagram posts with advanced text formatting and templates
+- **Post Generator** - Advanced typography and markup system for social media content
+- **Database Management** - Sophisticated relational data organization system
 - **API Integration** - Webhook support for automation platforms like Make.com
+- **Modular Architecture** - Designed to accommodate additional business tools as needed
 
 ## Code Style & Best Practices
 
