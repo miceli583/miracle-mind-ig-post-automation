@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAuthors, createAuthor } from '@/lib/database-relational';
+import { getAuthors, createAuthor } from '@/lib/supabase-database';
 
 export async function GET() {
   try {
@@ -8,7 +8,7 @@ export async function GET() {
   } catch (error) {
     console.error('Error fetching authors:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch authors' },
+      { error: 'Failed to fetch authors from Supabase database' },
       { status: 500 }
     );
   }
@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error creating author:', error);
     return NextResponse.json(
-      { error: 'Failed to create author' },
+      { error: 'Failed to create author in Supabase database' },
       { status: 500 }
     );
   }

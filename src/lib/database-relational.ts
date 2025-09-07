@@ -34,7 +34,7 @@ async function ensureDataDirectory() {
   }
 }
 
-async function loadDatabase(): Promise<DatabaseSchema> {
+export async function loadDatabase(): Promise<DatabaseSchema> {
   if (cachedDb) return cachedDb;
 
   await ensureDataDirectory();

@@ -1,19 +1,37 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs/promises';
-import path from 'path';
-
-const DB_FILE = path.join(process.cwd(), 'data', 'database-relational.json');
+import { getCoreValues, getSupportingValues, getQuotes, getAuthors, getQuotePosts, analyzeDatabase } from '@/lib/supabase-database';
 
 export async function GET() {
   try {
-    const data = await fs.readFile(DB_FILE, 'utf-8');
-    const parsed = JSON.parse(data);
+    const [coreValues, supportingValues, quotes, authors, quotePosts, analysis] = await Promise.all([
+      getCoreValues(),
+      getSupportingValues(),
+      getQuotes(), 
+      getAuthors(),
+      getQuotePosts(),
+      analyzeDatabase()
+    ]);
     
-    return NextResponse.json(parsed);
+    return NextResponse.json({
+      database: 'supabase',
+      analysis,
+      structure: {
+        coreValues,
+        supportingValues,
+        quotes,
+        authors,
+        quotePosts: quotePosts.slice(0, 10) // Limit to first 10 for performance
+      },
+      metadata: {
+        totalRecords: analysis.coreValues + analysis.supportingValues + analysis.quotes + analysis.authors + analysis.posts,
+        lastUpdated: new Date().toISOString(),
+        source: 'Supabase PostgreSQL Database'
+      }
+    });
   } catch (error) {
-    console.error('Error reading database structure:', error);
+    console.error('Error reading Supabase database structure:', error);
     return NextResponse.json(
-      { error: 'Failed to read database structure' },
+      { error: 'Failed to read Supabase database structure', database: 'supabase' },
       { status: 500 }
     );
   }

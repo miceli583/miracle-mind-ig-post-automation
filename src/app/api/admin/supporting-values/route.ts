@@ -1,14 +1,54 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getSupportingValues, createSupportingValue } from '@/lib/database-relational';
+import { getSupportingValues, createSupportingValue, getCoreValues } from '@/lib/supabase-database';
+import { createClient } from '@supabase/supabase-js';
+
+const supabase = createClient(
+  process.env.SUPABASE_URL!,
+  process.env.SUPABASE_SERVICE_ROLE_KEY!,
+  {
+    auth: { persistSession: false }
+  }
+);
 
 export async function GET() {
   try {
-    const supportingValues = await getSupportingValues();
-    return NextResponse.json(supportingValues);
+    const [supportingValues, coreValues] = await Promise.all([
+      getSupportingValues(),
+      getCoreValues()
+    ]);
+
+    // Fetch relationship data from junction table
+    const { data: relationships, error } = await supabase
+      .from('core_value_supporting_values')
+      .select('core_value_id, supporting_value_id');
+
+    if (error) {
+      console.error('Error fetching relationships:', error);
+      return NextResponse.json(supportingValues); // Fallback to basic data
+    }
+
+    // Enhance supporting values with relationship information
+    const enhancedSupportingValues = supportingValues.map(sv => {
+      const relatedCoreValueIds = relationships
+        ?.filter(rel => rel.supporting_value_id === sv.id)
+        .map(rel => rel.core_value_id) || [];
+      
+      const relatedCoreValueNames = relatedCoreValueIds
+        .map(id => coreValues.find(cv => cv.id === id)?.value)
+        .filter(Boolean);
+
+      return {
+        ...sv,
+        coreValueIds: relatedCoreValueIds,
+        coreValueNames: relatedCoreValueNames
+      };
+    });
+
+    return NextResponse.json(enhancedSupportingValues);
   } catch (error) {
     console.error('Error fetching supporting values:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch supporting values' },
+      { error: 'Failed to fetch supporting values from Supabase database' },
       { status: 500 }
     );
   }
@@ -46,7 +86,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error creating supporting value:', error);
     return NextResponse.json(
-      { error: 'Failed to create supporting value' },
+      { error: 'Failed to create supporting value in Supabase database' },
       { status: 500 }
     );
   }

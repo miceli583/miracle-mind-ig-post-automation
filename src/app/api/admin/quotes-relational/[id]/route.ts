@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { updateQuote, archiveQuote, deleteQuote } from '@/lib/database-relational';
+import { updateQuote, archiveQuote, deleteQuote } from '@/lib/supabase-database';
 
 export async function PUT(
   request: NextRequest,
@@ -28,7 +28,7 @@ export async function PUT(
   } catch (error) {
     console.error('Error updating quote:', error);
     return NextResponse.json(
-      { error: 'Failed to update quote' },
+      { error: 'Failed to update quote in Supabase database' },
       { status: 500 }
     );
   }
@@ -62,7 +62,7 @@ export async function PATCH(
   } catch (error) {
     console.error('Error archiving quote:', error);
     return NextResponse.json(
-      { error: 'Failed to archive quote' },
+      { error: 'Failed to archive quote in Supabase database' },
       { status: 500 }
     );
   }
@@ -87,7 +87,7 @@ export async function DELETE(
   } catch (error) {
     console.error('Error deleting quote:', error);
     return NextResponse.json(
-      { error: 'Failed to delete quote' },
+      { error: 'Failed to delete quote from Supabase database' },
       { status: 500 }
     );
   }

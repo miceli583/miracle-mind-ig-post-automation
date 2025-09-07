@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getCoreValues, createCoreValue } from '@/lib/database-relational';
+import { getCoreValues, createCoreValue } from '@/lib/supabase-database';
 
 export async function GET() {
   try {
@@ -8,7 +8,7 @@ export async function GET() {
   } catch (error) {
     console.error('Error fetching core values:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch core values' },
+      { error: 'Failed to fetch core values from Supabase database' },
       { status: 500 }
     );
   }
@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error creating core value:', error);
     return NextResponse.json(
-      { error: 'Failed to create core value' },
+      { error: 'Failed to create core value in Supabase database' },
       { status: 500 }
     );
   }

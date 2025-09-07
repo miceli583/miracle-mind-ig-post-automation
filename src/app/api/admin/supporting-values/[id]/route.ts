@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { updateSupportingValue, archiveSupportingValue, deleteSupportingValue } from '@/lib/database-relational';
+import { updateSupportingValue, archiveSupportingValue, deleteSupportingValue } from '@/lib/supabase-database';
 
 export async function PUT(
   request: NextRequest,
@@ -35,7 +35,7 @@ export async function PUT(
   } catch (error) {
     console.error('Error updating supporting value:', error);
     return NextResponse.json(
-      { error: 'Failed to update supporting value' },
+      { error: 'Failed to update supporting value in Supabase database' },
       { status: 500 }
     );
   }
@@ -69,7 +69,7 @@ export async function PATCH(
   } catch (error) {
     console.error('Error archiving supporting value:', error);
     return NextResponse.json(
-      { error: 'Failed to archive supporting value' },
+      { error: 'Failed to archive supporting value in Supabase database' },
       { status: 500 }
     );
   }
@@ -94,7 +94,7 @@ export async function DELETE(
   } catch (error) {
     console.error('Error deleting supporting value:', error);
     return NextResponse.json(
-      { error: 'Failed to delete supporting value' },
+      { error: 'Failed to delete supporting value from Supabase database' },
       { status: 500 }
     );
   }

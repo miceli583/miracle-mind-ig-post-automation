@@ -1,14 +1,24 @@
 import { NextResponse } from 'next/server';
-import { seedDatabase } from '@/lib/database';
+import { seedDatabase, analyzeDatabase } from '@/lib/supabase-database';
 
 export async function POST() {
   try {
     await seedDatabase();
-    return NextResponse.json({ success: true });
+    const analysis = await analyzeDatabase();
+    return NextResponse.json({ 
+      success: true, 
+      database: 'supabase',
+      message: 'Database seeding completed using Supabase',
+      analysis
+    });
   } catch (error) {
-    console.error('Error seeding database:', error);
+    console.error('Error seeding Supabase database:', error);
     return NextResponse.json(
-      { error: 'Failed to seed database' },
+      { 
+        error: 'Failed to seed Supabase database',
+        database: 'supabase',
+        details: error instanceof Error ? error.message : 'Unknown error'
+      },
       { status: 500 }
     );
   }

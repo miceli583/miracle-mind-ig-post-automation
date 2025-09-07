@@ -1,17 +1,24 @@
 import { NextResponse } from 'next/server';
-import { seedFromNotionCSV } from '@/lib/database-relational';
+import { seedFromNotionCSV, analyzeDatabase } from '@/lib/supabase-database';
 
 export async function POST() {
   try {
     await seedFromNotionCSV();
+    const analysis = await analyzeDatabase();
     return NextResponse.json({ 
       success: true, 
-      message: 'Successfully imported data from Notion CSV with proper thematic relationships' 
+      database: 'supabase',
+      message: 'Successfully imported data from Notion CSV with proper thematic relationships to Supabase',
+      analysis
     });
   } catch (error) {
-    console.error('Error seeding from Notion CSV:', error);
+    console.error('Error seeding Supabase from Notion CSV:', error);
     return NextResponse.json(
-      { error: 'Failed to import Notion data. Make sure the CSV file exists in the project root.' },
+      { 
+        error: 'Failed to import Notion data to Supabase database. CSV seeding should be done via migration scripts.',
+        database: 'supabase',
+        details: error instanceof Error ? error.message : 'CSV import not implemented for Supabase'
+      },
       { status: 500 }
     );
   }

@@ -1,17 +1,20 @@
 import { NextResponse } from 'next/server';
-import { getCoreValues, getSupportingValues, getQuotes, getAuthors } from '@/lib/database-relational';
+import { getCoreValues, getSupportingValues, getQuotes, getAuthors, analyzeDatabase } from '@/lib/supabase-database';
 
 export async function GET() {
   try {
-    const [coreValues, supportingValues, quotes, authors] = await Promise.all([
+    const [coreValues, supportingValues, quotes, authors, analysis] = await Promise.all([
       getCoreValues(),
       getSupportingValues(),
       getQuotes(),
-      getAuthors()
+      getAuthors(),
+      analyzeDatabase()
     ]);
 
     return NextResponse.json({
       status: 'success',
+      database: 'supabase',
+      analysis,
       counts: {
         coreValues: coreValues.length,
         supportingValues: supportingValues.length,
@@ -28,7 +31,8 @@ export async function GET() {
   } catch (error) {
     return NextResponse.json({
       status: 'error',
-      error: error instanceof Error ? error.message : 'Unknown error'
+      database: 'supabase',
+      error: error instanceof Error ? error.message : 'Unknown error occurred with Supabase database'
     });
   }
 }

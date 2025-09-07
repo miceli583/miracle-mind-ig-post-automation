@@ -25,6 +25,12 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                 >
                   Daily Value Manager
                 </a>
+                <a
+                  href="/biztools/admin/post-generator"
+                  className="border-transparent text-gray-400 hover:text-cyan-400 hover:border-cyan-400 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-all duration-300"
+                >
+                  Post Generator
+                </a>
               </div>
             </div>
           </div>

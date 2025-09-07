@@ -2,7 +2,7 @@
 
 import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import type { CoreValue, SupportingValue, CoreValueSupportingValue, QuoteWithAuthor, Author, CoreValueQuote } from '@/types/database-relational';
+import type { CoreValue, SupportingValue, QuoteWithAuthor, Author } from '@/types/database-relational';
 
 interface ExtendedSupportingValue extends SupportingValue {
   coreValueIds?: string[];
@@ -62,62 +62,36 @@ function ValuesPageContent() {
 
   const fetchData = async () => {
     try {
-      // Fetch the complete database structure with relationships
-      const response = await fetch('/api/admin/debug/db-structure');
-      if (response.ok) {
-        const data = await response.json();
-        
-        // Set core values, supporting values, quotes, and authors
-        if (data.coreValues) setCoreValues(data.coreValues);
-        if (data.supportingValues) setSupportingValues(data.supportingValues);
-        if (data.quotes) setQuotes(data.quotes);
-        if (data.authors) setAuthors(data.authors);
-        // if (data.coreValueSupportingValues) setRelationships(data.coreValueSupportingValues);
-        // if (data.coreValueQuotes) setQuoteRelationships(data.coreValueQuotes);
-        
-        // Enhance supporting values with core value relationships
-        if (data.supportingValues && data.coreValueSupportingValues && data.coreValues) {
-          const enhancedSupportingValues = data.supportingValues.map((sv: SupportingValue) => {
-            const relatedCoreValueIds = data.coreValueSupportingValues
-              .filter((rel: CoreValueSupportingValue) => rel.supportingValueId === sv.id)
-              .map((rel: CoreValueSupportingValue) => rel.coreValueId);
-            
-            const relatedCoreValueNames = relatedCoreValueIds
-              .map((id: string) => data.coreValues.find((cv: CoreValue) => cv.id === id)?.value)
-              .filter(Boolean);
-            
-            return {
-              ...sv,
-              coreValueIds: relatedCoreValueIds,
-              coreValueNames: relatedCoreValueNames
-            };
-          });
-          setSupportingValues(enhancedSupportingValues);
-        }
-        
-        // Enhance quotes with core value relationships and authors
-        if (data.quotes && data.coreValueQuotes && data.coreValues && data.authors) {
-          const enhancedQuotes = data.quotes.map((quote: QuoteWithAuthor) => {
-            const relatedCoreValueIds = data.coreValueQuotes
-              .filter((rel: CoreValueQuote) => rel.quoteId === quote.id)
-              .map((rel: CoreValueQuote) => rel.coreValueId);
-            
-            const relatedCoreValueNames = relatedCoreValueIds
-              .map((id: string) => data.coreValues.find((cv: CoreValue) => cv.id === id)?.value)
-              .filter(Boolean);
-            
-            const author = quote.authorId ? data.authors.find((a: Author) => a.id === quote.authorId) : undefined;
-            
-            return {
-              ...quote,
-              author,
-              coreValueIds: relatedCoreValueIds,
-              coreValueNames: relatedCoreValueNames
-            };
-          });
-          setQuotes(enhancedQuotes);
-        }
-      }
+      // First fetch core values and authors
+      const [coreValuesRes, authorsRes] = await Promise.all([
+        fetch('/api/admin/core-values'),
+        fetch('/api/admin/authors')
+      ]);
+
+      const [coreValuesData, authorsData] = await Promise.all([
+        coreValuesRes.json(),
+        authorsRes.json()
+      ]);
+
+      setCoreValues(coreValuesData || []);
+      setAuthors(authorsData || []);
+
+      // Now fetch supporting values and quotes with enhanced relationship data
+      const [supportingValuesRes, quotesRes] = await Promise.all([
+        fetch('/api/admin/supporting-values'),
+        fetch('/api/admin/quotes-relational')
+      ]);
+
+      const [supportingValuesData, quotesData] = await Promise.all([
+        supportingValuesRes.json(),
+        quotesRes.json()
+      ]);
+
+      // Enhanced supporting values with core value relationships
+      // Note: This requires updating the API to return relationship data or fetching separately
+      setSupportingValues(supportingValuesData || []);
+      setQuotes(quotesData || []);
+
     } catch (error) {
       console.error('Failed to fetch data:', error);
     } finally {

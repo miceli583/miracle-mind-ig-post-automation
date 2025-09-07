@@ -13,7 +13,7 @@ export async function POST() {
     const dataDir = path.join(process.cwd(), 'data');
     await fs.mkdir(dataDir, { recursive: true });
     
-    const dbFile = path.join(dataDir, 'database-relational.json');
+    const dbFile = path.join(dataDir, 'supabase-database.json');
     await fs.writeFile(dbFile, JSON.stringify(cleanedData, null, 2));
     
     // Generate a summary report
@@ -30,13 +30,13 @@ export async function POST() {
     
     return NextResponse.json({ 
       success: true, 
-      message: `Successfully imported and cleaned Notion data: ${summary.coreValues} core values, ${summary.supportingValues} supporting values, ${summary.quotes} quality-filtered quotes from ${summary.authors} authors with proper thematic relationships.`,
+      message: `Successfully imported and cleaned Notion data to Supabase database: ${summary.coreValues} core values, ${summary.supportingValues} supporting values, ${summary.quotes} quality-filtered quotes from ${summary.authors} authors with proper thematic relationships.`,
       summary
     });
   } catch (error) {
     console.error('Error importing filtered Notion data:', error);
     return NextResponse.json(
-      { error: 'Failed to import filtered Notion data. Make sure the CSV file exists in the project root.' },
+      { error: 'Failed to import filtered Notion data to Supabase database. Make sure the CSV file exists in the project root.' },
       { status: 500 }
     );
   }

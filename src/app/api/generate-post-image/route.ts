@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { generateQuoteTemplate } from '@/lib/template';
 import { browserPool } from '@/lib/browser-pool';
 import { DESIGN_CONFIG } from '@/config/design';
-import { getQuotePosts } from '@/lib/database-relational';
+import { getQuotePosts } from '@/lib/supabase-database';
 
 export async function POST(request: NextRequest) {
   let page = null;
@@ -42,8 +42,11 @@ export async function POST(request: NextRequest) {
     // Create browser page
     page = await browserPool.createPage();
     
-    // Set content and wait for fonts
-    await page.setContent(html, { waitUntil: 'networkidle0' });
+    // Set content and wait for fonts with longer timeout
+    await page.setContent(html, { 
+      waitUntil: 'domcontentloaded',
+      timeout: 30000 
+    });
     
     // Enhanced font loading check
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

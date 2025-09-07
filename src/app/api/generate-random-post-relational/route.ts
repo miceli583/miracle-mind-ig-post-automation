@@ -1,16 +1,12 @@
 import { NextResponse } from 'next/server';
-import { getRandomQuotePostData, createQuotePost, seedDatabase } from '@/lib/database-relational';
+import { getRandomQuotePostData, createQuotePost, getCoreValues, getSupportingValues, getQuotes } from '@/lib/supabase-database';
 
 export async function POST() {
   try {
-    // Ensure database is seeded with sample data if empty
-    await seedDatabase();
-    
     const randomData = await getRandomQuotePostData();
     
     if (!randomData) {
       // Add better error logging to understand what's missing
-      const { getCoreValues, getSupportingValues, getQuotes } = await import('@/lib/database-relational');
       const coreValues = await getCoreValues();
       const supportingValues = await getSupportingValues();
       const quotes = await getQuotes();
@@ -22,7 +18,7 @@ export async function POST() {
       });
       
       return NextResponse.json(
-        { error: 'Not enough thematically related data available. Please import your Notion data first.' },
+        { error: 'Not enough thematically related data available in Supabase database.' },
         { status: 400 }
       );
     }

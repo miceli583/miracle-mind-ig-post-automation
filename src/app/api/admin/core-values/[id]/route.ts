@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { updateCoreValue, archiveCoreValue, deleteCoreValue } from '@/lib/database-relational';
+import { updateCoreValue, archiveCoreValue, deleteCoreValue } from '@/lib/supabase-database';
 
 export async function PUT(
   request: NextRequest,
@@ -34,7 +34,7 @@ export async function PUT(
   } catch (error) {
     console.error('Error updating core value:', error);
     return NextResponse.json(
-      { error: 'Failed to update core value' },
+      { error: 'Failed to update core value in Supabase database' },
       { status: 500 }
     );
   }
@@ -68,7 +68,7 @@ export async function PATCH(
   } catch (error) {
     console.error('Error archiving core value:', error);
     return NextResponse.json(
-      { error: 'Failed to archive core value' },
+      { error: 'Failed to archive core value in Supabase database' },
       { status: 500 }
     );
   }
@@ -93,7 +93,7 @@ export async function DELETE(
   } catch (error) {
     console.error('Error deleting core value:', error);
     return NextResponse.json(
-      { error: 'Failed to delete core value' },
+      { error: 'Failed to delete core value from Supabase database' },
       { status: 500 }
     );
   }

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getCoreValues, getSupportingValues, getQuotes, createQuotePost } from '@/lib/database';
+import { getCoreValues, getSupportingValues, getQuotes, createQuotePost } from '@/lib/supabase-database';
 
 export async function POST() {
   try {
@@ -11,7 +11,7 @@ export async function POST() {
 
     if (coreValues.length === 0 || supportingValues.length === 0 || quotes.length === 0) {
       return NextResponse.json(
-        { error: 'Not enough data available. Please add core values, supporting values, and quotes first.' },
+        { error: 'Not enough data available in Supabase database.' },
         { status: 400 }
       );
     }
@@ -35,7 +35,7 @@ export async function POST() {
         coreValue: randomCore.value,
         supportingValue: randomSupporting.value,
         quote: randomQuote.text,
-        author: randomQuote.author
+        author: randomQuote.author?.name || ''
       }
     });
   } catch (error) {

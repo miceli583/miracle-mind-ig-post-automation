@@ -14,7 +14,7 @@ export async function DELETE(
   } catch (error) {
     console.error('Error deleting author:', error);
     return NextResponse.json(
-      { error: 'Failed to delete author' },
+      { error: 'Failed to delete author from Supabase database' },
       { status: 500 }
     );
   }

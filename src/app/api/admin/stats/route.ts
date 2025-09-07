@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getCoreValues, getSupportingValues, getQuotes, getQuotePosts, getAuthors } from '@/lib/database-relational';
+import { getCoreValues, getSupportingValues, getQuotes, getQuotePosts, getAuthors } from '@/lib/supabase-database';
 
 export async function GET() {
   try {
@@ -22,9 +22,9 @@ export async function GET() {
       publishedPosts
     });
   } catch (error) {
-    console.error('Error fetching stats:', error);
+    console.error('Error fetching stats from Supabase:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch stats' },
+      { error: 'Failed to fetch stats from database' },
       { status: 500 }
     );
   }
